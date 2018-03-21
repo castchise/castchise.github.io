@@ -1,0 +1,438 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial, sans-serif;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.wrapper{
+	background-color: #fff;
+}
+.header{
+	background: #fff url('../img/headbg.png') 0 0 repeat; /*фон пикчей хедеру*/
+}
+.headbar{
+	width: 1001px;
+	margin: 0 auto; /* ширина и центрирование хедбара*/
+}
+.logobox{
+	padding-top: 13px;
+	float: left;
+}
+.headmenu{
+	float: right;
+}
+.headmenu>li{
+	float: left;
+	margin-left: 25px; /*отступы между элементами (ссылками) хедменю*/
+	line-height: 68px;
+	list-style:none;
+}
+.headmenu li:first-child{
+	margin-left: auto; /*отмена отступа слева для первого элемента списка*/
+}
+.headmenu>li>a{ /*стилизация ссылок на хедбаре*/
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	transition: .5s ease-in-out;
+}
+.headmenu a:hover{
+	color: #ffc012;
+}
+.dropdown{
+	position: relative;
+}
+.sub-menu{ /*позиционирование дропдауна + ширина/скругленность*/
+	position: absolute;
+	z-index: 9999999;
+	top: 50px;
+	height: 0px;
+	overflow: hidden;
+	width: 170px;
+	transition: height .5s ease-in-out;
+	border-radius: 3px;
+}
+.sub-menu>li{ /*высота элементов дропдауна + бордер между ними*/
+	border-bottom: 2px solid #000;
+	line-height: 40px;
+}
+.dropdown:hover .sub-menu{ /*открытие дропдауна*/
+	display: block;
+	height: 165px;
+}
+.sub-menu a{ /*стилизация дропдауна*/
+	display: block;
+	text-align: center;
+	background: #529ecb url('') 0 0 no-repeat;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	transition: .2s ease-in-out;
+}
+.sub-menu a:hover{ /*стилизация ховера дропдауна*/
+	background-color: #1b80ca;
+	color: #fff;
+	font-size: 16px;
+}
+.headspace{ /*стилизация хед-банер плейсмента*/
+	background: transparent url('../img/banner.png') 0 0 no-repeat;
+	background-size: 100%; /*растяжение бг по ширине экрана*/
+	height: 373px; 
+}
+.headbanner{ /*определение рабочей области + позиция от которой двигаются пикчи*/
+	width: 1001px;
+	margin: 0 auto;
+	position: relative;
+}
+.pictures img:first-child{ /*задний план (синяя пикча) з-индексирую поверх серой*/ 
+	z-index: 3;
+	position: absolute;
+	top: 70px; /*положение относительно хедбанера*/
+}
+.pictures img:last-child{ /*задний план (серая пикча)*/
+	z-index: 2;
+	position: absolute;
+	top: 40px; /*положение относительно хедбанера*/
+	left: 182px; /*положение относительно хедбанера*/
+}
+.headbannerpic a{ /*передний план (красная пикча) + положение относительно хедбанера*/
+	position: absolute;
+	top: 121px;
+	left: 46px;
+	z-index: 9999;
+}
+.headbannerpic a>img{ /*тень только на пикчу*/
+	box-shadow: 0 0 8px rgba(0,0,0,.75);
+}
+.headbannerpic>img:last-child{ /*отражение (по идее можно и нужно было сделать через ::after)*/
+	position: absolute;
+	top: 388px;
+	left: 46px;
+}
+.headbannertxt{ /*блок с текстом и кнопкой справа от картинок*/
+	padding-top: 70px;
+	width: 360px;
+	height: 303px;
+	left: 624px;
+	position: absolute;
+}
+.headbanner h1{
+	font-family: "Droid Sans bold", sans-serif;
+	font-size: 26px;
+	color: #fff;
+	text-shadow: -2px 2px 2px rgba(0,0,0,.6);
+}
+.headbanner p{
+	margin-top: 30px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+	word-break: break-all;
+}
+.headbanner form{
+	text-align: center;
+}
+.bannersubm{
+	width: 187px;
+	height: 54px;
+	font-family: "Droid Sans",sans-serif;
+	font-size: 28px;
+	color: #fff;
+	background: linear-gradient(to right,#4290c1, #60a9d4);
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	margin-top: 50px;
+}
+.content{ /*ширина центрирование контенблока*/
+	width: 1001px;
+	margin: 0 auto;
+	margin-top: 69px;
+	clear: both;
+}
+.mailbox{
+	width: 962px;
+	height: 72px;
+	background: transparent url('../img/bge.png') 0 0 no-repeat;
+	margin:0 auto;
+	line-height: 72px;
+}
+.mailbox, .mailbox p, .mailbox form{
+	position: relative; /*для тени псевдоэлементов*/
+}
+.mailbox p{
+	float: left;
+	margin-left: 12px;
+}
+.emailform{
+	float: right;
+	margin-right: 18px;
+	display: table; /*вертикальное выравнивание элементов форм*/
+}
+.emplaceholder{ /*email input text bar*/
+	vertical-align: middle;
+	background-color: #fff;
+	height: 42px;
+	width: 232px;
+	padding-left: 16px; /*пробовал через ::placeholder - text-area все равно приходится подтягивать паддингом*/
+	border-radius: 3px;
+	border: none;
+	outline: none;
+}
+.emsubm{
+	vertical-align: middle;
+	margin-left: 5px;
+	background: linear-gradient(to right,#4290c1, #60a9d4);
+	border-radius: 2px;
+	width: 62px;
+	height: 42px;
+	border: none;
+	outline: none;
+	font-family: "Droid Sans", sans-serif;
+	font-size: 14px;
+	color: #fff;
+	box-shadow: 0px 2px 1px 0px rgba(0,0,0,.4);
+}
+.emsubm:hover{
+	position: relative;
+	top: 1px;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,.4);
+}
+.mailbox::after, .mailbox::before{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	height: 10px;
+	bottom: 5px;
+	left: 30px;
+	width: 50%;
+	top: 74%;
+	max-width: 300px;
+	background-color: #c4c4c4;
+	transform: rotate(-3deg);
+	box-shadow: 10px 6px 20px 4px rgba(0,0,0,.4);
+}
+.mailbox::after{
+	transform: rotate(3deg);
+	right: 30px;
+	left: auto;
+}
+.contentblocks{ /*ширина+центрирование поля для контент блоков*/
+	margin: 0 auto;
+	width: 962px;
+	overflow: hidden;
+}
+.row1, .row2, .row3{
+	margin-top: 50px;
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+.row1{
+	width: 292px;
+}
+.row3{
+	margin-right: 10px;
+	width: 290px;
+}
+.uppercont.head{
+	font-weight: 700;
+	font-size: 18px;
+	height: 35px;
+	line-height: 35px;
+}
+.uppercont.head img{ /*img в блочный элемент + положение слева*/
+	display: block;
+	float: left;
+}
+.uppercont.head p{
+	margin-left: 10px;
+	float: left;
+}
+.uppercont.meat p{
+	margin-top: 10px;
+	clear: both;
+	font-size: 14px;
+	line-height: 14px;
+}
+.uppercont.meat{ /*убрать сильный разнобой в высоте кнопок при разном контенте*/
+	min-height: 200px;
+}
+.uppercont form{
+	margin-top: 23px;
+}
+.uppercont .contentsubm{
+	outline: none;
+	border: none;
+	width: 83px;
+	height: 34px;
+	font-family: "Myriad Pro",Myriad, sans-serif;
+	font-size: 15px;
+	color: #1d1d1d;
+	background: linear-gradient(to bottom,#fff,#e3e3e3);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,.4);
+}
+.uppercont .contentsubm:hover{
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,.2);
+}
+.bottomcont.pic{
+	margin-top: 73px;
+	overflow: auto;
+	width: 269px;
+	height: 131px;
+	border: 7px solid #e2e0e0;
+	border-radius: 4px;
+}
+.botwrap{ /*оборотка нижнего блока для теней псевдоэлементами*/
+	position: relative;
+	width: 283px;
+}
+.botwrap:before, .botwrap:after{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 13px;
+	width: 40%;
+	top: 50%;
+	left: 148px;
+	max-width: 300px;
+	background: #c4c4c4;
+	box-shadow: 0 14px 20px #777;
+	transform: rotate(-8deg);
+}
+.botwrap:after{
+	transform: rotate(8deg);
+	right: 138px;
+	left: auto;
+}
+.bottomcont.head{
+	margin-top: 17px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.bottomcont .meat{
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	min-height: 150px;
+}
+.footer{
+	margin-top: 20px;
+	clear: both;
+	min-height: 388px;
+	/*background: linear-gradient(to top,#000000,#191818);*/
+	background: transparent url('../img/footbg.png') 0 0 repeat-x;
+}	
+.footerblocks{
+	width: 962px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.aboutsec, .footmenu, .contactsec{
+	margin-top: 30px;
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+.footblock.head{
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+}
+.footblock.head:after{
+	content: "";
+	display: block;
+	background: transparent url('../img/footblockafter1.png') 0 0 no-repeat;
+	height: 5px;
+	width: 269px;
+	opacity: .5;
+}
+.aboutsec{
+	width: 292px;
+}
+.aboutsec.meat p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.aboutsec.meat p:first-child{
+	margin-top: auto;
+}
+.footsubm{
+	background: linear-gradient(to top,#1454ab, #1d8fd5);
+	outline: none;
+	border: none;
+	width: 73px;
+	height: 37px;
+	color: #fff;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	border-radius: 4px;
+	margin-top: 25px;
+}
+.footmenu ul{
+	margin-top: 30px;
+	list-style: square inside url('../img/arrow.png');
+}
+.footmenu ul li{
+	margin-top: 20px;
+}
+.footmenu ul a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+.footmenu ul a:hover{
+	text-decoration: underline;
+}
+.contactsec{
+	margin-right: 10px;
+	width: 290px;
+}
+.contactsec form{
+	margin-top: 30px;
+}
+.footname, .footmail, .footmsg{
+	color: #fff;
+	border-radius: 30px;
+	background: #111010 url() 0 0 no-repeat;
+	border: none;
+	outline: none;
+	padding-left: 17px;
+	width: 188px;
+	height: 32px;
+	font-size: 14px;
+	box-shadow: 1px 1px 0 0 #353535, inset 1px 1px 0 0 black;
+}
+.footmail, .footmsg{
+	margin-top: 7px;
+}
+.footmsg{
+	width: 268px;
+	height: 86px;
+	resize: none;
+	font-family: Arial, sans-serif;
+	padding-top: 10px;
+}
+.contactsec>form>.footsubm{
+	margin-top: auto;
+}
+.postfooter{
+	background-color: #000000;
+	border-top: 1px solid #4e4949;
+}
+.postfooter p{
+	width: 962px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #fff;
+	line-height: 35px;
+}
