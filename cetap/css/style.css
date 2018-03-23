@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #fff;
+}
+.head-wrap{
+	width: 1170px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 150px;
+}
+.pic-logo{
+	margin-top: 53px;
+	float: left;
+}
+.navbar{
+	margin-top: 72px;
+	overflow: hidden;
+	float: right;
+	text-transform: uppercase;
+	margin-right: 75px;
+}
+.navbar li{
+	list-style: none;
+	float: left;
+	margin-left: 50px;
+}
+/*.navbar li:first-child{
+	margin-left: 0px;
+}*/
+.navbar a{
+	display: block;
+	text-decoration: none;
+	font-family: 'lato regular', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: #515755;
+	transition: .5s ease-in-out;
+	position: relative;
+}
+.navbar a:hover{
+	color: #16211e;
+}
+.navbar a:hover:before{
+	content: "";
+	position: absolute;
+	left: -20px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/pointer.png);
+	background-repeat: no-repeat;
+}
+.banner-wrap{
+	width: 100%;
+}
+.pic-container img{
+	min-width: 100%;
+}
+.pic-after{
+	text-transform: uppercase;
+	font-family: 'open sans regular', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	height: 35px;
+	margin-top: 60px;
+}
+.pic-after span:first-child{
+	color: #ff9b2e;
+	display: inline-block;	
+	position: relative;
+}
+.pic-after span:first-child:before{
+	content: "";
+	position: absolute;
+	left: -715px;
+	display: block;
+	height: 100%;
+	width: 709px;
+	top: 13px;
+	background-image: url(../img/sep1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.pic-after span:last-child{
+	color: #16211e;
+	display: inline-block;
+	position: relative;
+}
+.pic-after span:last-child:before{
+	content: "";
+	position: absolute;
+	right: -715px;
+	display: block;
+	height: 100%;
+	width: 709px;
+	top: 13px;
+	background-image: url(../img/sep2.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.content-wrap{
+	width: 1170px;
+	margin: 0 auto;
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+}
+.container{
+	text-align: center;
+}
+.container>h2{
+	font-family: 'open sans regular', sans-serif;
+	font-size: 24px;	
+	text-transform: uppercase;
+	position: relative;
+}
+.container h2:hover:before{
+	content: "";
+	position: absolute;
+	left: 25%;
+	bottom: 25%;
+	display: block;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background-image: url(../img/pointer.png);
+	background-repeat: no-repeat;
+}
+.container p{
+	font-family: 'lato regular', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #515755;
+}
