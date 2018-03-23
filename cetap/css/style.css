@@ -5,6 +5,12 @@
 body{
 	background-color: #fff;
 }
+p{
+	cursor: default;
+}
+span{
+	cursor: default;
+}
 .head-wrap{
 	width: 1170px;
 	margin: 0 auto;
@@ -37,18 +43,24 @@ body{
 	font-size: 15px;
 	font-weight: 600;
 	color: #515755;
-	transition: .5s ease-in-out;
 	position: relative;
 }
 .navbar a:hover{
 	color: #16211e;
 }
+.navbar a:before{
+	content: "";
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s ease-in-out;
+}
 .navbar a:hover:before{
 	content: "";
+	opacity: 1;
+	visibility: visible;
 	position: absolute;
 	left: -20px;
 	top: 2px;
-	display: block;
 	width: 15px;
 	height: 15px;
 	background-image: url(../img/pointer.png);
@@ -58,7 +70,9 @@ body{
 	width: 100%;
 }
 .pic-container img{
+	display: block;
 	min-width: 100%;
+	height: 800px;
 }
 .pic-after{
 	text-transform: uppercase;
@@ -113,24 +127,53 @@ body{
 .container{
 	text-align: center;
 }
+.container img{
+	display: block;
+	margin: 0 auto;
+}
 .container>h2{
+	display: inline-block;
 	font-family: 'open sans regular', sans-serif;
 	font-size: 24px;	
 	text-transform: uppercase;
 	position: relative;
 	cursor: default;
 }
+.container h2:before{
+	content: "";
+	opacity: 0;
+	visibility: hidden;
+}
 .container h2:hover:before{
 	content: "";
 	position: absolute;
-	left: 25%;
+	left: -20px;
 	bottom: 25%;
-	display: block;
+	opacity: 1;
+	visibility: visible;
 	width: 15px;
 	height: 15px;
-	line-height: 15px;
 	background-image: url(../img/pointer.png);
 	background-repeat: no-repeat;
+	transition: .5s ease-in-out;
+}
+.container h2:after{
+	content: "";
+	opacity: 0;
+	visibility: hidden;
+}
+.container h2:hover:after{
+	content: "";
+	position: absolute;
+	right: -20px;
+	bottom: 25%;
+	opacity: 1;
+	visibility: visible;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/pointer.png);
+	background-repeat: no-repeat;
+	transition: .5s ease-in-out;
 }
 .container p{
 	font-family: 'lato regular', sans-serif;
@@ -138,4 +181,142 @@ body{
 	font-weight: 500;
 	color: #515755;
 	cursor: default;
+}
+.team-wrap{
+	margin-top: 90px;
+	min-width: 100%;
+	height: 564px;
+	background-color: #ff9b2e;
+}
+.team-container{
+	width: 950px;
+	margin: 0 auto;
+	padding: 0px 150px;
+}
+.team-header{
+	padding-top: 70px;
+	text-align: center;
+	color: #fff;
+	font-family: 'open sans regular', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.team-header p{
+	display: inline-block;
+	position: relative;
+}
+.team-header p:before{
+	content: "";
+	position: absolute;
+	left: -10px;
+	bottom: 35%;
+	height: 7px;
+	width: 7px;
+	background-image: url('../img/pointer2.png');
+	background-repeat: no-repeat;
+}
+.team-header p:after{
+	content: "";
+	position: absolute;
+	right: -10px;
+	bottom: 35%;
+	height: 7px;
+	width: 7px;
+	background-image: url('../img/pointer2.png');
+	background-repeat: no-repeat;
+}
+.team-body{
+	margin-top: 70px;
+}
+.team-body-pic-cont{
+	float: left;
+}
+.team-body-pic-cont img{
+	display: block;
+	height: 250px;
+	width: 250px;
+}
+.team-info1, .team-info2, .team-contact{
+	margin-left: 325px;
+}
+.team-info1{
+	font-family: 'open sans regular', sans-serif;
+	font-size: 16px;
+}
+.team-info1 p:first-child{
+	font-weight: 600;
+	color: #fff;
+}
+.team-info1 p:last-child{
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	opacity: .5;
+	word-spacing: 3px;
+}
+.team-info2{
+	margin-top: 40px;
+	font-family: 'open sans regular', sans-serif;
+	font-size: 15px;
+	color: #fff;
+}
+.team-contact{
+	margin-top: 30px;
+}
+.team-contact a{
+	float: left;
+	margin-left: 10px;
+	display: block;
+}
+.team-contact a:first-child{
+	margin-left: auto;
+}
+.fb{
+	background-image: url('../img/facebook.png');
+	height: 30px;
+	width: 30px;
+	transition: .3s ease-in-out;
+}
+.fb:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url('../img/facebookh.png');
+}
+.tw{
+	background-image: url('../img/twitter.png');
+	height: 30px;
+	width: 30px;
+	transition: .3s ease-in-out;
+}
+.tw:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url('../img/twitterh.png');
+}
+.gp{
+	background-image: url('../img/google.png');
+	height: 30px;
+	width: 30px;
+	transition: .3s ease-in-out;
+}
+.gp:hover{
+	height: 30px;
+	width: 30px;
+	background-image: url('../img/googleh.png');
+}
+.proj-wrap{
+	margin-top: 70px;
+}
+.proj-container{
+	width: 950px;
+	margin: 0 auto;
+	margin-top: 70px;
+	padding: 0px 150px;
+}
+.showcase1{
+	margin: 0 auto;
+	border-radius: 150px;
+	width: 300px;
+	height: 300px;
+	background-color: #ff9b2e;
 }
