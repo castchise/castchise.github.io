@@ -47,6 +47,7 @@ body{
 	content: "";
 	position: absolute;
 	left: -20px;
+	top: 2px;
 	display: block;
 	width: 15px;
 	height: 15px;
