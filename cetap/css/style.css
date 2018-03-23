@@ -11,6 +11,15 @@ p{
 span{
 	cursor: default;
 }
+#scroll a{
+	position: absolute;
+	right: 50%;
+	bottom: 5%;
+	background-image: url(../img/scroll.png);
+	height: 25px;
+	width: 20px;
+	opacity: .5;
+}
 .head-wrap{
 	width: 1170px;
 	margin: 0 auto;
@@ -183,7 +192,7 @@ span{
 	cursor: default;
 }
 .team-wrap{
-	margin-top: 90px;
+	margin-top: 80px;
 	min-width: 100%;
 	height: 564px;
 	background-color: #ff9b2e;
@@ -305,6 +314,7 @@ span{
 	background-image: url('../img/googleh.png');
 }
 .proj-wrap{
+	clear: both;
 	margin-top: 70px;
 }
 .proj-container{
