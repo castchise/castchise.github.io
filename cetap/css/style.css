@@ -67,6 +67,7 @@ body{
 	font-size: 24px;
 	height: 35px;
 	margin-top: 60px;
+	cursor: default;
 }
 .pic-after span:first-child{
 	color: #ff9b2e;
@@ -117,6 +118,7 @@ body{
 	font-size: 24px;	
 	text-transform: uppercase;
 	position: relative;
+	cursor: default;
 }
 .container h2:hover:before{
 	content: "";
@@ -135,4 +137,5 @@ body{
 	font-size: 15px;
 	font-weight: 500;
 	color: #515755;
+	cursor: default;
 }
