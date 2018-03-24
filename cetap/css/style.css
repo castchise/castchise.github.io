@@ -20,6 +20,10 @@ span{
 	width: 20px;
 	opacity: .5;
 }
+.header{
+	height: 100vh;
+	min-height: 600px;
+}
 .head-wrap{
 	width: 1170px;
 	margin: 0 auto;
@@ -78,6 +82,14 @@ span{
 .banner-wrap{
 	width: 100%;
 }
+.pic-container{
+	min-height: 85vh;
+	background-image: url('../img/banner.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
 .pic-container img{
 	display: block;
 	min-width: 100%;
@@ -127,9 +139,10 @@ span{
 	background-position: 0px 0px;
 }
 .content-wrap{
+	clear: both;
 	width: 1170px;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 140px;
 	display: flex;
 	justify-content: center;
 }

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CetAp /Kharkov</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link  href="css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 </head>
 <body>
 	<div id="scroll">
@@ -21,27 +21,29 @@
     		});
 		});
 	</script>
-	<div class="head-wrap">
-		<div class="pic-logo">
-			<a href=""><img src="img/logo.png" alt="logo"></a>
+	<div class="header">
+		<div class="head-wrap">
+			<div class="pic-logo">
+				<a href=""><img src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="headnav">
+				<ul class="navbar">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Детям</a></li>
+					<li><a href="#">Взрослым</a></li>
+					<li><a href="#">Проекты</a></li>
+					<li><a href="#">Команда</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="headnav">
-			<ul class="navbar">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Детям</a></li>
-				<li><a href="#">Взрослым</a></li>
-				<li><a href="#">Проекты</a></li>
-				<li><a href="#">Команда</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="banner-wrap">
-		<div class="pic-container">
-			<img src="img/banner.png" alt="bannerpic">
-		</div>
-		<div class="pic-after" id="anchor1">
-			<span>мы</span><span>предлагаем</span>
+		<div class="banner-wrap">
+			<div class="pic-container">
+				<!-- <img src="img/banner.png" alt="bannerpic"> -->
+			</div>
+			<div class="pic-after" id="anchor1">
+				<span>мы</span><span>предлагаем</span>
+			</div>
 		</div>
 	</div>
 	<div class="content-wrap">
@@ -71,7 +73,7 @@
 			<div class="team-header">
 				<p>наша команда</p>
 			</div>
-			<div class="fotorama" data-width="100%" data-ratio="900/400" data-loop="true" data-arrows="true" data-shadows="false">
+			<div class="fotorama" data-width="100%" data-ratio="900/400" data-loop="true" data-arrows="true" data-shadows="false" data-autoplay="true">
 				<div class="team-body">
 					<div class="team-body-pic-cont">
 						<img src="img/photo1.png" alt="photo">
@@ -125,7 +127,7 @@
 				</div>
 			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
-			<script src="script/fotorama.js"></script> <!-- 16 KB -->
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 		</div>
 	</div>
 	<div class="proj-wrap">
