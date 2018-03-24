@@ -149,9 +149,10 @@ span{
 .container{
 	text-align: center;
 }
-.container img{
+.contentpic{
 	display: block;
 	margin: 0 auto;
+	width: 150px;
 }
 .container>h2{
 	display: inline-block;
@@ -165,6 +166,19 @@ span{
 	content: "";
 	opacity: 0;
 	visibility: hidden;
+}
+.contentpic:hover+h2:before{
+	content: "";
+	position: absolute;
+	left: -20px;
+	bottom: 25%;
+	opacity: 1;
+	visibility: visible;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/pointer.png);
+	background-repeat: no-repeat;
+	transition: .5s ease-in-out;
 }
 .container h2:hover:before{
 	content: "";
@@ -183,6 +197,19 @@ span{
 	content: "";
 	opacity: 0;
 	visibility: hidden;
+}
+.contentpic:hover+h2:after{
+	content: "";
+	position: absolute;
+	right: -20px;
+	bottom: 25%;
+	opacity: 1;
+	visibility: visible;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/pointer.png);
+	background-repeat: no-repeat;
+	transition: .5s ease-in-out;
 }
 .container h2:hover:after{
 	content: "";
