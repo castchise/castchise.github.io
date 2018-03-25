@@ -155,7 +155,7 @@ span{
 }
 .pic-container{
 	min-height: 85vh;
-	background-image: url('../img/banner.png');
+	background-image: url('../img/banner.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
