@@ -136,7 +136,7 @@ span{
 	text-decoration: none;
 	color: #fff;
 	font-size: 30px;
-	transition: .5s ease-in-out;
+	transition: .1s ease-in-out;
 }
 .btn span{
 	cursor: pointer;	
@@ -146,7 +146,12 @@ span{
 	opacity: 1;
 }
 .btn:hover{
-	box-shadow: 0px 10px 0px #ff8500;
+	box-shadow: 0px 2px 0px #ff8500;
+	transform: translateY(3px);
+}
+.btn:active{
+	transform: translateY(6px);
+	box-shadow: none;
 }
 .pic-container{
 	min-height: 85vh;
@@ -227,7 +232,35 @@ span{
 	position: relative;
 	cursor: default;
 }
+.container h2:hover{
+	z-index: 1;
+}
+.container h2:hover:before{
+	content: "";
+	width: 100%;
+	background-color: #ff9b2e;
+	z-index: -1;
+}
 .container h2:before{
+	transition-timing-function: linear;
+	transition-duration: .25s;
+	content: "";
+	z-index: 0;
+	position: absolute;
+	height: 100%;
+	width: 0;
+}
+.contentpic:hover+h2:before{
+	content: "";
+	width: 100%;
+	background-color: #ff9b2e;
+	z-index: -1;
+}
+/*Ниже - покраска заголовка при ховере х2 или пикчи*/
+
+/* Ниже - псевдоэлементы шарики при ховере пикчи или заголовка */
+
+/*.container h2:before{
 	content: "";
 	opacity: 0;
 	visibility: hidden;
@@ -288,7 +321,7 @@ span{
 	background-image: url(../img/pointer.png);
 	background-repeat: no-repeat;
 	transition: .5s ease-in-out;
-}
+}*/
 .container p{
 	font-family: 'lato regular', sans-serif;
 	font-size: 15px;
