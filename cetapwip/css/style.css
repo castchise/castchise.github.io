@@ -146,12 +146,12 @@ span{
 	opacity: 1;
 }
 .btn:hover{
-	box-shadow: 0px 2px 0px #ff8500;
-	transform: translateY(3px);
+	box-shadow: 0px 3px 0px #ff8500;
+	transform: translateY(2px);
 }
 .btn:active{
-	transform: translateY(6px);
-	box-shadow: none;
+	transform: translateY(3px);
+	box-shadow: 0px 2px 0px #ff8500;
 }
 .pic-container{
 	min-height: 85vh;
