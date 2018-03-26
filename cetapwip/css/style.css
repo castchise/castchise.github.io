@@ -26,7 +26,7 @@ span{
 	min-height: 600px;
 }
 .head-wrap{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	overflow: hidden;
 	height: 150px;
@@ -81,16 +81,17 @@ span{
 	background-repeat: no-repeat;
 }
 .banner-wrap{
-	width: 100%;
+	min-width: 100%;
 }
 .salecont{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	position: relative;
 }
 .saleblock{
 	position: absolute;
 	top: 65px;
+	left: 1%;
 	font-family: 'open sans semibold', sans-serif;
 	color: #fff;
 	text-transform: uppercase;
@@ -160,11 +161,11 @@ span{
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.pic-container img{
+/*.pic-container img{
 	display: block;
 	min-width: 100%;
 	height: 800px;
-}
+}*/
 .pic-after{
 	text-transform: uppercase;
 	font-family: 'open sans regular', sans-serif;
@@ -174,7 +175,7 @@ span{
 	margin-top: 60px;
 	cursor: default;
 }
-.pic-after span:first-child{
+/*.pic-after span:first-child{
 	color: #ff9b2e;
 	display: inline-block;	
 	position: relative;
@@ -207,10 +208,10 @@ span{
 	background-image: url(../img/sep2.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-}
+}*/
 .content-wrap{
 	clear: both;
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	margin-top: 140px;
 	display: flex;
@@ -248,7 +249,7 @@ span{
 	z-index: 0;
 	position: absolute;
 	height: 100%;
-	width: 0;
+	width: 0%;
 }
 .contentpic:hover+h2:before{
 	content: "";
@@ -336,7 +337,7 @@ span{
 	background-color: #ff9b2e;
 }
 .team-container{
-	width: 950px;
+	max-width: 950px;
 	margin: 0 auto;
 	padding: 0px 150px;
 }
@@ -456,7 +457,7 @@ span{
 	margin-top: 70px;
 }
 .proj-container{
-	width: 950px;
+	max-width: 950px;
 	margin: 0 auto;
 	margin-top: 70px;
 	padding: 0px 150px;
@@ -485,13 +486,13 @@ span{
 	font-size: 14px;
 }
 *[class^="revealator"] {
-	width: 600px;
+	max-width: 600px;
 	display: inline-block;
 	vertical-align: top;
 }
 *[class^="revealator"]:last-child{
 	margin-left: 80px;
-	width: 100px;
+	max-width: 100px;
 }
 .foot-wrap{
 	clear: both;
@@ -511,14 +512,14 @@ span{
 	background-size: cover;
 }
 .contact-wrap{
-	width: 100%;
+	min-width: 100%;
 	background-color: #ff9b2e;
 }
 .contacts{
 	padding-top: 10px;
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
-	height: 75px;
+	min-height: 75px;
 	font-family: 'open sans semibold', sans-serif;
 	font-size: 14px;
 	color: #fff;
@@ -543,30 +544,36 @@ span{
 	opacity: .9;
 }
 .connect-wrap{
-	width: 100%;
+	min-width: 100%;
 	background-color: #fff;
+	text-align: center;
 }
 .connections{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	height: 30px;
-	line-height: 30px;
 	font-family: 'open sans semibold', sans-serif;
 	font-size: 12px;
 	color: #16211e;
 	text-transform: uppercase;
+	text-align: left;
 }
 .connections h4{
+	display: inline-block;
 	opacity: .5;
-	float: left;
+	max-width: 100%;
+	margin-top: 5px;
 }
 .connections h4>a{
 	color: #ff8500;
 }
-.connections>.team-contact{
-	margin-top: auto;
+.emptyspace{
 	float: right;
+	max-width: 20%;
 }
-.connections>.team-contact>a:hover{
-	background-image: ;
+.connections>.team-contact{
+	margin-left: auto;
+	margin-top: auto;
+	max-width: 20%;
+	float: right;
 }
