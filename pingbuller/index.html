@@ -6,7 +6,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="fonts/league_gothic.css">
+	<link rel="stylesheet" href="fonts/leaguegothic/league_gothic.css">
+	<link rel="stylesheet" href="fonts/opensans/stylesheet.css">
 </head>
 <body>
 	<header class="header">
@@ -19,9 +20,22 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Products</a></li>
+					<li class="menu-list-hidden"><a href="#">Lorem ipsum</a></li>
+					<li class="menu-list-hidden"><a href="#">dolor sit amet</a></li>
 				</ul>
-			</nav>
-			<div class="header-slider"></div>
+			</nav>			
+		</div>
+		<div class="header-slider">
+				<div class="header-slider-container">
+					<h1 class="header-slider-h1">Lorem ipsum dolor</h1>
+					<h2 class="header-slider-h2">it will make all of your dreams come</h2>
+					<div class="header-slider-textwrapper">
+						<p class="header-slider-text-hidden">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+					</div>
+				</div>
+				<div class="phonewrap">
+					<div class="iphone"></div>
+				</div>
 		</div>
 	</header><!-- header -->
 
@@ -48,26 +62,96 @@
 	<div class="content">
 		<div class="wrapper">
 			<div class="content-box-wrap">
-				<img src="" alt="pic">
+				<img src="img/avatar.png" alt="pic">
 				<div class="content-text-box">
 					<h3 class="content-text-title">Pingbuller</h3>
 					<h3 class="content-text-sub-title">starts here</h3>
-					<p class="content-text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae</p>
+					<div class="txt-wrap">
+						<p class="content-text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.” Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+					</div>
 				</div>
 			</div>
+			<div class="clearfix" style="clear:both;"></div>
+			<div class="update-box-wrap">
+				<h2 class="updates-header">recent updates</h2>
+				<div class="update-box">
+					<img src="img/picture.png" alt="#">
+					<p class="update-box-topic">Nunc turpis neque</p>
+					<p class="update-box-topic-large">Nunc turpis neque feugiat eget</p>
+					<p class="update-box-info">Posted by Admin on March 07</p>
+					<p class="update-box-info-large">Posted by Admin on March 13 2018</p>
+				</div>
+				<div class="update-box">
+					<img src="img/picture.png" alt="#">
+					<p class="update-box-topic">Nunc turpis neque</p>
+					<p class="update-box-topic-large">Nunc turpis neque feugiat eget</p>
+					<p class="update-box-info">Posted by Admin on March 07</p>
+					<p class="update-box-info-large">Posted by Admin on March 13 2018</p>
+				</div>
+				<div class="update-box">
+					<img src="img/picture.png" alt="#">
+					<p class="update-box-topic">Nunc turpis neque</p>
+					<p class="update-box-topic-large">Nunc turpis neque feugiat eget</p>
+					<p class="update-box-info">Posted by Admin on March 07</p>
+					<p class="update-box-info-large">Posted by Admin on March 13 2018</p>
+				</div>
+				<a href="#" class="update-box-link">more blog posts</a>
+			</div>	
 		</div>
 	</div><!-- content -->
 
 	<div class="sponsors">
 		<div class="wrapper">
-			
+			<div class="sponsors-box-wrap">
+				<img src="img/logos3.png">
+				<img src="img/logos2.png">
+				<img src="img/logos1.png">
+			</div>
 		</div>
 	</div><!-- sponsors -->
+	
+	<div class="pre-footer">
+		<div class="wrapper">
+			<div class="pre-footer-box-large">
+				<img src="img/logo_footer.png" alt="#">
+				<p class="copyright">Все украдено, PINGBULL AS</p>
+				<p class="copyright-info">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
+			</div>
+			<div class="pre-footer-newswrap">
+				<div class="pre-footer-box">
+					<h4 class="pre-footer-header">news categories</h4>
+					<p class="pre-footer-news">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
+					<p class="pre-footer-news-large">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+				</div>
+				<div class="pre-footer-box">
+					<h4 class="pre-footer-header">news categories</h4>
+					<p class="pre-footer-news">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
+					<p class="pre-footer-news-large">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+				</div>
+				<div class="pre-footer-box">
+					<h4 class="pre-footer-header">news categories</h4>
+					<p class="pre-footer-news">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque</p>
+					<p class="pre-footer-news-large">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<div class="wrapper">
-			
+			<nav class="footer-menu">
+				<ul class="menu-list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Products</a></li>
+					<li class="menu-list-hidden"><a href="#">Lorem ipsum</a></li>
+					<li class="menu-list-hidden"><a href="#">dolor sit amet</a></li>
+				</ul>
+			</nav>
+			<p class="foot-info">3DeCb 6blJl <span>Yung$ergeY666</span></p>
 		</div>
 	</footer><!-- footer -->
+	<script> </script>
 </body>
 </html>
