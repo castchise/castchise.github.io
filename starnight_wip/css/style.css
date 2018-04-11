@@ -199,7 +199,7 @@ body{
 }
 .features{
 	padding-top: 100px;
-	padding-bottom: 315px;
+	padding-bottom: 280px;
 
 	background-color: #f6f6f4;
 }
@@ -274,4 +274,41 @@ body{
 	font-size: 16px;
 
 	color: #abbcc3;
+}
+.footer{
+	padding-top: 75px;
+	padding-bottom: 70px;
+
+	background-color: #7accc8;
+}
+.footer-block-lg, .footer-block-sm{
+	color: #f3f3f3e0;
+	font-size: 14px;
+}
+.footer-list{
+	list-style: none;
+}
+.footer-list li{
+	margin-bottom: 10px;
+}
+.footer-list a{
+	color: #fff;
+}
+.footer-list a:hover{
+	color: #fff;
+}
+.footer-logo{
+	padding-top: 75px;
+
+	display: block;
+	margin: 0 auto;
+}
+.footer-txt{
+	margin: 0 auto;
+	padding-top: 20px;
+
+	color: #e8e8e8ad;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 12px;
 }
