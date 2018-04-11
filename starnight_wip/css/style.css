@@ -287,6 +287,7 @@ body{
 }
 .footer-list{
 	list-style: none;
+	min-width: 115px;
 }
 .footer-list li{
 	margin-bottom: 10px;
