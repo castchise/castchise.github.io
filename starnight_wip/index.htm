@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Starnight</title>
+	<title>document</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+	<!-- bootstrap js -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<header class="header">
@@ -37,11 +42,127 @@
 	<div class="quotes">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl custom-quotes">
-					
+				<div class="col-xl quotes-slide-box">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="col-xl carousel-item active">
+						    <div class="quote">
+								<img src="img/avatar.png" alt="">
+								<div class="quote-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, soluta...</div>
+							</div>				  
+					    </div>
+					    <div class="col-xl carousel-item">
+					      	<div class="quote">
+								<img src="img/avatar.png" alt="">
+								<div class="quote-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, soluta...</div>
+							</div>
+					    </div>
+					    <div class="col-xl carousel-item">
+					     	<div class="quote">
+								<img src="img/avatar.png" alt="">
+								<div class="quote-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, soluta...</div>
+							</div>
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+					<div class="quotes-slider" style="display: none;">
+						<div class="quote">
+							
+							
+						</div>
+						<div class="quote">
+							<img src="img/avatar.png" alt="">
+							Lorem ipsum dolor sit amet.
+						</div>
+						<div class="quote">
+							<img src="img/avatar.png" alt="">
+							Lorem ipsum dolor sit amet.
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="statements">
+		<div class="container">
+			<div class="divider"></div>
+			<div class="row">
+				<div class="col-sm">
+					<h4 class="statements-header">so dreamy</h4>
+					<div class="statements-txt">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+				<div class="col-sm">
+					<h4 class="statements-header">more buzz words</h4>
+					<div class="statements-txt">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<h4 class="statements-header">apple store</h4>
+					<div class="statements-txt">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+				<div class="col-sm">
+					<h4 class="statements-header">extra startup juice</h4>
+					<div class="statements-txt">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="statements-btn-box">
+					<a href="#" class="statements-btn">Try Demo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<div class="features-box">
+						<div class="feature-1">
+							<div class="feature-hidden">
+								<h5 class="feature-hidden-header">Feature 1 Title</h5>
+								<div class="feature-hidden-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+								
+							</div>
+							<div class="features-textbox">
+								<h5 class="features-box-header">Extra startup juice</h5>
+								<div class="features-box-txt">Added feature.</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="features-box">
+						<div class="feature-2">
+							<div class="feature-hidden">
+								<h5 class="feature-hidden-header">Feature 2 Title</h5>
+								<div class="feature-hidden-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+								
+							</div>
+							<div class="features-textbox">
+								<h5 class="features-box-header">Extra startup juice</h5>
+								<div class="features-box-txt">Extra nice UI comes with the app</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<h2 class="features-header">So flat you’ll want to give it some shadows</h2>
+					<div class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, qui!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
 </body>
 </html>
