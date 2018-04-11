@@ -7,6 +7,7 @@ body{
 }
 .header{
 	background: url('../img/header_banner.jpg') top center no-repeat;
+	background-size: cover;
 }
 .customhead{
 	padding-top: 188px;
@@ -67,6 +68,7 @@ body{
 }
 .sub-header{
 	background: url(../img/bg_sub_head.png) top center no-repeat;
+	background-size: cover;
 }
 .custom-sub-header{
 	padding-top: 95px;
