@@ -1,0 +1,12 @@
+@font-face{
+	font-family: MuseoSans;
+	src: url(../fonts/museosans-700-webfont.ttf);
+}
+@font-face{
+	font-family: AvenirHeavy;
+	src: url(../fonts/avenir-heavy-webfont.ttf);
+}
+@font-face{
+	font-family: AvenirMedium;
+	src: url(../fonts/avenir-medium-webfont.woff);
+}
