@@ -150,6 +150,9 @@ body{
 	color: #f7f7f7;
 }
 /*about sec*/
+.about-sec{
+	padding-bottom: 30px;
+}
 .about-title{
 	margin: 0;
 	padding-top: 30px;
@@ -415,7 +418,76 @@ body{
 
 	color: #5a5e62;
 	font-size: 14px;
-	font-family: AvenirHeavy;
+}
+/*------- team section (hidden) -------*/
+
+.team-title{
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+	text-align: center;
+	
+	font-size: 34px;
+	color: #0ebfdd;
+
+	text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+
+	border-bottom: 3px solid #0ebfdd;
+}
+.team-member-container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+
+	padding-top: 15px;
+	padding-bottom: 30px;
+
+	border-top: 1px solid #f7f7f7;
+}
+.team-member{
+	margin-left: 60px;
+}
+.team-member:first-child{
+	margin-left: 0;
+}
+.member-name{
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	background-color: #0ebfdd;
+	color: #fff;
+	font-family: "AvenirHeavy";
+}
+.member-title{
+	padding-top: 1px;
+
+	font-style: italic;
+	font-size: 14px;
+}
+.member-about{
+	padding-top: 5px;
+
+	font-size: 15px;
+}
+.member-about:before{
+	content: "\f10d";
+	padding-right: 7px;
+	font-size: 14px;
+	font-family: FontAwesome;
+
+	color: #0ebfdd;
+}
+.member-about:after{
+	content: "\f10e";
+	padding-left: 7px;
+	font-size: 14px;
+	font-family: FontAwesome;
+
+	color: #0ebfdd;
 }
 /*mobile horizontal*/
 @media (min-width: 460px) and (max-width: 959px) {
@@ -438,9 +510,21 @@ body{
 	.header-banner{
 		padding-top: 250px;
 	}
+	/*sales-block*/
+	.cta-button{
+		margin: 0;
+		margin-top: 30px;
+
+	}
 	/*showcase*/
 	.showcase img{
 	max-width: 200px;
+	}
+	.showcase-descr-txt{
+		padding-bottom: 30px;
+	}
+	.showcase-descr-list{
+		text-align: center;
 	}
 }
 /*desktop*/
