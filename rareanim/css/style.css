@@ -1,0 +1,38 @@
+
+	/*GLOBAL STYLES*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.wrapper-lg{
+	max-width: 90%;
+	margin: 0 auto;
+}
+.wrapper-sm{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+	/*HEADER*/
+
+video{
+	height: 100vh;
+	width: 100vw;
+	object-fit: fill; 
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.header{
+	height: 100vh;
+	background-color: rgba(0,0,0,.55);
+}
