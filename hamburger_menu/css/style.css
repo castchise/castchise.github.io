@@ -117,13 +117,12 @@ ul{
 	top: 0;
 }
 #toggle:checked ~ .toggle-container{
-	top: 65%;
-	left: 50%;
-	margin-left: -25px;
+	top: 1%;
+	left: 1%;
 }
 #toggle:checked ~ .toggle-container .toggle1{
 	transform: rotate(45deg);
-	top: 7px;
+	top: 6px;
 }
 #toggle:checked ~ .toggle-container .toggle2{
 	opacity: 0;
