@@ -65,15 +65,95 @@
 			</div>
 		</div>
 	</div>
+	<!-- bio/about section -->
 	<div class="bio">
 		<img src="img/avatar.png" alt="photo" class="about pic">
-		<h3 class="about head">Hi, my name's John Smith</h3>
+		<h3 class="about head">My name's John Smith</h3>
 		<h4 class="about subhead">And I love Photography</h4>
 		<p class="about txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta temporibus quia rem repudiandae aspernatur quae cupiditate error, debitis autem, sapiente velit, minus vitae tempora nemo, optio possimus necessitatibus ex earum!</p>
 	</div>
-	<div class="randomblock">
-		
+	<!-- gallery+filter section -->
+	<div class="search-head">
+		<h4>Check out my awesome gallery of photos!</h4>
+		<p>Hint: <span>you can select group of images by keyword-buttons below</span></p>
 	</div>
+	<!-- filter buttons wrapper -->
+	<div id="searchbtns">
+		<button class="btn" onclick="filterSelection('all')"> Show All</button>
+		<button class="btn" onclick="filterSelection('landscape')"> Landscape</button>
+		<button class="btn" onclick="filterSelection('cities')"> Cities</button>
+		<button class="btn" onclick="filterSelection('space')"> Space</button>
+	</div>
+	<!-- image-grid -->
+	<div class="img row">
+		<!-- landscape imgs -->
+		<div class="gcolumn landscape">
+			<div class="content">
+				<img src="img/land1.jpg" alt="landscape" style="width: 100%;">
+				<h5>Grand Canyon</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn landscape">
+			<div class="content">
+				<img src="img/land2.jpg" alt="landscape" style="width: 100%;">
+				<h5>Siberia</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn landscape">
+			<div class="content">
+				<img src="img/land3.jpg" alt="landscape" style="width: 100%;">
+				<h5>Landscape</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<!-- cities imgs -->
+		<div class="gcolumn cities">
+			<div class="content">
+				<img src="img/cit1.jpg" alt="cities" style="width: 100%;">
+				<h5>Menton</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn cities">
+			<div class="content">
+				<img src="img/cit2.jpg" alt="cities" style="width: 100%;">
+				<h5>Chicago</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn cities">
+			<div class="content">
+				<img src="img/cit3.jpg" alt="cities" style="width: 100%;">
+				<h5>Tokyo</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<!-- space imgs -->
+		<div class="gcolumn space">
+			<div class="content">
+				<img src="img/spac1.jpg" alt="space" style="width: 100%;">
+				<h5>Space</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn space">
+			<div class="content">
+				<img src="img/spac2.jpg" alt="space" style="width: 100%;">
+				<h5>Astronomy</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="gcolumn space">
+			<div class="content">
+				<img src="img/spac3.jpg" alt="space" style="width: 100%;">
+				<h5>Forest and Space</h5>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/filter.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

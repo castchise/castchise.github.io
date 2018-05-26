@@ -155,8 +155,86 @@ img{
 	font-style: italic;
 	font-size: 13px;
 }
-.randomblock{
-	background-color: grey;
-	height: 300px;
-	width: 100%;
+/*pre-search text heading*/
+.search-head{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;	
+
+	background-color: #464f67;
+
+	font-family: sans-serif;
+}
+.search-head h4{
+	font-size: 22px;
+	color: #fff;
+}
+.search-head p{
+	padding-top: 5px;
+	color: #e0e0e0;
+
+	display: inline-block;
+	border-bottom: 1.5px dotted;
+}
+.search-head span{
+	font-size: 14px;
+	font-style: italic;
+}
+/*image-grid*/
+.show{
+	display: block !important;
+}
+.gcolumn {
+	float: left;
+	width: 33.33%;
+
+	padding: 5px;
+	display: none;
+}
+.content{
+	padding: 10px;
+
+	background-color: #454f6621;
+	border-radius: 1%;
+}
+.img.row .gcolumn img{
+	height: 350px;
+}
+h5{
+	margin-top: 5px;
+
+	text-align: center;
+
+	font-family: sans-serif;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+}
+.content p{
+	text-align: center;
+	font-style: italic;
+}
+/*image-grid-buttons*/
+#searchbtns{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.btn{
+	padding: 10px 25px;
+
+	border: none;
+	outline: none;
+
+	background-color: white;
+	border: 2px solid #454f66;
+
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #464f679e;
+	color: #fff;
+}
+.btn.active{
+	background-color: #464f67;
+	color: #fff;
 }
