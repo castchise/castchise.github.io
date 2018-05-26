@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="headBox">
+		<h1 class="heading">Image Gallery</h1>
+		<h2 class="subHeading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, laboriosam.</h2>
+	</header>
+	<div class="container">
+		<!-- gallery slides-show -->
+		<div class="slides">
+			<div class="pagenum">1/6</div>
+			<img src="img/g1.jpg" alt="1" style="width:100%">
+		</div>
+		<div class="slides">
+			<div class="pagenum">2/6</div>
+			<img src="img/g2.jpg" alt="2" style="width:100%">
+		</div>
+		<div class="slides">
+			<div class="pagenum">3/6</div>
+			<img src="img/g3.jpg" alt="3" style="width:100%">
+		</div>
+		<div class="slides">
+			<div class="pagenum">4/6</div>
+			<img src="img/g4.jpg" alt="4" style="width:100%">
+		</div>
+		<div class="slides">
+			<div class="pagenum">5/6</div>
+			<img src="img/g5.jpg" alt="5" style="width:100%">
+		</div>
+		<div class="slides">
+			<div class="pagenum">6/6</div>
+			<img src="img/g6.jpg" alt="6" style="width:100%">
+		</div>
+		<!-- prev-next btns -->
+		<a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a href="#" class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- img-text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		<!-- thumbnails -->
+		<div class="row">
+			<div class="column">
+				<img src="img/gt1.jpg" alt="City Landscape" class="demo cursor" style="width:100%" onclick="currentSlide(1)">
+			</div>
+			<div class="column">
+				<img src="img/gt2.jpg" alt="Aurora Borealis" class="demo cursor" style="width:100%" onclick="currentSlide(2)">
+			</div>
+			<div class="column">
+				<img src="img/gt3.jpg" alt="Mountains and Village" class="demo cursor" style="width:100%" onclick="currentSlide(3)">
+			</div>
+			<div class="column">
+				<img src="img/gt4.jpg" alt="Road and Mountain" class="demo cursor" style="width:100%" onclick="currentSlide(4)">
+			</div>
+			<div class="column">
+				<img src="img/gt5.jpg" alt="New Horizons" class="demo cursor" style="width:100%" onclick="currentSlide(5)">
+			</div>
+			<div class="column">
+				<img src="img/gt6.jpg" alt="Lake and Mountains" class="demo cursor" style="width:100%" onclick="currentSlide(6)">
+			</div>
+		</div>
+	</div>
+	<div class="bio">
+		<img src="img/avatar.png" alt="photo" class="about pic">
+		<h3 class="about head">Hi, my name's John Smith</h3>
+		<h4 class="about subhead">And I love Photography</h4>
+		<p class="about txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta temporibus quia rem repudiandae aspernatur quae cupiditate error, debitis autem, sapiente velit, minus vitae tempora nemo, optio possimus necessitatibus ex earum!</p>
+	</div>
+	<div class="randomblock">
+		
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
