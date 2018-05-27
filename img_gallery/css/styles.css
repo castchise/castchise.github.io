@@ -181,6 +181,9 @@ img{
 	font-style: italic;
 }
 /*image-grid*/
+.img.row{
+	margin-bottom: 10px;
+}
 .show{
 	display: block !important;
 }
@@ -234,7 +237,7 @@ h5{
 	background-color: #464f679e;
 	color: #fff;
 }
-.btn.active{
+.gactive{
 	background-color: #464f67;
 	color: #fff;
 }
