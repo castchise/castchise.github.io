@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #000;
+}
+.wrapper{
+	width: 100%;
+	height: 90vh;
+
+	position: relative;	
+
+	background-image: url(../img/title.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 73% center;
+	background-repeat: 	no-repeat;	
+}
+.wrapper::after{
+	content:"";
+	display: block;
+
+	width: 100%;
+	height: 300px;
+
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+
+	background-image: url(../img/bgTransition1.png);
+}
+.content{
+	max-width: 650px;
+
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -325px;
+
+	top: 90%;
+
+	color: 	white;
+	background-color: grey;
+}
+#particles-js{
+	position: absolute;
+
+	height: 55%;
+	width: 60%;
+
+	right: 3%;
+	bottom: 20%;
+
+	background-color: transparent;
+}
