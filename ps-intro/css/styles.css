@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	margin: 100px auto;
+
+
+	text-align: center;
+}
+.header{
+	text-transform: uppercase;
+	font-family: Georgia;
+	letter-spacing: 8px;
+	font-size: 58px;
+	font-weight: 800;
+	color: #2b3c98;
+}
+.diamond-wrap{ 
+	margin: 150px auto;
+
+	height: 600px;
+	width: 600px;
+
+	transform: rotate(45deg);
+
+	overflow: hidden;
+}
+.diamond{
+	height: 300px;
+	width: 300px;
+
+	
+	position: relative;
+
+	background: #ff4508;
+	background: -moz-linear-gradient(left, #ff4508 0%, #fce82f 50%, #ff4508 99%, #ff4508 100%);
+	background: -webkit-linear-gradient(left, #ff4508 0%,#fce82f 50%,#ff4508 99%,#ff4508 100%);
+	background: linear-gradient(45deg, #ff4508 0%,#fce82f 50%,#ff4508 99%,#ff4508 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6532', endColorstr='#ff6532',GradientType=1 );
+
+
+
+	overflow: hidden;
+}
+.sq1wrap{
+	height: 500px;
+	width: 208px;
+
+	overflow: hidden;
+
+	transform: rotate(-45deg);
+}
+.sq1{
+	height: 53%;
+	width: 350px;
+
+	background: linear-gradient(-40deg, #ff4508 0%,#fce82f 50%,#ff4508 99%,#ff4508 100%);
+
+	transform: rotate(-45deg);
+
+	position: absolute;
+
+	left: 84%;
+	top: -5.5%;
+
+	animation: sqleft 3s linear 1;
+}
+@keyframes sqleft{
+	0% { left: 30%; top: 10%; }
+	100% { left: 84%; top: -5.5%; }
+}
+.sq2wrap{
+	height: 500px;
+	width: 208px;
+
+	overflow: hidden;
+
+	transform: rotate(-45deg);
+
+	position: absolute;
+
+	top: -54%;
+	right: -13%;
+}
+.sq2{
+	height: 53%;
+	width: 350px;
+
+	background: linear-gradient(-40deg, #ff4508 0%,#fce82f 50%,#ff4508 99%,#ff4508 100%);
+
+	transform: rotate(-45deg);
+
+	position: absolute;
+
+	right: 84%;
+	bottom: 6%;
+
+	animation: sqright 3s linear 1;
+}
+@keyframes sqright{
+	0% { bottom: 21%; right: 30%; }
+	100% { bottom: 6%; right: 84%; }
+}
