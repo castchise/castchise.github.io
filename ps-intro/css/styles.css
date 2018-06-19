@@ -16,16 +16,29 @@
 	font-size: 58px;
 	font-weight: 800;
 	color: #2b3c98;
+
+	animation-name: hideIn, fadeInTxt;
+	animation-duration: 2.5s, 2s;
+	animation-delay: 0s, 2.5s;
+	animation-timing-function: linear,linear;
+	animation-iteration-count: 1,1;
 }
 .diamond-wrap{ 
 	margin: 150px auto;
 
-	height: 600px;
-	width: 600px;
+	height: 300px;
+	width: 300px;
 
 	transform: rotate(45deg);
 
 	overflow: hidden;
+
+	opacity: 1;
+	animation: fadeIn 1s linear 1;
+}
+@keyframes fadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 .diamond{
 	height: 300px;
@@ -65,11 +78,13 @@
 	left: 84%;
 	top: -5.5%;
 
-	animation: sqleft 3s linear 1;
+	animation: sqleft 2s linear 1;
+
+
 }
 @keyframes sqleft{
-	0% { left: 30%; top: 10%; }
-	100% { left: 84%; top: -5.5%; }
+	0% { left: 30%; top: 10%; opacity: 0;}
+	100% { left: 84%; top: -5.5%; opacity: 1;}
 }
 .sq2wrap{
 	height: 500px;
@@ -97,9 +112,43 @@
 	right: 84%;
 	bottom: 6%;
 
-	animation: sqright 3s linear 1;
+	animation: sqright 2s linear 1;
 }
 @keyframes sqright{
-	0% { bottom: 21%; right: 30%; }
-	100% { bottom: 6%; right: 84%; }
+	0% { bottom: 21%; right: 30%; opacity: 0;}
+	100% { bottom: 6%; right: 84%; opacity: 1;}
+}
+.sub-header{
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #2b3c98;
+/*	animation-name: hide, fadeInTxt;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+*/
+	animation-name: hideIn, fadeInTxt;
+	animation-duration: 2.5s, 2s;
+	animation-delay: 0s, 2.5s;
+	animation-timing-function: linear,linear;
+	animation-iteration-count: 1,1;
+
+	opacity: 1;
+}
+.sub1{
+	font-weight: 300;
+	font-size: 44px;
+}
+.sub2{
+	font-weight: 300;
+	font-size: 30px;
+}
+@keyframes hideIn{
+	from { opacity: 0; }
+	to { opacity: 0; }
+}
+@keyframes fadeInTxt{
+	0% { opacity: 0; }
+
+	100% { opacity: 1; }
 }
