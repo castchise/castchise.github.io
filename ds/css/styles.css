@@ -14,9 +14,18 @@ body{
 	font-family: OptimusSB;
 	src: url(../fonts/OptimusPrincepsSemiBold.ttf);
 }
+section{
+	max-width: 650px;
+
+	margin: 0 auto;
+	margin-bottom: 250px;
+}
+h5{
+	text-align: center !important;
+}
 .wrapper{
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 
 	position: relative;	
 
@@ -55,22 +64,16 @@ body{
 }
 .content{
 	max-width: 650px;
-
-	position: absolute;
-	z-index: 2;
-	left: 50%;
-	margin-left: -325px;
-
-	top: 90%;
+	margin: 0 auto;
 
 	color: 	white;
 	background-color: grey;
 }
 /*nav-bar*/
-.horizontal{
+#horizontal{
 	z-index: 999;
 	position: absolute;
-	top: 80%;
+	top: 93%;
 	margin-left: auto;
 	margin-right: auto;
 	right: 0;
@@ -80,7 +83,7 @@ body{
 	font-family: OptimusSB;
 	font-size: 2em;
 }
-.horizontal a{
+#horizontal a{
 	margin-right: 5%;
 	
 	color: #c4c09f;
@@ -89,11 +92,11 @@ body{
 
 	transition: .5s ease-in-out;
 }
-.horizontal a:hover{
+#horizontal a:hover{
 	opacity: 1;
 	color: #c4c09f !important;
 }
-.horizontal a:last-child{
+#horizontal a:last-child{
 	margin-right: auto;
 }
 /*bonfire particles*/
@@ -107,4 +110,17 @@ body{
 	bottom: 12%;
 
 	background-color: transparent;
+}
+#intro{
+	margin-top: 250px;
+	background-color: #8998af;
+}
+#rem{
+	background-color: #9b63a3;
+}
+#story{
+	background-color: #7a8e68;
+}
+#other{
+	background-color: #897151;
 }
