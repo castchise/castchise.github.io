@@ -1,9 +1,18 @@
+/*		!!!GENERAL!!!		*/
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
-	background-color: #000;
+	background-color: #000 !important;
+}
+@font-face{
+	font-family: Optimus;
+	src: url(../fonts/OptimusPrinceps.ttf);
+}
+@font-face{
+	font-family: OptimusSB;
+	src: url(../fonts/OptimusPrincepsSemiBold.ttf);
 }
 .wrapper{
 	width: 100%;
@@ -30,6 +39,20 @@ body{
 
 	background-image: url(../img/bgTransition1.png);
 }
+/*top-head-bar*/
+.top-head{
+	padding-top: .1%; /*(padding for page logo)*/
+}
+/*top image logo*/
+.logo{
+	max-width: 45%;
+	margin: 0 auto;
+	display: block;	
+}
+.logo img{
+	display: block;
+	width: 100%;
+}
 .content{
 	max-width: 650px;
 
@@ -43,6 +66,37 @@ body{
 	color: 	white;
 	background-color: grey;
 }
+/*nav-bar*/
+.horizontal{
+	z-index: 999;
+	position: absolute;
+	top: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+
+	text-align: center;
+	font-family: OptimusSB;
+	font-size: 2em;
+}
+.horizontal a{
+	margin-right: 5%;
+	
+	color: #c4c09f;
+	text-decoration: none !important;
+	opacity: .75;
+
+	transition: .5s ease-in-out;
+}
+.horizontal a:hover{
+	opacity: 1;
+	color: #c4c09f !important;
+}
+.horizontal a:last-child{
+	margin-right: auto;
+}
+/*bonfire particles*/
 #particles-js{
 	position: absolute;
 
