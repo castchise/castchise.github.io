@@ -54,6 +54,9 @@ h5{
 }
 /*top image logo*/
 .logo{
+	position: relative;
+	z-index: 50; /*for mobile hidden menu*/
+
 	max-width: 45%;
 	margin: 0 auto;
 	display: block;	
@@ -66,14 +69,111 @@ h5{
 	max-width: 650px;
 	margin: 0 auto;
 
-	color: 	white;
+	color: 	#fff;
 	background-color: grey;
 }
-/*nav-bar*/
+/*nav-bars*/
+/*mobile(hidden by default)*/
+#mobile{
+	display: none;
+}
+#mobile-nav{
+	position: fixed;
+	top: -100%;
+	z-index: 5;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0,0,0,.8);
+
+	transition: .5s ease-in-out;
+}
+.links{
+	position: relative;
+	left: 10%;
+	top: 20%;
+
+	list-style: none !important;
+}
+.links a{
+	display: inline-block;
+
+	font-family: Optimus;
+	font-size: 2em;
+	color: #fff;
+
+	transition: .1s ease-out;
+}
+.links a:hover{
+	color: #888585 !important;
+	text-decoration: none;
+
+}
+.links a:active{
+	color: #888585 !important;
+}
+.closeMobileMenu{
+	position: absolute;
+	top: 90%;
+	left: 10%;
+
+	font-family: Optimus;
+	font-size: 2em;
+	color: #fff;
+}
+.closeMobileMenu:hover{
+	color: #888585 !important;
+	text-decoration: none;
+}
+.social{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.social li{
+	display: inline-block;
+}
+.social a{
+	margin-right: 55%;
+
+	color: #fff;
+	opacity: .75;
+
+	transition: .2s ease-in-out;
+}
+.social li:last-child a{
+	margin-right: auto;
+}
+.social a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.social i{
+	font-size: 2em;
+}
+#toggle{
+	display: none;
+}
+.toggle-contain{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+
+
+	z-index: 4;
+}
+.toggle-link{
+	color: white;
+	font-family: OptimusSB;
+}
+
+/*desktop*/
 #horizontal{
 	z-index: 999;
 	position: absolute;
-	top: 93%;
+	top: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	right: 0;
@@ -84,6 +184,7 @@ h5{
 	font-size: 2em;
 }
 #horizontal a{
+	display: inline-block;
 	margin-right: 5%;
 	
 	color: #c4c09f;
@@ -123,4 +224,12 @@ h5{
 }
 #other{
 	background-color: #897151;
+}
+@media only screen and (max-width: 768px){
+	#horizontal{
+		display: none;
+	}
+	#mobile{
+		display: block;
+	}
 }

@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
 	<div class="wrapper">
@@ -14,10 +16,30 @@
 			</a>
 		</header>
 		<nav id="horizontal">
-				<a href="#intro">Introduction</a>
-				<a href="#rem">Remastered</a>
-				<a href="#story">Story</a>
-				<a href="#other">Other Games</a>
+			<a href="#intro">Introduction</a>
+			<a href="#rem">Remastered</a>
+			<a href="#story">Story</a>
+			<a href="#other">Other Games</a>
+		</nav>
+		<nav id="mobile">
+			<input id="toggle" type="checkbox" onclick="openMenu()">
+			<label for="toggle" class="toggle-contain">
+				<span class="toggle-link">Menu</span>
+			</label>
+			<div id="mobile-nav">
+				<ul class="links">
+					<li><a href="#intro" onclick="closeMenu()">intro</a></li>
+					<li><a href="#rem" onclick="closeMenu()">remastered</a></li>
+					<li><a href="#story" onclick="closeMenu()">story</a></li>
+					<li><a href="#other" onclick="closeMenu()">other</a></li>
+				</ul>
+				<a href="#" class="closeMobileMenu" onclick="closeMenu()">Close</a>
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+				</ul>
+			</div>
 		</nav>
 		<div id="particles-js">		
 		</div>	
