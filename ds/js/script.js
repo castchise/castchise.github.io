@@ -29,3 +29,15 @@ function openMenu(){
 
   return menu.style.top = '0%';
 }
+
+window.onscroll = function() {stickMenu()};
+var menuLink = document.getElementById('toggle-contain');
+var stickyBar = menuLink.offsetTop;
+
+function stickMenu(){
+  if (window.pageYOffset >= stickyBar){
+    menuLink.classList.add('sticky')
+  } else {
+    menuLink.classList.remove('sticky');
+  }
+}

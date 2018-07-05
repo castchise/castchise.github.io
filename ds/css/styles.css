@@ -16,12 +16,13 @@ body{
 }
 section{
 	max-width: 650px;
-
 	margin: 0 auto;
-	margin-bottom: 250px;
+	font-family: Optimus;
+	font-size: 22px;
 }
 h5{
 	text-align: center !important;
+	font-family: OptimusSB;
 }
 .wrapper{
 	width: 100%;
@@ -156,19 +157,53 @@ h5{
 #toggle{
 	display: none;
 }
-.toggle-contain{
-	position: fixed;
+#toggle-contain{
+	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-
-
+	
 	z-index: 4;
 }
+/*sticky bar show-effect*/
+#toggle-contain::before{
+	content: "";
+	height: 30px;
+	display: block;
+	position: absolute;
+	z-index: 3;
+	top: -100%;
+
+	background-image: url(../img/menu_bgSlide.png);
+	background-position: top left;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	z-index: -1;
+
+	transition: top 1s;
+}
+#toggle-contain.sticky::before{
+	content: "";
+	height: 30px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	z-index: 3;
+	top: 0%;
+}
 .toggle-link{
+	position: relative;
+	left: 50%;
+	margin-left: -23px;
+	z-index: 100;
+
 	color: white;
 	font-family: OptimusSB;
 }
-
+.sticky{
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+}
 /*desktop*/
 #horizontal{
 	z-index: 999;
@@ -212,24 +247,54 @@ h5{
 
 	background-color: transparent;
 }
+.section-header{
+	font-size: 28px !important; /*fontsize for lg device*/
+}
 #intro{
-	margin-top: 250px;
-	background-color: #8998af;
+	color: #fff;
+}
+#intro p{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	text-align: center;
+}
+#intro p::before{
+	content: "";
+	width: 100%;
+	height: 5px;
+	display: block;
+
+	padding-bottom: 15px;
+	
+	background-image: url(../img/divider.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 110%;
+	background-size: 110%;
 }
 #rem{
-	background-color: #9b63a3;
+	/*background-color: #9b63a3;*/
 }
 #story{
-	background-color: #7a8e68;
+	/*background-color: #7a8e68;*/
 }
 #other{
-	background-color: #897151;
+	/*background-color: #897151;*/
 }
 @media only screen and (max-width: 768px){
+	.logo{
+		max-width: 80%;
+	}
 	#horizontal{
 		display: none;
 	}
 	#mobile{
 		display: block;
+	}
+	.section-header{
+		font-size: 22px !important; /*for md< device*/
+	}
+	section p{
+		font-size: 16px;
 	}
 }
