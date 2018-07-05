@@ -15,8 +15,10 @@ body{
 	src: url(../fonts/OptimusPrincepsSemiBold.ttf);
 }
 section{
-	max-width: 650px;
+	max-width: 960px;
 	margin: 0 auto;
+	margin-bottom: 100px;
+
 	font-family: Optimus;
 	font-size: 22px;
 }
@@ -250,16 +252,16 @@ h5{
 .section-header{
 	font-size: 28px !important; /*fontsize for lg device*/
 }
-#intro{
+#intro, #rem, #story, #other{
 	color: #fff;
 }
-#intro p{
+#intro p, #rem p, #story p, #other p{
 	padding-left: 15px;
 	padding-right: 15px;
 
 	text-align: center;
 }
-#intro p::before{
+#intro p::before, #rem p::before, #story p::before, #other p::before{
 	content: "";
 	width: 100%;
 	height: 5px;
@@ -273,7 +275,30 @@ h5{
 	background-size: 110%;
 }
 #rem{
-	/*background-color: #9b63a3;*/
+	color: #fff;
+}
+#remastered-slides{
+	margin: 30px auto;
+
+	height: 500px;
+	max-width: 900px;
+	
+	overflow: hidden;
+
+	position: relative;
+}
+#old, #new{
+	height: 500px;
+	max-width: 900px;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	overflow: hidden;
+}
+#new{
+	width: 50%;
 }
 #story{
 	/*background-color: #7a8e68;*/

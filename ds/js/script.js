@@ -41,3 +41,14 @@ function stickMenu(){
     menuLink.classList.remove('sticky');
   }
 }
+
+document.getElementById('remastered-slides').onmousemove = function(event){
+  var x = event.offsetX; //относительно родителя
+  console.log(x);
+  document.getElementById('new').style.width = x + 'px';
+}
+
+document.getElementById('remastered-slides').onmouseleave = function(event){
+  document.getElementById('new').style.width = '50%';
+  document.getElementById('new').style.transition = "ease .2s";﻿
+}
