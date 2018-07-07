@@ -84,16 +84,16 @@
     z-index: 5;
     top: 50%;
 
-    width: 24px;
-    height: 24px;
-    margin: -12px 0 0 -12px;
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
 
     content: '\21C6';
     color: #fffaf6ed;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
-    line-height: 24px;
+    line-height: 18px;
     background-color: #2f2f2f;
     transition: all .3s ease;
     box-shadow: 0 1px 6px rgba(0,0,0,.3),
@@ -102,11 +102,15 @@
     
     border: 1px solid #7d7d7d;
     box-sizing: content-box;
+
+    opacity: 1;
 }
 .handle.draggable:after{
-    width: 18px;
-    height: 18px;
-    margin: -9px 0 0 -9px;
-	line-height: 18px;
-	font-size: 12px;	
+/*    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+	line-height: 6px;
+	font-size: 4px;	*/
+
+	opacity: 0;
 }
