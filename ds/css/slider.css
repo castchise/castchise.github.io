@@ -1,6 +1,32 @@
-.slider-wrap{
-	padding-left: 35px;
-	padding-right: 35px;
+.slider-container{
+	padding-left: 17px;
+	padding-right: 17px;
+}
+.slide-wrap{
+	position: relative;
+}
+.slide-wrap::after{
+	content:"Original";
+	position: absolute;
+	bottom: 2%;
+	right: 0;
+	margin-right: 20px;
+
+	z-index: 999;
+
+	text-decoration: underline;
+	font-size: .8em;
+}
+.slide-wrap::before{
+	content: "Remastered";
+	position: absolute;
+	bottom: 2%;
+	margin-left: 20px;
+
+	z-index: 999;
+
+	text-decoration: underline;
+	font-size: .8em;
 }
 .slider::before{
 	content: "";
@@ -15,7 +41,7 @@
 	background-repeat: no-repeat;
 	background-position: left top, left bottom, right top, right bottom;
 	-webkit-background-size: auto 30%;
-	background-size: 30px;
+	background-size: 20px;
 
 	border: 1px solid #b2b2b2;
 
@@ -47,8 +73,8 @@
 	top: 0;
 	bottom: 0;
 
-	width: 4px;
-	margin-left: -2px;
+	width: 2px;
+	margin-left: -1px;
 
 	background-color: rgba(115,115,115,.5);
 	cursor: ew-resize;
