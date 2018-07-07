@@ -282,7 +282,7 @@ h5{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: 40% top;
 }
 .remastered-slides{
 	margin: 30px auto;
@@ -374,7 +374,7 @@ h5{
 #other{
 	/*background-color: #897151;*/
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.logo{
 		max-width: 80%;
 	}
@@ -389,5 +389,13 @@ h5{
 	}
 	section p{
 		font-size: 16px;
+	}
+	#intro{
+		padding-top: 150px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	#horizontal{
+		font-size: 1.5em;
 	}
 }

@@ -1,0 +1,86 @@
+.slider-wrap{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.slider::before{
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-image: url(../img/decobox_UL.svg), url(../img/decobox_LL.svg), url(../img/decobox_UR.svg), url(../img/decobox_LR.svg);
+	background-repeat: no-repeat;
+	background-position: left top, left bottom, right top, right bottom;
+	-webkit-background-size: auto 30%;
+	background-size: 30px;
+
+	border: 1px solid #b2b2b2;
+
+	z-index: 1;
+}
+.slider{
+	position: relative;
+	overflow: hidden;
+
+	margin: 50px auto;
+}
+.slider img{
+	width: 100%;
+	display: block;
+}
+.slider .resize{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 50%;
+
+	overflow: hidden;
+}
+.handle{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+
+	width: 4px;
+	margin-left: -2px;
+
+	background-color: rgba(115,115,115,.5);
+	cursor: ew-resize;
+}
+.handle::after{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+
+    content: '\21C6';
+    color: #fffaf6ed;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #2f2f2f;
+    transition: all .3s ease;
+    box-shadow: 0 1px 6px rgba(0,0,0,.3),
+    			inset 0 0px 0 rgba(255,255,255,.5),
+    			inset 0 60px 50px -30px #525252;
+    
+    border: 1px solid #7d7d7d;
+    box-sizing: content-box;
+}
+.handle.draggable:after{
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+	line-height: 18px;
+	font-size: 12px;	
+}
