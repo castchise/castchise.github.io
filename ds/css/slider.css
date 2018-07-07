@@ -12,7 +12,7 @@
 	right: 0;
 	margin-right: 20px;
 
-	z-index: 999;
+	z-index: 5;
 
 	text-decoration: underline;
 	font-size: .8em;
@@ -23,7 +23,7 @@
 	bottom: 2%;
 	margin-left: 20px;
 
-	z-index: 999;
+	z-index: 5;
 
 	text-decoration: underline;
 	font-size: .8em;
@@ -81,7 +81,7 @@
 }
 .handle::after{
     position: absolute;
-    z-index: 999;
+    z-index: 5;
     top: 50%;
 
     width: 24px;
