@@ -1,0 +1,12 @@
+@font-face{
+	font-family: OpenSansCond;
+	src: url(../fonts/OpenSans-CondBold.ttf);
+}
+@font-face{
+	font-family: OpenSansCondLight;
+	src: url(../fonts/OpenSans-CondLight.ttf);
+}
+@font-face {
+	font-family: Playfair;
+	src:url(../fonts/PlayfairDisplay-Bold.ttf);
+}
