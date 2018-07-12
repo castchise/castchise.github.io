@@ -1,12 +1,14 @@
-window.onscroll = function() {stickyMenu()};
+window.onscroll = function() {stickness()};
 
-var bar = document.getElementById('headbar');
-var sticky = bar.offsetTop;
+var navbar = document.getElementById("headbarwrap");
+var sticky = navbar.offsetTop;
 
-function stickyMenu(){
-	if(window.pageYOffset >= sticky){
-		bar.classList.add('sticky')
-	} else {
-		bar.classList.remove('sticky');
-	}
+function stickness() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
+
+console.log(sticky);

@@ -24,13 +24,20 @@ a{
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+.sticky{
+	position: sticky;
+	z-index: 999;
+	top: -20px;
+	width: 100%;	
 
+	left: 50%;
+}
+#headbarwrap{
+	padding-top: 20px;
+}
 #headbar{
 	max-width: 1199px;
 	margin: 0 auto;
-
-	position: relative;
-	top: 30px;
 
 	background-color: #000;
 	color: #fff;
@@ -38,16 +45,6 @@ a{
 	line-height: 55px;
 
 	overflow: hidden;
-}
-.sticky{
-	position: fixed !important;
-	z-index: 999;
-	top: 0 !important;
-	width: 100%;	
-
-	
-	left: 50%;
-	transform: translate(-50%);
 }
 #headbar img{
 	float: left;
@@ -63,7 +60,7 @@ a{
 	margin-left: 18px;
 
 	font-family: OpenSansCond;
-	font-size: 20px;
+	font-size: 1em;
 
 }
 
@@ -77,12 +74,12 @@ a{
 	margin-left: 15px;
 
 	font-family: OpenSansCondLight;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 .buttons{
-	float: right;
-	margin-right: 11px;
+	float: left;
+	margin-left: 48%;
 
 	font-family: OpenSansCond;
 }
@@ -180,6 +177,8 @@ a{
 	display: inline-block;
 	margin-right: 15px;
 	margin-top: 30px;
+
+	width: 100%;
 }
 .work:last-child{
 	margin-right: auto;
@@ -216,4 +215,79 @@ a{
 .clove{
 	margin-right: 15px;
 	margin-left: 15px;
+}
+
+@media screen and (max-width: 1198px){
+	.header{
+		height: auto;
+		padding-bottom: 10px;
+	}
+
+	.headbarwrap{
+		padding-top: 0px;
+	}
+	.buttons{
+		width: 100%;
+		margin-left: auto;
+	}
+	.about, .contact{
+		float: none;
+		margin-top: auto;
+		width: 100%;
+	}
+
+	.herobar{
+		/*padding-top: 175px;*/
+	}
+	
+	.statusbar{
+		text-align: center;
+	}
+	.statusbar img{
+		float: none;
+	}
+	.status{
+		display: block;
+		margin-left: 0px;
+		margin-top: 5px;
+
+		line-height: 23px;
+	}
+	.title{
+		text-align: center;
+	}
+	.herolink{
+		margin: 40px auto 0px;
+	}
+
+	.footer{
+		margin-top: 30px;
+	}
+	.social{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+
+		justify-content: center;
+		float: none;
+	}
+	.social li{
+		margin-right: 5px;
+	}
+	.social li:last-child{
+		margin-right: 0px;
+	}
+	.footpics{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.footpics img{
+		float: none;
+	}
+	.copyright{
+		float: none;
+		text-align: center;
+	}
 }
