@@ -1,26 +1,45 @@
-// ---------------------------------------------------------
-// ANCHOR SCROLLS
-// ---------------------------------------------------------
-
-// desktopAnchorScroll
 $(document).ready(function(){
-    $("#horizontal").on("click","a", function (event) {
+    // desktopAnchorScroll
+    $('#horizontal').on('click','a', function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
-});
-// mobileAnchorScroll
-$(document).ready(function(){
-    $("#mobile").on("click","a", function (event) {
+
+    // mobileAnchorScroll
+    $('#mobile').on('click','a', function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
-});
 
+    // trigger animation @ viewport; viewport JQ plug-in
+    ;(function($, win) {
+      $.fn.inViewport = function(cb) {
+         return this.each(function(i,el){
+           function visPx(){
+             var H = $(this).height(),
+                 r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+             return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+           } visPx();
+           $(win).on("resize scroll", visPx);
+         });
+      };
+    }(jQuery, window));
+
+    // detect one-of-3 paragrphs and init animations
+    $('.story-pic').inViewport(function(vis){
+      if(vis) $(this).addClass('anim-1');
+    });
+    $('.story-p-2').inViewport(function(vis){
+      if(vis) $(this).addClass('anim-2');
+    });
+    $('.story-p-3').inViewport(function(vis){
+      if(vis) $(this).addClass('anim-3');
+    });
+});
 // ---------------------------------------------------------
 // ONSCROLL: STICKY MENU + BG APPEARANCE
 // ---------------------------------------------------------
@@ -66,6 +85,24 @@ function openMenu(){
 }
 
 // ---------------------------------------------------------
+// new version of slideComparsion
+// ---------------------------------------------------------
+
+function slideCompar(x){
+  var offset = event.offsetX;
+  // console.log(offset);
+
+  var contain = $(x).find('.new');
+  contain[0].style.width = offset + 'px';
+}
+
+function slideComparDefault(x){
+  var contain = $(x).find('.new');
+  contain[0].style.width = '50%';
+  contain[0].style.transition = 'ease .2s';
+}
+
+// ---------------------------------------------------------
 // OLD VERSION OF slideCompar
 // ---------------------------------------------------------
 
@@ -97,20 +134,4 @@ function openMenu(){
 //   }
 // }
 
-// ---------------------------------------------------------
-// NEW SLIDER
-// ---------------------------------------------------------
 
-function slideCompar(x){
-  var offset = event.offsetX;
-  // console.log(offset);
-
-  var contain = $(x).find('.new');
-  contain[0].style.width = offset + 'px';
-}
-
-function slideComparDefault(x){
-  var contain = $(x).find('.new');
-  contain[0].style.width = '50%';
-  contain[0].style.transition = 'ease .2s';
-}
