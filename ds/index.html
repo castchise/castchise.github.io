@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-	<div class="wrapper">
+	<header class="header">
 		<header class="top-head">
 			<a href="#" class="logo">
 				<img src="img/page_logo.png" alt>
@@ -44,66 +44,87 @@
 		</nav>
 		<div id="particles-js">		
 		</div>	
-	</div>
-	<section id="intro">
-		<h5 class="section-header">Introduction</h5>
-		<p>Go to a gloomy and harsh world full of despair. Your fate will depend on the ability to properly assess the situation and build a strategy of behavior, quickly learn and be unpredictable. Dark Souls will require you to be completely concentrated and will severely punish for mistakes. However, when you die, you will become stronger! Each test is a puzzle with an infinite number of solutions. You will need, first of all, the ability to strategically think in order to defeat numerous opponents and complete your path.</p>
-	</section>
-	<section id="rem">
-		<h5 class="section-header">Remastered</h5>
-		<p>Experience remastered version of the same old Dark Souls game with brand new visual effects.</p>
-		<div class="slider-container">
-			<div class="slide-wrap"><!-- for text-preview -->
-				<div class="slider">
-					<img src="img/prison1.jpg" alt="">
-					<div class="resize">
-						<img src="img/prison2.jpg" alt="">
+	</header>
+	<main class="wrapper">
+		<div id="bgwrap">
+			<section id="intro">
+				<h5 class="section-header">Introduction</h5>
+				<p>Go to a gloomy and harsh world full of despair. Your fate will depend on the ability to properly assess the situation and build a strategy of behavior, quickly learn and be unpredictable. Dark Souls will require you to be completely concentrated and will severely punish for mistakes. However, when you die, you will become stronger! Each test is a puzzle with an infinite number of solutions. You will need, first of all, the ability to strategically think in order to defeat numerous opponents and complete your path.</p>
+			</section>
+			<section id="rem">
+				<h5 class="section-header">Remastered</h5>
+				<p>Experience remastered version of the same old Dark Souls game with brand new visual effects.</p>
+				<div class="slider-container">
+					<div class="slide-wrap">
+						<div class="slider">
+							<img src="img/wall1.jpg" alt="">
+							<div class="resize">
+								<img src="img/wall2.jpg" alt="">
+							</div>
+							<div class="handle"></div>
+						</div>
 					</div>
-					<div class="handle"></div>
-				</div>
-			</div>
-			<div class="slide-wrap">
-				<div class="slider">
-					<img src="img/wall1.jpg" alt="">
-					<div class="resize">
-						<img src="img/wall2.jpg" alt="">
+					<div class="slide-wrap"><!-- for text-preview -->
+						<div class="slider">
+							<img src="img/prison1.jpg" alt="">
+							<div class="resize">
+								<img src="img/prison2.jpg" alt="">
+							</div>
+							<div class="handle"></div>
+						</div>
 					</div>
-					<div class="handle"></div>
+					<div class="slide-wrap">
+						<div class="slider">
+							<img src="img/hill1.jpg" alt="">
+							<div class="resize">
+								<img src="img/hill2.jpg" alt="">
+							</div>
+							<div class="handle"></div>
+						</div>
+					</div>		
 				</div>
-			</div>
-			<div class="slide-wrap">
-				<div class="slider">
-					<img src="img/hill1.jpg" alt="">
-					<div class="resize">
-						<img src="img/hill2.jpg" alt="">
-					</div>
-					<div class="handle"></div>
+				<p class="sub-info">Alongside with updated graphics, game will also feature some minor gameplay changes and huge amount of improvements like higher resolution, framerate, online player capacity etc.</p>
+				<p class="sub-info sm">Check out full list of remastered features by link below</p>
+				<!-- **	OLD VERSION OF SLIDERS ** -->
+		<!-- 		<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
+					<div class="old"><img src="img/prison1.jpg" alt=""></div>
+					<div class="new"><img src="img/prison2.jpg" alt=""></div>
 				</div>
-			</div>		
+				<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
+					<div class="old"><img src="img/wall1.jpg" alt=""></div>
+					<div class="new"><img src="img/wall2.jpg" alt=""></div>
+				</div>
+				<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
+					<div class="old"><img src="img/hill1.jpg" alt=""></div>
+					<div class="new"><img src="img/hill2.jpg" alt=""></div>
+				</div> -->
+				<a href="#" class="rem-link">Learn More..</a>				
+			</section>
+			<section id="story">
+				<h5 class="section-header">Story</h5>
+				<p>In the Age of Ancients, the world was unformed, shrouded by fog. A land of gray crags, Archtrees and Everlasting Dragons. But then there was fire, and with fire came disparity. Heat and cold, life and death, and of course, light and dark. Then from the dark, they came, and found the Souls of Lords within the flame.Nito, the first of the dead,the Witch of Izalith, and her Daughters of Chaos,Gwyn, the Lord of Sunlight, and his faithful knights,and the furtive pygmy,so easily forgotten.</p>
+				<div class="story-pic-wrap">
+					<img src="img/story_pic_15.jpg" alt="" class="story-pic">
+					<img src="img/story_pic_14.jpg" alt="" class="story-pic">
+					<img src="img/story_pic_13.jpg" alt="" class="story-pic">
+					<img src="img/story_pic_12.jpg" alt="" class="story-pic">
+					<img src="img/story_pic_11.jpg" alt="" class="story-pic">
+					<img src="img/story_pic_00.jpg" alt="" class="story-pic">
+				</div>
+<!-- 				<p>With the Strength of Lords, they challenged the Dragons. Gwyn's mighty bolts peeled apart their stone scales. The Witches weaved great firestorms. Nito unleashed a miasma of death and disease. And Seath the Scaleless betrayed his own, and the Dragons were no more.</p>
+				<div class="story-pic-wrap">
+					<img src="img/story_pic_1.jpg" alt="" class="story-pic">
+				</div> -->
+			</section>
+			<section id="other" style="color: grey;">
+				<h5 class="section-header">Other Section</h5>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptas magnam quisquam sint eius accusamus expedita, illum, dolores quasi repellat maiores ipsum molestias quae non, necessitatibus ducimus tenetur aperiam et animi harum alias. Dolore neque sunt beatae earum ullam incidunt dolores repudiandae in quisquam vitae mollitia, blanditiis vero nesciunt voluptatum! Alias mollitia soluta necessitatibus officia, reiciendis natus architecto cumque blanditiis, quasi et suscipit quidem, ipsa distinctio. Quam corporis voluptate tempora illum blanditiis officiis veritatis necessitatibus ipsum quas cumque omnis aliquid est exercitationem consequuntur, eaque nam! Vitae culpa, eaque nesciunt quasi, sint ipsum accusamus? A obcaecati fugit pariatur. Illum vel, doloribus?
+			</section>
 		</div>
-		<!-- **	OLD VERSION OF SLIDERS ** -->
-<!-- 		<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
-			<div class="old"><img src="img/prison1.jpg" alt=""></div>
-			<div class="new"><img src="img/prison2.jpg" alt=""></div>
-		</div>
-		<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
-			<div class="old"><img src="img/wall1.jpg" alt=""></div>
-			<div class="new"><img src="img/wall2.jpg" alt=""></div>
-		</div>
-		<div class="remastered-slides" onmousemove="slideCompar(this)" onmouseout="slideComparDefault(this)">
-			<div class="old"><img src="img/hill1.jpg" alt=""></div>
-			<div class="new"><img src="img/hill2.jpg" alt=""></div>
-		</div> -->
-		<a href="#" class="rem-link">Learn More..</a>				
-	</section>
-	<section id="story" style="color: grey;">
-		<h5 class="section-header">Story Section</h5>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptas magnam quisquam sint eius accusamus expedita, illum, dolores quasi repellat maiores ipsum molestias quae non, necessitatibus ducimus tenetur aperiam et animi harum alias. Dolore neque sunt beatae earum ullam incidunt dolores repudiandae in quisquam vitae mollitia, blanditiis vero nesciunt voluptatum! Alias mollitia soluta necessitatibus officia, reiciendis natus architecto cumque blanditiis, quasi et suscipit quidem, ipsa distinctio. Quam corporis voluptate tempora illum blanditiis officiis veritatis necessitatibus ipsum quas cumque omnis aliquid est exercitationem consequuntur, eaque nam! Vitae culpa, eaque nesciunt quasi, sint ipsum accusamus? A obcaecati fugit pariatur. Illum vel, doloribus?
-	</section>
-	<section id="other" style="color: grey;">
-		<h5 class="section-header">Other Section</h5>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptas magnam quisquam sint eius accusamus expedita, illum, dolores quasi repellat maiores ipsum molestias quae non, necessitatibus ducimus tenetur aperiam et animi harum alias. Dolore neque sunt beatae earum ullam incidunt dolores repudiandae in quisquam vitae mollitia, blanditiis vero nesciunt voluptatum! Alias mollitia soluta necessitatibus officia, reiciendis natus architecto cumque blanditiis, quasi et suscipit quidem, ipsa distinctio. Quam corporis voluptate tempora illum blanditiis officiis veritatis necessitatibus ipsum quas cumque omnis aliquid est exercitationem consequuntur, eaque nam! Vitae culpa, eaque nesciunt quasi, sint ipsum accusamus? A obcaecati fugit pariatur. Illum vel, doloribus?
-	</section>
+	</main>
+	<footer class="footer">
+		
+	</footer>
 	<!-- <script type="text/javascript" src="js/script.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/particles.js"></script>

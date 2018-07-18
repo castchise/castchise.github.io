@@ -1,3 +1,7 @@
+// ---------------------------------------------------------
+// ANCHOR SCROLLS
+// ---------------------------------------------------------
+
 // desktopAnchorScroll
 $(document).ready(function(){
     $("#horizontal").on("click","a", function (event) {
@@ -16,8 +20,23 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 500);
     });
 });
+
+// ---------------------------------------------------------
+// ONSCROLL: STICKY MENU + BG APPEARANCE
+// ---------------------------------------------------------
+
+window.onscroll = function(){
+  // stickyMenu init
+  stickMenu();
+  // bg appearance
+  var bgWrap = document.getElementById('bgwrap');
+  if(pageYOffset >= 850){
+    bgWrap.style.background = 'rgba(0,0,0,.1)';
+  } else if (pageYOffset <= 850){
+    bgWrap.style.background = 'rgba(0,0,0,1)';
+  }
+};
 // mobileStickyMenu
-window.onscroll = function() {stickMenu()};
 var menuLink = document.getElementById('toggle-contain');
 var stickyBar = menuLink.offsetTop;
 
@@ -28,7 +47,11 @@ function stickMenu(){
     menuLink.classList.remove('sticky');
   }
 }
+
+// ---------------------------------------------------------
 // mobileMenuControls
+// ---------------------------------------------------------
+
 function closeMenu(){
   menu = document.getElementById('mobile-nav');
   console.log(menu);
@@ -41,6 +64,11 @@ function openMenu(){
 
   return menu.style.top = '0%';
 }
+
+// ---------------------------------------------------------
+// OLD VERSION OF slideCompar
+// ---------------------------------------------------------
+
 // document.getElementById('remastered-slides').onmousemove = function(event){
 //   var x = event.offsetX; //относительно родителя
 //   console.log(x);
@@ -69,6 +97,10 @@ function openMenu(){
 //   }
 // }
 
+// ---------------------------------------------------------
+// NEW SLIDER
+// ---------------------------------------------------------
+
 function slideCompar(x){
   var offset = event.offsetX;
   // console.log(offset);
@@ -82,4 +114,3 @@ function slideComparDefault(x){
   contain[0].style.width = '50%';
   contain[0].style.transition = 'ease .2s';
 }
-

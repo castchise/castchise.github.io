@@ -26,7 +26,7 @@ h5{
 	text-align: center !important;
 	font-family: OptimusSB;
 }
-.wrapper{
+.header{
 	width: 100%;
 	height: 100vh;
 
@@ -38,7 +38,7 @@ h5{
 	background-position: 73% center;
 	background-repeat: 	no-repeat;	
 }
-.wrapper::after{
+.header::after{
 	content:"";
 	display: block;
 
@@ -189,7 +189,7 @@ h5{
 	width: 100%;
 	display: block;
 	position: absolute;
-	z-index: 3;
+	z-index: 6;
 	top: 0%;
 }
 .toggle-link{
@@ -249,21 +249,21 @@ h5{
 
 	background-color: transparent;
 }
+/*main section wrapper*/
+.wrapper{
+	background: url('../img/embers.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+
+}
+#bgwrap{
+	background: rgba(0,0,0,1);
+	transition: .8s ease;
+}
 .section-header{
 	font-size: 28px !important; /*fontsize for lg device*/
 }
-#intro, #rem, #story, #other{
-	color: #fff;
-}
-#intro p, #rem p, #story p, #other p{
-	padding-left: 15px;
-	padding-right: 15px;
-
-	text-align: center;
-
-	color: rgba(178,178,178,.8);
-}
-#intro p::before, #rem p::before, #story p::before, #other p::before{
+.section-header:after{
 	content: "";
 	width: 100%;
 	height: 5px;
@@ -276,13 +276,31 @@ h5{
 	-webkit-background-size: 110%;
 	background-size: 110%;
 }
+#intro, #rem, #story, #other{
+	color: #fff;
+}
+#intro p, #rem p, #story p, #other p{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	text-align: center;
+
+	color: rgba(178,178,178,.8);
+}
 #intro{
 	padding-top: 250px;
-	background-image: url(../img/artorias.jpg);
+	background-image: url(../img/artor.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 40% top;
+}
+.sub-info::before{
+	content: '';
+	display: none !important;
+}
+.sm{
+	font-size: 16px;
 }
 .remastered-slides{
 	margin: 30px auto;
@@ -369,7 +387,86 @@ h5{
 	color: rgba(178,178,178,1)
 }
 #story{
+	padding-top: 200px;
+
 	/*background-color: #7a8e68;*/
+	background-image: url(../img/story.png);
+	-webkit-background-size: 55%;
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.story-pic-wrap{
+	position: relative;
+	height: 0;
+	width: 768px;
+	max-width: 100%;
+
+	/*responsive height HAX!!*/
+	padding-bottom: 45%;
+	overflow: hidden;
+
+	margin: 0 auto;
+}
+.story-pic-wrap::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	border: 1px solid rgba(178,178,178,.6);
+	background-image: url(../img/decobox_UL.svg), url(../img/decobox_LL.svg), url(../img/decobox_UR.svg), url(../img/decobox_LR.svg);
+	background-repeat: no-repeat;
+	background-position: left top, left bottom, right top, right bottom;
+	-webkit-background-size: auto 30%;
+	background-size: 10px;
+}
+.story-pic{
+	position: absolute;
+	max-width: 100%;
+	left: 0;
+}
+.story-pic {
+    animation: crossFade 42s;
+}
+.story-pic:nth-of-type(6) {
+    animation-delay: 0s;
+}
+.story-pic:nth-of-type(5) {
+    animation-delay: 7s;
+}
+.story-pic:nth-of-type(4) {
+    animation-delay: 14s;
+}
+.story-pic:nth-of-type(3) {
+    animation-delay: 21s;
+}
+.story-pic:nth-of-type(2) {
+    animation-delay: 28s;
+}
+.story-pic:nth-of-type(1) {
+    animation-delay: 35s;
+}
+@keyframes crossFade {
+    0% {
+        opacity: 1;
+    }
+    11.904761904761903% {
+        opacity: 1;
+    }
+    16.666666666666664% {
+        opacity: 0;
+    }
+    95.23809523809524% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 #other{
 	/*background-color: #897151;*/
@@ -390,8 +487,19 @@ h5{
 	section p{
 		font-size: 16px;
 	}
+	.sm{
+	font-size: 12px;
+}
 	#intro{
 		padding-top: 150px;
+	}
+	#story{
+		padding-top: 150px;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	.story-pic-wrap{
+		padding-bottom: 55%;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
