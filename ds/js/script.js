@@ -1,24 +1,19 @@
-$(document).ready(function(){
-    // desktopAnchorScroll
-    $('#horizontal').on('click','a', function (event) {
+$(document).ready(function() {
+    // AnchorScrolling
+    var menuArray = ['#horizontal', '#links'];
+    for(var i=0; i<menuArray.length; i++){
+      $(menuArray[i]).on('click','a', function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
-    });
-
-    // mobileAnchorScroll
-    $('#mobile').on('click','a', function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
-    });
+        $('body,html').animate({scrollTop: top}, 1500);
+      });
+    }
 
     // trigger animation @ viewport; viewport JQ plug-in
     ;(function($, win) {
       $.fn.inViewport = function(cb) {
-         return this.each(function(i,el){
+         return this.each(function(i,el) {
            function visPx(){
              var H = $(this).height(),
                  r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
@@ -30,13 +25,13 @@ $(document).ready(function(){
     }(jQuery, window));
 
     // detect one-of-3 paragrphs and init animations
-    $('.story-pic').inViewport(function(vis){
+    $('.story-pic').inViewport(function(vis) {
       if(vis) $(this).addClass('anim-1');
     });
-    $('.story-p-2').inViewport(function(vis){
+    $('.story-p-2').inViewport(function(vis) {
       if(vis) $(this).addClass('anim-2');
     });
-    $('.story-p-3').inViewport(function(vis){
+    $('.story-p-3').inViewport(function(vis) {
       if(vis) $(this).addClass('anim-3');
     });
 });
@@ -44,7 +39,7 @@ $(document).ready(function(){
 // ONSCROLL: STICKY MENU + BG APPEARANCE
 // ---------------------------------------------------------
 
-window.onscroll = function(){
+window.onscroll = function() {
   // stickyMenu init
   stickMenu();
   // bg appearance
@@ -59,8 +54,8 @@ window.onscroll = function(){
 var menuLink = document.getElementById('toggle-contain');
 var stickyBar = menuLink.offsetTop;
 
-function stickMenu(){
-  if (window.pageYOffset >= stickyBar){
+function stickMenu() {
+  if (window.pageYOffset >= stickyBar) {
     menuLink.classList.add('sticky')
   } else {
     menuLink.classList.remove('sticky');
@@ -71,13 +66,13 @@ function stickMenu(){
 // mobileMenuControls
 // ---------------------------------------------------------
 
-function closeMenu(){
+function closeMenu() {
   menu = document.getElementById('mobile-nav');
   console.log(menu);
 
   return menu.style.top = '-100%';
 }
-function openMenu(){
+function openMenu() {
   menu = document.getElementById('mobile-nav');
   console.log(menu);
 
@@ -88,7 +83,7 @@ function openMenu(){
 // new version of slideComparsion
 // ---------------------------------------------------------
 
-function slideCompar(x){
+function slideCompar(x) {
   var offset = event.offsetX;
   // console.log(offset);
 
@@ -96,11 +91,37 @@ function slideCompar(x){
   contain[0].style.width = offset + 'px';
 }
 
-function slideComparDefault(x){
+function slideComparDefault(x) {
   var contain = $(x).find('.new');
   contain[0].style.width = '50%';
   contain[0].style.transition = 'ease .2s';
 }
+
+// ---------------------------------------------------------
+// modal window
+// ---------------------------------------------------------
+var modal = document.getElementById('modal');
+
+document.querySelector('.rem-link').onclick = function() {
+  modal.classList.add('show');
+  document.querySelector('body').classList.add('modalWindowed');
+  document.querySelector('.modal-close').onclick = function() {
+    modal.classList.remove('show');
+    document.querySelector('body').classList.remove('modalWindowed');
+  }
+}
+
+window.onclick = function(e) {
+  if(e.target == modal) {
+    modal.classList.remove('show');
+    document.querySelector('body').classList.remove('modalWindowed');
+  }
+}
+
+// if (getComputedStyle(modal, null).display == 'block') {
+//   console.log('modal window is open');
+//   document.querySelector('body').style.overflow = 'hidden';
+// }
 
 // ---------------------------------------------------------
 // OLD VERSION OF slideCompar

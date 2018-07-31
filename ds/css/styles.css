@@ -26,6 +26,9 @@ h5{
 	text-align: center !important;
 	font-family: OptimusSB;
 }
+a:hover{
+	text-decoration: none !important;
+}
 .header{
 	width: 100%;
 	height: 100vh;
@@ -92,14 +95,14 @@ h5{
 
 	transition: .5s ease-in-out;
 }
-.links{
+#links{
 	position: relative;
 	left: 10%;
 	top: 20%;
 
 	list-style: none !important;
 }
-.links a{
+#links a{
 	display: inline-block;
 
 	font-family: Optimus;
@@ -108,12 +111,12 @@ h5{
 
 	transition: .1s ease-out;
 }
-.links a:hover{
+#links a:hover{
 	color: #888585 !important;
 	text-decoration: none;
 
 }
-.links a:active{
+#links a:active{
 	color: #888585 !important;
 }
 .closeMobileMenu{
@@ -373,6 +376,7 @@ h5{
 	text-align: center;
 	text-decoration: none !important;
 	color: rgba(178,178,178,.6);
+	outline: none;
 
 	border: 1px solid rgba(178,178,178,.6);
 	background-image: url(../img/decobox_UL.svg), url(../img/decobox_LL.svg), url(../img/decobox_UR.svg), url(../img/decobox_LR.svg);
@@ -385,6 +389,130 @@ h5{
 }
 .rem-link:hover{
 	color: rgba(178,178,178,1)
+}
+#modal{
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-color: rgba(0,0,0,.8);
+
+	overflow-y: scroll;
+
+	transition: .5s ease;
+}
+.show{
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+.modalWindowed{
+	overflow: hidden;
+}
+.modal-remastered{
+	display: block;
+	position: relative;
+	top: 5%;
+	background-color: #110806;
+	margin: 0 auto;
+	padding: 20px;
+	width: 70%;
+
+	overflow: hidden;
+}
+.modal-remastered:after{
+	content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/decobox_UL.svg), url(../img/decobox_LL.svg), url(../img/decobox_UR.svg), url(../img/decobox_LR.svg);
+    background-repeat: no-repeat;
+    background-position: left top, left bottom, right top, right bottom;
+    -webkit-background-size: auto 30%;
+    background-size: 20px;
+    border: 1px solid #b2b2b2;
+	z-index: 1;
+}
+.modal-remastered img{
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.modal-close{
+	position: absolute;
+	z-index: 999;
+	top: 2%;
+	right: 2%;
+
+	color: #fff;
+	font-size: 1em;
+}
+.modal-close:hover,
+.modal-close:focus{
+	text-decoration: none;
+	cursor: pointer;
+}
+.modal-title{
+	font-size: 1.2em;
+	text-align: center;
+}
+.modal-intro:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	left: 4%;
+
+	background-image: url(../img/bonfire_ico.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 5%;
+	background-size: 5%;
+}
+.modal-title:after{
+	content: "";
+	width: 100%;
+	height: 5px;
+	display: block;
+	padding-bottom: 3%;
+
+	background-image: url(../img/divider.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 110%;
+	background-size: 110%;
+}
+.modal-intro{
+	max-width: 85%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+
+	font-size: .75em;
+}
+.modal-specs{
+	display: table;
+	margin: 0 auto;
+
+	font-size: .85em;
+	border-spacing: 7px;
+	border-collapse: separate;
+}
+.modal-specs > li:nth-child(2), .modal-specs > li:nth-child(3), .modal-specs > li:nth-child(4){
+	border-bottom: 1px solid #fff;
+}
+.modal-specs li{
+	display: table-cell;
+	vertical-align: middle;
+}
+.specs-reso, .specs-framerate, .specs-online, .specs-system, .specs-dlc{
+	display: table-row;
 }
 #story{
 	padding-top: 200px;
@@ -553,7 +681,7 @@ h5{
 	margin-bottom: 0;
 
 	overflow: hidden;
-	outline-style: none;
+	list-style: none;
 }
 .ogames-container li{
 	position: relative;
@@ -607,13 +735,10 @@ h5{
 	height: auto;
 	margin: auto;
 
-	transition: opacity .5s;
+	transition: .5s ease-in-out;
 }
-.ogames img:nth-child(1){
-	opacity: 1;
-}
-.ogames:hover img:nth-child(2){
-	opacity: 0;
+.ogames:hover > img{
+	filter: blur(.5em);
 }
 .ogames-short-info{
 	height: 35%;
@@ -658,23 +783,58 @@ h5{
 	opacity: 0;
 	transition: all .5s ease-in-out;
 }
-.ogames:hover .detail-descr{
-	top: 25%;
-	opacity: 1;
-}
 .detail-plat{
 	position: absolute;
 	width: 100%;
 	bottom: -1%;
+	
+	font-size: .65em;
 
 	opacity: 0;
 	transition: all .5s ease-in-out;
 }
+.detail-link{
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+	text-transform: lowercase;
+	bottom: -1%;
+	
+	color: rgba(191,191,191,.85);
+
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+.detail-link:after{
+	content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: #c4c09f;
+    width: 0%;
+    bottom: 16%;
+
+    transition: .5s ease-in-out;
+}
+.ogames:hover .detail-descr{
+	top: 25%;
+	opacity: 1;
+}
 .ogames:hover .detail-plat{
 	bottom: 0;
 	opacity: 1;
-
-	font-size: .65em;
+}
+.ogames:hover .detail-link{
+	bottom: 15%;
+	opacity: 1;
+}
+.detail-link:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.detail-link:hover:after{
+	width: 100%;
 }
 .footer{
 	border-top: 1px solid #acacac;
@@ -719,6 +879,24 @@ h5{
 	#intro{
 		padding-top: 150px;
 	}
+	.modal-remastered{
+		width: 99%;
+	}
+	.modal-title{
+		font-size: .7em;
+	}
+	.modal-intro{
+		font-size: .5em;
+	}
+	.modal-intro:before{
+		left: 8%;
+		-webkit-background-size: 7%;
+		background-size: 7%;
+	}
+	.modal-specs{
+		font-size: .5em;
+		border-spacing: 5px;
+	}
 	#story{
 		padding-top: 150px;
 		-webkit-background-size: 100%;
@@ -728,16 +906,19 @@ h5{
 		padding-bottom: 55%;
 	}
 	#other{
-		padding-top: 100px;
+		padding-top: 150px;
 		-webkit-background-size: 100%;
 		background-size: 100%;
 	}
+	.ogames-container{
+		padding-top: 20px;
+	}
 	.ogames-container li{
 		float: none;
-		max-width: 90%;
+		max-width: 60%;
 		margin: 0 auto;
 		margin-bottom: 5%;
-		padding-bottom: 75%;
+		padding-bottom: 54%;
 	}
 	.ogames:hover .ogames-short-info{
 		justify-content: center;
@@ -745,12 +926,54 @@ h5{
 	.ogames-title{
 		font-size: 1em;
 	}
+	.ogames:hover .detail-link{
+		bottom: 25%;
+	}
 	.detail-descr{
 		display: none;
+	}
+}
+@media only screen and (max-width: 555px){
+	.ogames-container li{
+		max-width: 90%;
+		padding-bottom: 75%;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
 	#horizontal{
 		font-size: 1.5em;
+	}
+	.modal-remastered{
+		width: 90%;
+	}
+	.ogames-container{
+		text-align: center;
+	}
+	.ogames-container li{
+		float: none;
+		display: inline-block;
+		max-width: 45%;
+		padding-bottom: 35%;
+	}
+	.ogames-short-info{
+		padding-top: 0.2em;
+	}
+	.ogames:hover .ogames-title{
+		font-size: 1em;
+	}
+	.ogames:hover .ogames-date{
+		font-size: 0.7em;
+		line-height: .5em;
+	}
+	.detail-descr{
+		top: 20%;
+		font-size: .6em;
+	}
+	.detail-plat{
+		font-size: .47em;
+		margin-bottom: 0;
+	}
+	.ogames:hover .detail-link{
+		bottom: 6%;
 	}
 }
