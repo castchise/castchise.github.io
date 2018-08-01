@@ -1,3 +1,5 @@
+https://i.imgur.com/5xWNTdu.jpg
+
 *List (with descr.) of sample projects hosted on github pages*
 
 Relevant works
