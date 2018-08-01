@@ -1,5 +1,4 @@
-**Welcome!**
-Here's list (with descr.) of sample projects hosted on github pages
+*List (with descr.) of sample projects hosted on github pages*
 
 Relevant works
 --------------
