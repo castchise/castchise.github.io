@@ -21,7 +21,7 @@ Other stuff:
 
 [CSS Generator](https://castchise.github.io/cssgen/index.html) -> sample of CSS generator using JS
 
-[Bingo Game](https://castchise.github.io/bingo/3/index.html) -> guess number from 1 to 10
+[Bingo Game](https://castchise.github.io/bingo/index.html) -> guess number from 1 to 10
 
 Older works:
 ------------
