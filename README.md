@@ -2,8 +2,7 @@
 Here's list (with descr.) of sample projects hosted on github pages
 
 Relevant works
-=============
-
+=
 [Dark Souls Themed](https://castchise.github.io/ds/index.html) -> latest work, website inspired by original JP version.(link in footer)
 vanilla JS, partially JQ used (+attempted to use crossfaded css animations for slideshow instead of JS slider)
 
