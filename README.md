@@ -1,6 +1,8 @@
 # Welcome!
 Here's list (with descr.) of sample projects hosted on github pages
 
+__Relevant works__
+
 [Dark Souls Themed](https://castchise.github.io/ds/index.html) -> latest work, website inspired by original JP version.(link in footer)
 vanilla JS, partially JQ used (+attempted to use crossfaded css animations for slideshow instead of JS slider)
 
@@ -12,7 +14,7 @@ vanilla JS, partially JQ used (+attempted to use crossfaded css animations for s
 
 [Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
 
-Other stuff:
+__Other stuff:__
 
 [PlayStation 1 Intro animation](https://castchise.github.io/ps-intro/index.html) -> replica of original PS1 Intro([https://youtu.be/oAhvQoLpvsM](https://youtu.be/oAhvQoLpvsM)) using CSS animations
 
@@ -22,7 +24,7 @@ Other stuff:
 
 [Bingo Game](https://castchise.github.io/bingo/3/index.html) -> guess number from 1 to 10
 
-Older works:
+__Older works:__
 
 [cGlobal](https://castchise.github.io/cglob_proj/index.htm) -> introduction to pseudoelements, dropdowns, form elements (non-adaptive)
 
