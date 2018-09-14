@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>WeatherApp</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+  <title>WeatherJS</title>
 </head>
 <body>
-	<!-- header -->
-	<header class="header">
-		<div class="wrapper">
-			<a href="#" class="logo">fun weather.</a>
-			<nav class="header__nav">
-				<ul class="nav__menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Reviews</a></li>
-					<li><a href="#">Download</a></li>
-				</ul>
-			</nav>
-			<div class="social">
-				<a href="#" class="fb"><i class="fa fa-facebook-f"></i></a>
-				<a href="#" class="ig"><i class="fa fa-instagram"></i></a>
-				<a href="#" class="tw"><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
-	</header>
-	<!-- //header -->
-	<div class="sub-header">
-		<div class="wave1"></div>
-		<div class="wave2"></div>
-		<div class="wrapper">
-			<h1 class="header__title">Get the most fun weather app</h1>
-			<p class="header__sub">Simple, nice and user-friendly application of the weather. Only useful information</p>
-			<img src="img/phone.png" alt="#" class="phone">
-			<div class="button__container">
-				<a href="#" class="btn dl">Download</a>
-				<a href="#" class="btn ft">Features</a>
-			</div>
-			<div class="obj city1">London</div>
-			<div class="obj city2">Rio</div>
-			<div class="obj weather1">Sunny</div>
-			<div class="obj weather2">9C</div>
-			<div class="scroll"></div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
+        <h1 id="w-location"></h1>
+        <h5 id="time"></h5>
+        <img id="w-icon">
+        <h3 id="w-string"></h3>
+        <h3 class="text-dark" id="w-desc"></h3>
+        <ul class="list-group mt-3" id="w-details">
+          <li class="list-group-item" id="w-humidity"></li>
+          <li class="list-group-item" id="w-cloud"></li>
+          <li class="list-group-item" id="w-wind"></li>
+        </ul>
+        <hr>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#locModal">
+            Change Location
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="w-form">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="w-change-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="storage.js"></script>
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
