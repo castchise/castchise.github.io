@@ -8,6 +8,8 @@ Relevant works
 [Dark Souls Themed](https://castchise.github.io/ds/index.html) -> latest work, website inspired by original JP version.(link in footer)
 vanilla JS, partially JQ used (+attempted to use crossfaded css animations for slideshow instead of JS slider)
 
+[WeatherJS](https://castchise.github.io/weatherjs/index.html) -> simple weather app with usage of OpenWeatherMap API
+
 [Starnight](https://castchise.github.io/starnight_wip/index.htm) -> bootstrap4 practise
 
 [Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
