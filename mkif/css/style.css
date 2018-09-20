@@ -30,6 +30,22 @@ ul{
   width: 100%;
 }
 
+.email-send-fail{
+  display: none;
+}
+.email-send-succ{
+  display: none;
+}
+
+.footer-email-send-fail{
+  margin-top: 10px;
+  display: none;
+}
+.footer-email-send-succ{
+  margin-top: 10px;
+  display: none;
+}
+
 /* HEADER STYLES */
 
 .header{
@@ -167,7 +183,7 @@ ul{
 
 /* ABOUT STYLES */
 #about{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .about-title{
   margin-top: 15px;
@@ -252,7 +268,7 @@ ul{
 
 /* WHY-US STYLES */
 #why-us{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .why-us-title{
   text-align: center;
@@ -318,7 +334,7 @@ ul{
 /* GRID STYLES */
 #work-grid{
   display: none;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .grid-wrapper{
   text-align: center;
@@ -366,8 +382,8 @@ ul{
 .close{
   color: #fff !important;
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: -7px;
+  right: 5px;
   font-size: 75px !important;
   font-weight: bold;
 }
@@ -380,25 +396,24 @@ ul{
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 10px;
+  padding: 5px 15px;
   margin-top: -50px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff !important;
+  background-color: #ff9800;
+  color: #000 !important;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 20px;
   user-select: none;
   -webkit-user-select: none;
 }
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 .prev:hover,
 .next:hover {
-  background-color: rgba(92, 92, 92, 0.288);
-  color: #000 !important;
+  background-color: rgba(0,0,0,.1);
+  color: #fff !important;
 }
 
 .numbertext {
@@ -455,7 +470,7 @@ ul{
 /* MODAL */
 .modal-header{
   background: url('../img/modal_bg.jpg');
-  height: 125px;
+  height: 85px;
 }
 .modal-title{
   line-height: 85px;
@@ -463,6 +478,6 @@ ul{
   font-size: 32px;
   text-shadow: 1px 1px 2px rgba(0,0,0,.8);
 }
-.modal-close{
-  font-size: 55px !important;
+.close.modal-close{
+  font-size: 35px !important;
 }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_desktop.css">
+  <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- slick -->
@@ -14,6 +15,10 @@
   <title>Мир Кровли и Фасада</title>
 </head>
 <body>
+  <div class="loader">
+    <p>Загрузка...</p>
+  </div>
+
   <header class="header">
     <div class="wrapper">
       <nav class="navbar">
@@ -126,7 +131,7 @@
         <div class="image-container">
           <img src="img/work.png" alt="">
         </div>
-        <p class="step-txt">Наши специалисты сами привезут нужный материал и выполняют монтаж.</p>
+        <p class="step-txt">Наши специалисты сами привезут нужный материал и выполнят монтаж.</p>
       </div>
       <div class="step">
         <h3 class="step-title">Шаг 3: Сдача Объекта</h3>
@@ -259,7 +264,13 @@
               </div>
               <input type="text" id="" class="form-control" placeholder="IvanIvanov@mail.ru">
             </div>
-          <a class="btn btn-warning btn-lg mt-4" href="#" role="button">Отправить</a>
+          <a class="btn btn-warning btn-lg mt-4" id="send-data-footer" href="#" role="button" onclick="return false;">Отправить</a>
+          <div class="alert alert-success footer-email-send-succ" role="alert">
+            Письмо отправлено. Спасибо за сотрудничество!
+          </div>
+          <div class="alert alert-danger footer-email-send-fail" role="alert">
+            Пожалуйста, заполните все поля!
+          </div>
       </form>
       
     </div>
@@ -291,31 +302,37 @@
         </div>
         <div class="modal-body bg-light">
           <div class="modal-body bg-light">
-            <form>
+            <form method="POST">
               <div class="input-group mb-1">
                 <div class="input-group-prepend">
                   <div class="input-group-text">Имя</div>
                 </div>
-                <input type="text" id="" class="form-control" placeholder="Иванов Иван">
+                <input type="text" id="fio" class="form-control" placeholder="Иванов Иван" name="fio" required>
               </div>
               <div class="input-group mb-1">
                 <div class="input-group-prepend">
                   <div class="input-group-text">Телефон</div>
                 </div>
-                <input type="text" id="" class="form-control" placeholder="+7(***)***-**-**">
+                <input type="text" id="phone" class="form-control" placeholder="+7(***)***-**-**" name="phone" required>
               </div>
               <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">E-Mail</div>
                   </div>
-                  <input type="text" id="" class="form-control" placeholder="Ivan@mail.ru">
+                  <input type="text" id="email" class="form-control" placeholder="Ivan@mail.ru" name="email" required>
                 </div>
             </form>
           </div>
         </div>
+        <div class="alert alert-success email-send-succ" role="alert">
+          Письмо отправлено. Спасибо за сотрудничество!
+        </div>
+        <div class="alert alert-danger email-send-fail" role="alert">
+          Пожалуйста, заполните все поля!
+        </div>
         <div class="modal-footer bg-light">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-warning">Отправить</button>
+          <button type="button" class="btn btn-warning" id="send-data-modal">Отправить</button>
         </div>
       </div>
     </div>
@@ -339,6 +356,8 @@
       });
     });
   </script>
-
+  <script src="https://smtpjs.com/v2/smtp.js"></script>
+  <script src="js/mail.js"></script>
+  <script src="js/preloader.js"></script>
 </body>
 </html>

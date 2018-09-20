@@ -89,7 +89,7 @@
   /* WHY US */
   .card-container{
     display: flex;
-    margin: 0px -50px;
+    margin: 0px 0px;
   }
   .card-container .card{
     margin: 5px;
