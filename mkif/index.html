@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_desktop.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- slick -->
@@ -18,7 +19,7 @@
       <nav class="navbar">
         <a href="#" class="header-logo-container"><img src="img/logo_header.png" alt=""></a>
         <h1 class="display-4 heading-title">Мир Кровли и Фасада</h1>
-        <p class="access-container"><a href="#nav-menu" id="nav-access"><i class="fas fa-bars"></i></a></p>
+        <p class="access-container"><a href="#" id="nav-access"><i class="fas fa-bars"></i></a></p>
         <ul id="nav-menu">
           <li><a href="#about">О Компании</a></li>
           <li><a href="#showcase-1">Наши Работы</a></li>
@@ -28,7 +29,7 @@
       </nav>
       <div class="main">
         <h2 class="display5 main-title">Кровельные и фасадные материалы для Вашего дома</h2>
-        <a href="#" class="btn btn-warning text-white main-btn" data-toggle="modal" data-target="#contactModal">Связаться с Нами!</a>
+        <a href="#" class="btn btn-warning main-btn" data-toggle="modal" data-target="#contactModal">Связаться с Нами!</a>
       </div>
       <div class="under-main">
         <div class="heading-contacts">
@@ -53,11 +54,11 @@
   <section id="showcase-1">
     <div class="wrapper">
       <div class="slider-container">
-        <div class="slide"><img src="img/roof1.png" alt=""></div>
-        <div class="slide"><img src="img/roof2.png" alt=""></div>
-        <div class="slide"><img src="img/siding_1.png" alt=""></div>
-        <div class="slide"><img src="img/house1.jpg" alt=""></div>
-        <div class="slide"><img src="img/house3.jpg" alt=""></div>
+        <div class="slide"><img src="img/roof1.png" alt="" class="showcaseSlide"></div>
+        <div class="slide"><img src="img/roof2.png" alt="" class="showcaseSlide"></div>
+        <div class="slide"><img src="img/siding_1.png" alt="" class="showcaseSlide"></div>
+        <div class="slide"><img src="img/house1.jpg" alt="" class="showcaseSlide"></div>
+        <div class="slide"><img src="img/house3.jpg" alt="" class="showcaseSlide"></div>
       </div>
     </div>
   </section>
@@ -121,14 +122,14 @@
         <p class="step-txt">Наши специалисты совершают замеры на обьекте. После чего происходит выбор и рассчет количества нужного материала.</p>
       </div>
       <div class="step">
-        <h3 class="step-title">Шаг 2: Работа на Обьекте</h3>
+        <h3 class="step-title">Шаг 2: Работа на Объекте</h3>
         <div class="image-container">
           <img src="img/work.png" alt="">
         </div>
         <p class="step-txt">Наши специалисты сами привезут нужный материал и выполняют монтаж.</p>
       </div>
       <div class="step">
-        <h3 class="step-title">Шаг 3: Наслаждайтесь Результатом</h3>
+        <h3 class="step-title">Шаг 3: Сдача Объекта</h3>
         <div class="image-container">
           <img src="img/happiness.png" alt="">
         </div>
@@ -170,6 +171,20 @@
         </div>
       </div>
   </section>
+
+  <!-- Modal/Slider -->
+  <div id="sliderModal" class="grid-modal">
+    <!-- <div class="modal-slider-container">
+      <div class="slide"><img src="" alt="" id="roof1_max" class="sliderModal-content"></div>
+      <div class="slide"><img src="" alt="" class="sliderModal-content" ></div>
+      <div class="slide"><img src="" alt="" class="sliderModal-content"></div>
+      <div class="slide"><img src="" alt="" class="sliderModal-content"></div>
+      <div class="slide"><img src="" alt="" class="sliderModal-content"></div>
+    </div> -->
+    <span class="close cursor slider-closure" onclick="closeModal()">&times;</span>
+    <img alt="" class="sliderModal-content" id="sliderImgModal">
+    <div class="tooltip-slide">нажмите на изображение для след.слайда</div>
+  </div>
 
   <!-- The Modal/Lightbox -->
   <div id="gridModal" class="grid-modal">
@@ -246,12 +261,12 @@
             </div>
           <a class="btn btn-warning btn-lg mt-4" href="#" role="button">Отправить</a>
       </form>
-      <hr>
-      <div class="map" align="center">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4553b4c158cdbb87daa07e40b2130016b42feb91ed6aa70b99a50d18d27e9bc&amp;width=320&amp;height=240&amp;margin=auto&amp;lang=ru_RU&amp;scroll=true"></script>
-      </div>
+      
     </div>
   </section>
+
+  <hr class="map-hr">
+  <div id="map"></div>
 
   <footer class="footer">
     <div class="wrapper">
@@ -270,7 +285,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalLabel">Обратная Связь</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -287,13 +302,13 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text">Телефон</div>
                 </div>
-                <input type="text" id="" class="form-control" placeholder="+7 (***) ***-**-**">
+                <input type="text" id="" class="form-control" placeholder="+7(***)***-**-**">
               </div>
               <div class="input-group mb-1">
                   <div class="input-group-prepend">
                     <div class="input-group-text">E-Mail</div>
                   </div>
-                  <input type="text" id="" class="form-control" placeholder="IvanIvanov@mail.ru">
+                  <input type="text" id="" class="form-control" placeholder="Ivan@mail.ru">
                 </div>
             </form>
           </div>
@@ -313,7 +328,17 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-
+  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script type="text/javascript">
+    let map;
+    ymaps.ready(() => {
+      map = new ymaps.Map('map', {
+        center: [55.76, 37.64],
+        zoom: 7,
+        // controls: []
+      });
+    });
+  </script>
 
 </body>
 </html>

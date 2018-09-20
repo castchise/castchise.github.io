@@ -24,18 +24,52 @@ $(document).ready(function(){
   $('.slider-container').slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
+    centerMode: true,
+    // centerPadding: '60px',
+    slidesToShow: 1
+  });
+  $('.modal-slider-container').find('.slick-slide').on('click', () => {
+    $('.modal-slider-container').slick('slickNext');
+  });
+  $('.modal-slider-container').slick({
+    dots: true,
+    arrows: false,
+    autoplay: false,
     centerMode: true,
     // centerPadding: '60px',
     slidesToShow: 1
   });
 });
 
+
+const sliderModal = document.getElementById('sliderModal'),
+      img = document.getElementsByClassName('showcaseSlide')
+      imgModal = document.getElementById('sliderImgModal');
+
+for (let i = 0; i < img.length; i++) {
+  img[i].onclick = function() {
+    sliderModal.style.display = 'block';
+    imgModal.src = this.src;
+  }
+  imgModal.onclick = function() {
+    if (i === (img.length-1)) {
+      i = 0;
+      imgModal.src = img[i++].src;
+    } else {
+      imgModal.src = img[i++].src;
+    }
+  }
+}
+
 // lightbox
 
 window.onclick = function(e) {
   if (e.target === document.getElementById('gridModal')) {
     document.getElementById('gridModal').style.display = 'none';
+  } 
+  if (e.target === document.getElementById('sliderModal')) {
+    document.getElementById('sliderModal').style.display = 'none';
   }
 }
 
@@ -47,6 +81,7 @@ document.querySelector('.grid-wrapper').addEventListener('click', function(e) {
 
 function closeModal() {
   document.getElementById('gridModal').style.display = 'none';
+  document.getElementById('sliderModal').style.display = 'none';
 }
 
 var slideIndex = 1;

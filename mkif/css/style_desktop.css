@@ -1,0 +1,123 @@
+@media only screen and (min-width: 768px) {
+
+  .input-group-prepend{
+    width: 20%;
+  }
+  .input-group-text{
+    width: 100%;
+  }
+
+  /* HEADER */
+  .header{
+    height: 680px;
+  }
+  .navbar{
+    overflow: hidden;
+  }
+  .header-logo-container{
+    width: auto;
+  }
+  .heading-title{
+    text-align: left;
+  }
+  .access-container{
+    display: none;
+  }
+  #nav-menu{
+    display: block;
+    width: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    overflow: hidden;
+  }
+  #nav-menu li:first-child{
+    margin-top: 5px;
+  }
+  #nav-menu li{
+    float: left;
+    margin: 5px;
+    padding: 0;
+    background: transparent;
+  }
+  #nav-menu a{
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+  }
+  #nav-menu li:hover{
+    background-color: #ffc107;
+  }
+  #nav-menu a:hover{
+    color: #000;
+  }
+  /* MAIN */
+  .main{
+  
+  }
+  .main-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  }
+  .main-btn{
+    margin-top: 100px;
+    height: 50px;
+    line-height: 35px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+  }
+  .under-main{
+    margin-top: 7px;
+    background: transparent;
+  }
+  .scroll{
+    display: none;
+  }
+
+  /* SHOWCASE */
+  .slide img{
+    max-width: 650px;
+  }
+  .sliderModal-content{
+    position: static;
+    max-width: 55% !important;
+  }
+
+  /* WHY US */
+  .card-container{
+    display: flex;
+    margin: 0px -50px;
+  }
+  .card-container .card{
+    margin: 5px;
+  }
+
+  /* MATERIALS */
+  #materials{
+    overflow: hidden;
+  }
+  .step{
+    float: left;
+    width: 33%;
+    height: 580px;
+    margin: 1px;
+  }
+  .materials{
+    margin-top: -63px;
+  }
+  .materials img{
+    width: 25%;
+  }
+  .step-txt{
+    padding-top: 5px;
+    border-top: 1px solid #00000024;
+  }
+
+  /* WORK GRID */
+  #work-grid{
+    display: block;
+  }
+}

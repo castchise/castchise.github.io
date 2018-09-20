@@ -20,6 +20,16 @@ ul{
   display: block !important;
 }
 
+.display-4{
+  margin-bottom: 30px;
+}
+.input-group-prepend{
+  width: 35%;
+}
+.input-group-text{
+  width: 100%;
+}
+
 /* HEADER STYLES */
 
 .header{
@@ -175,7 +185,7 @@ ul{
   display: block;
   max-width: 80%;
   margin: 0 auto;
-  border: 1px solid #ce4e0e;
+  border: 1px solid #000;
 }
 
 /* SHOWCASE-1 STYLES */
@@ -191,9 +201,53 @@ ul{
   padding-bottom: 20px;
 }
 .slide img{
-  max-width: 250px !important;
+  max-width: 250px;
   margin: 0 auto;
   border: 1px solid #000;
+
+  cursor: pointer;
+}
+
+/* SLIDER MODAL */
+
+#sliderImgModal{
+  cursor: pointer;
+}
+
+.tooltip-slide{
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,.5);
+}
+
+.slider-closure{
+  position: absolute;
+  top: 1% !important;
+  right: auto !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sliderModal-content{
+  margin: auto !important;
+  display: block !important;
+  max-width: 95% !important;
+
+  animation-name: zoom;
+  animation-duration: 0.6s;
+
+  top: 26%;
+  left: 3%;
+  position: absolute;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
 /* WHY-US STYLES */
@@ -228,10 +282,12 @@ ul{
 }
 
 .step{
+  width: 90%;
+  margin: 15px auto;
+  padding: 5px 25px;
   background: rgba(255,255,255,.45);
   border-radius: 30px;
-  padding: 5px 25px;
-  margin: 10px 5px;
+  
 }
 .step-title{
   text-align: center;
@@ -297,7 +353,7 @@ ul{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(0,0,0,.65);
 }
 .modal-content{
   position: relative;
@@ -355,7 +411,7 @@ ul{
 
 /* Pree-footer Styles */
 #pre-footer{
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 .contact-us{
   max-width: 90%;
@@ -364,6 +420,13 @@ ul{
 }
 .contact-us .btn{
   display: block;
+}
+.map-hr{
+  margin-bottom: 0;
+}
+#map{
+  width: 100%;
+  height: 300px;
 }
 
 /* FOOTER STYLES */
@@ -376,13 +439,14 @@ ul{
 
   font-weight: lighter;
   text-align: center;
+  color: #ffffff9e;
 }
 .footer-heading{
   font-weight: lighter;
 }
 .footer i{
   margin-right: 5px;
-  color: #00000075;
+  color: #ffffff9e;
 }
 .footer hr{
   margin: 5px;
@@ -398,4 +462,7 @@ ul{
   color: #fff;
   font-size: 32px;
   text-shadow: 1px 1px 2px rgba(0,0,0,.8);
+}
+.modal-close{
+  font-size: 55px !important;
 }
