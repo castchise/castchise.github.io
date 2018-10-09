@@ -2,6 +2,11 @@
 
 *List (with descr.) of sample projects hosted on github pages*
 
+Commercial works
+--------------
+[Roofing & Siding LP](https://castchise.github.io/mkif/index.html) -> freelance project, landing page with addition of yMaps and email delievery of contact information submitted by user on hosts e-mail address (done via smtpjs)  
+
+
 Relevant works
 --------------
 
