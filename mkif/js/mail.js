@@ -34,8 +34,8 @@ function dataSend(name, phone, email) {
     clearance('.footer-email-send-fail');
     clearance('.email-send-fail');
   } else {
-    Email.send("rayweoweo@gmail.com",
-      "rayweoweo@gmail.com",
+    Email.send("YOUREMAILRIGHTHERE@EMAIL.COM",
+      "SENDERMAIL@EMAIL.COM",
       "Получен новый заказ по кровле/сайдингу!",
       `
         <h1>Получен заказ от ${name}!</h1>
@@ -47,8 +47,8 @@ function dataSend(name, phone, email) {
         E-Mail: <span style="font-weight: bold;">${email}</span>
       `,
       "smtp.elasticemail.com",
-      "rayweoweo@gmail.com",
-      "73d88f7d-1ef6-4f9f-a2ab-a08dc85fe1c8");
+      "username",
+      "pw");
 
     data[0].value = '';
     data[1].value = '';

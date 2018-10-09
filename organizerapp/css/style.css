@@ -1,0 +1,129 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+  background-color: #fdfdfd;
+  transition: .5s ease-in-out;
+}
+.app-wrap{
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 1%;
+
+  box-shadow: 0px 6px 8px -1px rgba(0,0,0,.3);
+  transition: opacity 1s ease;
+  /* background-color: #ecf0f1; */
+}
+
+/* LOADER STYLES */
+
+#loader-wrap{
+  position: fixed;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  transition: 1s ease;
+}
+#loader{
+  margin-top: 15%;
+  overflow: hidden;
+  text-align: center;
+}
+.load-txt{
+  opacity: 0;
+  transform: translateY(200%);
+  transition: opacity 2s ease-in-out, transform 1s ease;
+}
+.load-txt-under{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.loaded{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* APP HEADINGS STYLES */
+
+.headbar{
+  padding: 8px 15px;
+
+  position: relative;
+
+  background-color: #2C3E50;
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+.headbar:first-child{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.headbar-title{
+  font-size: 14px;
+  font-weight: 300;
+}
+.expand-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+/* app body styles */
+
+.app-container{
+  padding: 10px 10px;
+  background-color: #ecf0f1;
+  /* border: 1px solid #2C3E50; */
+
+  /* display: none; */
+
+  /* max-height: 100%; */
+  opacity: 1;
+  overflow: hidden;
+  transition: .2s ease-out;
+}
+
+/* settings styles */
+
+.settings{
+  text-align: center;
+}
+.setting-param{
+  display: inline-block;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  position: relative;
+  z-index: 1;
+
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #364c63;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: .2s ease-out;
+}
+.setting-param:hover{
+  background: #2C3E50;
+}
+.setting-param:active{
+ background: #1f2c3a;
+}
+.setting-param i{
+  color: #fff;
+}
+.setting-param span{
+  padding: 0 5px;
+  color: #fff;
+}

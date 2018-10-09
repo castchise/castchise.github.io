@@ -26,6 +26,6 @@ function loaded() {
   const loadWrap = document.getElementById('loader-wrap');
   loadWrap.className = 'loaded';
   setTimeout(function() {
-    document.querySelector('.container.app-wrap').classList.remove('loaded');
+    document.querySelector('.app-wrap').classList.remove('loaded');
   }, 1500);
 }
