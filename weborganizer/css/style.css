@@ -30,19 +30,35 @@ body{
   margin-top: 15%;
   overflow: hidden;
   text-align: center;
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 2s ease-in-out;
 }
 .load-txt{
   opacity: 0;
   transform: translateY(200%);
   transition: opacity 2s ease-in-out, transform 1s ease;
 }
+
+.load-strip{
+  display: block;
+  margin: 3px auto;
+  border: 0;
+  width: 0%;
+  height: 2px;
+  background: #2C3E50;
+
+  transition: 20s ease;
+}
+
 .load-txt-under{
   opacity: 0;
   transition: opacity 1s;
 }
 .loaded{
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 /* APP HEADINGS STYLES */
