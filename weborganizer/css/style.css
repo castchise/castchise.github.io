@@ -10,10 +10,10 @@ body{
 .app-wrap{
   max-width: 768px;
   margin: 0 auto;
-  margin-top: 1%;
+  padding-top: 1%;
 
-  box-shadow: 0px 6px 8px -1px rgba(0,0,0,.3);
-  transition: opacity 1s ease;
+  box-shadow: 0px 27px 35px 0px rgba(0,0,0,.2);
+  transition: 1s ease;
   /* background-color: #ecf0f1; */
 }
 
@@ -24,7 +24,6 @@ body{
   z-index: 999;
   height: 100vh;
   width: 100%;
-  background-color: #fff;
   transition: 1s ease;
 }
 #loader{
@@ -49,13 +48,15 @@ body{
 /* APP HEADINGS STYLES */
 
 .headbar{
-  padding: 8px 15px;
+  padding: 8px 27px;
 
   position: relative;
 
   background-color: #2C3E50;
   color: #fff;
   transition: .5s ease-in-out;
+
+  cursor: pointer;
 }
 .headbar:first-child{
   border-top-left-radius: 8px;
@@ -65,6 +66,14 @@ body{
   font-size: 14px;
   font-weight: 300;
 }
+.headbar-ico{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 12px;
+}
 .expand-btn{
   position: absolute;
   top: 50%;
@@ -72,8 +81,6 @@ body{
   right: 15px;
 
   font-size: 12px;
-
-  cursor: pointer;
 }
 
 /* app body styles */
@@ -81,23 +88,33 @@ body{
 .app-container{
   padding: 10px 10px;
   background-color: #ecf0f1;
-  /* border: 1px solid #2C3E50; */
+  border-left: 1px solid #2C3E50;
+  border-right: 1px solid #2C3E50;
 
   /* display: none; */
 
   /* max-height: 100%; */
+  visibility: visible;
   opacity: 1;
   overflow: hidden;
   transition: .2s ease-out;
+}
+.app-container:last-child{
+  /* border-bottom: 1px solid #2C3E50; */
 }
 
 /* settings styles */
 
 .settings{
   text-align: center;
+  max-height: 0;
+  padding: 0;
+  visibility: hidden;
+  font-size: 0;
 }
 .setting-param{
   display: inline-block;
+  margin: 5px;
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -106,8 +123,9 @@ body{
   z-index: 1;
 
   border: 1px solid #000;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   background: #364c63;
+  font-size: 15px;
 
   overflow: hidden;
   cursor: pointer;
@@ -124,6 +142,129 @@ body{
   color: #fff;
 }
 .setting-param span{
-  padding: 0 5px;
+  padding-left: 1px;
+  padding-right: 5px;
   color: #fff;
+}
+
+/* MODAL STYLES */
+
+#modalCurr, #modalGeo, #modalIntro{
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease;
+  z-index: -1;
+}
+
+.modal{
+  position: fixed;
+  width: 330px;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal-header{
+  cursor: default;
+}
+.modal-header.headbar{
+  padding-left: 25px;
+}
+.close-modal{
+  cursor: pointer;
+}
+.modal-title{
+  font-weight: 500;
+  /* text-decoration: underline; */
+  padding-bottom: 5px;
+}
+.select-box{
+  text-align: center;
+}
+.modal hr{
+  height: 1px;
+  background: #2c3e50;
+  border: none;
+  /* border-bottom: 1px solid #8c8c8c; */
+}
+.select-contain{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.select-contain:last-child{
+  margin-bottom: 0;
+}
+.select-txt{
+  display: block;
+  float: left;
+  width: 25%;
+
+  padding: 3px;
+
+  background: #2c3e50;
+  color: #fff;
+  font-size: 14px;
+}
+.select-txt.headbar{
+  border-radius: 0px;
+}
+.currency-changer{
+  display: block;
+  float: left;
+  width: 73%;
+
+  padding: 1.5px;
+
+  border: 1px solid #2c3e50;
+  border-left: none;
+  outline: none;
+  background: white;
+}
+.button-container{
+  text-align: right;
+  font-size: 0;
+  border-bottom: 1px solid #2c3e50;
+}
+.btn{
+  padding: 5px;
+  margin-right: 5px;
+
+  color: #fff;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+}
+.btn:last-child{
+  margin-right: 0;
+}
+.subm, #init-setup{
+  background: #3d75b2;
+}
+.subm:hover, #init-setup:hover{
+  background: #36669b;
+}
+.subm:active, #init-setup:active{
+  background: #2e5b8d;
+}
+.cls{
+  background: #364c63;
+}
+.cls:hover{
+  background: #2C3E50;
+}
+.cls:active{
+  background: #1f2c3a;
+}
+#inpGeo{
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+
+  border: none;
+  outline: none;
+}
+#modalIntro .app-container:last-child{
+  border-bottom: 1px solid #2c3e50;
 }

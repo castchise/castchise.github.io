@@ -31,9 +31,9 @@ function nightMode() {
 }
 
 function changeCurrency() {
-  console.log('currency');
+  modalOpen(this.getAttribute('data-anchor'));
 }
 
 function changeLocation() {
-  console.log('location');
+  modalOpen(this.getAttribute('data-anchor'));
 }

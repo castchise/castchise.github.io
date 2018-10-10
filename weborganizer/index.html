@@ -10,7 +10,7 @@
   <title>Organizer App</title>
 </head>
 <body>
-  <div id="loader-wrap">
+  <div id="loader-wrap" class="">
     <div id="loader" class="container text-center">
       <h3 class="load-txt">OrganizerApp.</h3>
       <h5 class="load-txt-under">Welcome!</h4>
@@ -19,6 +19,7 @@
 
   <div class="app-wrap loaded" id="app">
     <div class="headbar">
+      <div class="headbar-ico"><i class="fas fa-info-circle"></i></div>
       <h4 class="headbar-title">infobar</h4>
       <div class="expand-btn"><i class="fa fa-minus"></i></div>
     </div>
@@ -26,6 +27,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut totam exercitationem modi adipisci nobis, mollitia corporis, necessitatibus consequatur magnam laudantium debitis laborum perspiciatis pariatur quam. Amet illum, sint doloribus eveniet sed atque, laudantium earum pariatur eius numquam distinctio soluta debitis praesentium nostrum dicta ut porro vel! Quam explicabo aperiam accusamus hic earum enim debitis dolore est sed eum, voluptas quod excepturi suscipit modi vitae reprehenderit corporis nostrum unde vel? Dolores velit impedit eum eos tempora beatae quae minima, accusamus ad perferendis. Quos illo, quisquam, possimus deleniti sapiente, labore vitae rerum incidunt cum expedita obcaecati. Iure iste molestias incidunt nesciunt.
     </div>
     <div class="headbar">
+      <div class="headbar-ico"><i class="fas fa-tasks"></i></div>
       <h4 class="headbar-title">task list</h4>
       <div class="expand-btn"><i class="fa fa-minus"></i></div>
     </div>
@@ -33,23 +35,93 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid aperiam ex aut possimus qui vel nemo adipisci sapiente est quos veniam, inventore atque ad ipsa, excepturi dolor praesentium ut rerum dolore corrupti! Dolor tenetur exercitationem ipsam distinctio nobis illo tempore dolores nihil numquam? 
     </div>
     <div class="headbar">
+      <div class="headbar-ico"><i class="fas fa-cog"></i></div>
       <h4 class="headbar-title">settings</h4>
-      <div class="expand-btn"><i class="fa fa-minus"></i></div>
+      <div class="expand-btn"><i class="fa fa-plus"></i></div>
     </div>
     <div class="settings app-container">
       <div class="setting-param" id="night">
         <i class="fas fa-moon"></i>
         <span class="param-txt">Night Mode</span>
       </div>
-      <div class="setting-param" id="currency">
+      <div class="setting-param" id="currency" data-anchor="modalCurr">
         <i class="fas fa-dollar-sign"></i>
         <span class="param-txt">Change Currency</span>
       </div>
-      <div class="setting-param" id="location">
+      <div class="setting-param" id="location" data-anchor="modalGeo">
         <i class="fas fa-compass"></i>
         <span class="param-txt">Change Location</span>
       </div>
     </div>
+  </div>
+
+  <div id="modalCurr" class="modal">
+    <div class="modal-header headbar">
+      <div class="headbar-ico"><i class="fas fa-dollar-sign"></i></div>
+      <h4 class="headbar-title">settings.currency</h4>
+      <div class="expand-btn close-modal"><i class="fa fa-times"></i></div>
+    </div>
+    <div class="modal-body app-container">
+      <h3 class="modal-title">Change your currency</h3>
+      <p class="modal-txt">select new value from dropdown</p>
+    </div>
+    <hr>
+    <div class="select-box app-container">
+      <div class="select-contain">
+        <span class="select-txt headbar">primary</span>
+        <select class="currency-changer">
+          <option value="0">USD</option>
+          <option value="0">UAH</option>
+          <option value="0">RUB</option>
+        </select>
+      </div>
+      <div class="select-contain"> 
+        <span class="select-txt headbar">secondary</span>
+        <select class="currency-changer">
+          <option value="0">USD</option>
+          <option value="0">UAH</option>
+          <option value="0">RUB</option>
+        </select>
+      </div> 
+    </div>
+    <div class="modal-body app-container button-container">
+      <button class="btn subm">submit</button>
+      <button class="btn cls">close</button>
+    </div>
+  </div>
+
+  <div id="modalGeo" class="modal">
+    <div class="modal-header headbar">
+      <div class="headbar-ico"><i class="fas fa-compass"></i></div>
+      <h4 class="headbar-title">settings.location</h4>
+      <div class="expand-btn close-modal"><i class="fa fa-times"></i></div> 
+    </div>
+    <div class="modal-body app-container">
+      <h3 class="modal-title">Change your location</h3>
+      <p class="modal-txt">enter new city name</p>
+    </div>
+    <hr>
+    <div class="modal-body app-container">
+      <input type="text" placeholder="f.e. 'Kyiv'" id="inpGeo">
+    </div>
+    <div class="modal-body app-container button-container">
+      <button class="btn subm">submit</button>
+      <button class="btn cls">close</button>
+    </div>
+  </div>
+
+  <div id="modalIntro" class="modal">
+    <div class="modal-header headbar">
+      <div class="headbar-ico"><i class="fas fa-bell"></i></div>
+      <h4 class="headbar-title">settings.setup</h4>
+    </div>
+    <div class="modal-body app-container">
+      <h3 class="modal-title">Welcome to OrganizerApp</h3>
+      <p class="modal-txt">apparently its your first launch or stored data has been corrupted. please follow the settings link provided to setup your personal info.</p>
+    </div>
+    <div class="modal-body app-container">
+      <button class="btn" id="init-setup">continue</button>
+    </div>  
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/loader.js"></script>
