@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/infobar.css">
+  <link rel="stylesheet" href="css/owfont-regular.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>Organizer App</title>
@@ -25,7 +27,37 @@
       <div class="expand-btn"><i class="fa fa-minus"></i></div>
     </div>
     <div class="infobar app-container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut totam exercitationem modi adipisci nobis, mollitia corporis, necessitatibus consequatur magnam laudantium debitis laborum perspiciatis pariatur quam. Amet illum, sint doloribus eveniet sed atque, laudantium earum pariatur eius numquam distinctio soluta debitis praesentium nostrum dicta ut porro vel! Quam explicabo aperiam accusamus hic earum enim debitis dolore est sed eum, voluptas quod excepturi suscipit modi vitae reprehenderit corporis nostrum unde vel? Dolores velit impedit eum eos tempora beatae quae minima, accusamus ad perferendis. Quos illo, quisquam, possimus deleniti sapiente, labore vitae rerum incidunt cum expedita obcaecati. Iure iste molestias incidunt nesciunt.
+      <div class="date-wrap">
+        <p class="infobar-txt">Today is</p>
+        <p class="infobar-txt date-info">
+          <span id="infobar-day">Friday</span>
+          <span id="infobar-date">24.07.08</span>
+        </p>
+        <p class="infobar-time">
+          <span id="infobar-time">14:11</span><span id="ampm">PM</span>
+        </p>
+      </div>
+      <div class="info-wrap">
+        <div class="weather-container">
+          <div class="weather-txt">
+            <p class="infobar-txt" id="infobar-city"></p>
+            <p class="infobar-txt">
+              <span id="infobar-temp"></span>
+              <span id="infobar-type"></span>  
+            </p>
+          </div>
+          <i class="" id="infobar-icon"></i>
+          
+        </div>
+        <div class="currency-container">
+          <p class="infobar-txt">
+            UAH > USD : <span id="currency-buy">28,7</span>
+          </p>
+          <p class="infobar-txt">
+            UAH < USD : <span id="currency-sell">29,1</span>
+          </p>
+        </div>
+      </div>
     </div>
     <div class="headbar">
       <div class="headbar-ico"><i class="fas fa-tasks"></i></div>
@@ -127,6 +159,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/loader.js"></script>
   <script src="js/settings.js"></script>
+  <script src="js/dateinfo.js"></script>
+  <script src="js/weather.js"></script>
+  
   <script src="js/app.js"></script>
   <script></script>
 </body>

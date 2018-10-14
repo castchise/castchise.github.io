@@ -8,7 +8,7 @@ body{
   transition: .5s ease-in-out;
 }
 .app-wrap{
-  max-width: 768px;
+  max-width: 540px;
   margin: 0 auto;
   padding-top: 1%;
 
@@ -283,4 +283,18 @@ body{
 }
 #modalIntro .app-container:last-child{
   border-bottom: 1px solid #2c3e50;
+}
+
+@media screen and (max-width: 420px) {
+  .app-wrap{
+    padding-top: 0;
+  }
+  .headbar:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .setting-param{
+    display: block;
+    padding: 7px;
+  }
 }

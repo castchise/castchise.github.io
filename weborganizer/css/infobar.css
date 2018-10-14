@@ -1,0 +1,63 @@
+.infobar{
+  display: flex;
+  justify-content: space-between;
+}
+.weather-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.currency-container{
+  text-align: center;
+}
+
+/* text styles for date & time */
+
+.date-wrap{
+  padding-right: 5px; /* for 4 inch devices */
+  font-size: 24px;
+
+}
+#infobar-day{
+  font-weight: bold;
+}
+#infobar-date{
+  font-weight: lighter;
+}
+#infobar-time{
+  font-size: 52px;
+  font-weight: lighter;
+}
+
+/* text-styles for weather */
+
+.weather-txt{
+  padding-right: 5px;
+  text-align: right;
+}
+
+#infobar-icon{
+  padding: 5px;
+  font-size: 45px;
+}
+
+.currency-container{
+  padding-top: 17px;
+  font-weight: lighter;
+}
+
+#currency-buy, #currency-sell{
+  font-weight: bold;
+}
+
+@media (max-width: 320px) {
+  .date-wrap{
+    font-size: 21px;
+  }
+  .date-info{
+    font-size: 20px;
+  }
+  .currency-container{
+    padding-top: 10px;
+  }
+}
