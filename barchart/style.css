@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  padding: 25px;
+}
+.yAxis{
+  padding-bottom: 38px;
+}
+.valueDiv, indexDiv{
+  height: 35px;
+  width: 55px;
+  background: rgba(177, 177, 177, 0.3);
+  text-align: center;
+  line-height: 35px;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-top: 1px solid;
+}
+
+.bar{
+  vertical-align: bottom;
+}
+
+.one, .two, .three{
+  border-top: 3px solid;
+  margin-bottom: 3px;
+}
+
+/* 0 - 5 numbers */
+.one{
+  background-color: #58e883;
+}
+
+/* 6-10 numbers */
+.two{
+  background-color: #f7f970;
+}
+
+/* 10+ numbers */
+.three{
+  background-color: #e53939;
+}
