@@ -28,6 +28,19 @@ function autoSlide() {
 }
 autoSlide();
 
+let images = new Array()
+function preload() {
+  for (i = 0; i < preload.arguments.length; i++) {
+    images[i] = new Image()
+    images[i].src = preload.arguments[i]
+  }
+}
+preload(
+  'https://castchise.github.io/tajam/img/bg-head1.jpg',
+  'https://castchise.github.io/tajam/img/bg-head2.jpg',
+  'https://castchise.github.io/tajam/img/bg-head3.jpg',
+)
+
 
 // MODAL
 
