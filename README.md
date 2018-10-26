@@ -15,6 +15,8 @@ vanilla JS, partially JQ used (+attempted to use crossfaded css animations for s
 
 [WeatherJS](https://castchise.github.io/weatherapp/index.html) -> simple weather app with usage of OpenWeatherMap API
 
+[Tajam](https://castchise.github.io/tajam/index.html) -> adaptive LP with simple functions (carousels/video pop-ups)
+
 [Starnight](https://castchise.github.io/starnight_wip/index.htm) -> bootstrap4 practise
 
 [Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
