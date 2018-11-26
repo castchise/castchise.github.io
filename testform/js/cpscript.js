@@ -19,7 +19,7 @@ function fillList() {
     item.style.display = 'block';
   });
   let xhr = new XMLHttpRequest;
-  xhr.open('GET', 'http://codeit.pro/codeitCandidates/serverFrontendTest/company/getList', true);
+  xhr.open('GET', 'https://codeit.pro/codeitCandidates/serverFrontendTest/company/getList', true);
   setTimeout(() => { xhr.send(); }, 1000); // timeout just for preloader example
   xhr.onreadystatechange = function() {
     let out = '';
