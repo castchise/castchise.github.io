@@ -22,7 +22,7 @@ function submitData(e) {
     let xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://codeit.pro/codeitCandidates/serverFrontendTest/user/registration', true);
     xhr.send(new FormData(register));
-    console.log(new FormData(register));
+    // console.log(new FormData(register));
     xhr.onreadystatechange = function() {
       if(xhr.status === 200 && xhr.readyState === 4) {
         document.querySelector('#loader').style.display = 'none';

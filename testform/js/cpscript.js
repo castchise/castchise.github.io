@@ -1,17 +1,4 @@
 "use strict";
-
-// function getData(url) {
-//   let xhr = new XMLHttpRequest;
-//   xhr.open('GET', url, true);
-//   xhr.send();
-//   xhr.onreadystatechange = function() {
-//     if(xhr.status === 200 && xhr.readyState === 4){
-//       console.log(JSON.parse(xhr.responseText));
-//     }
-//   }
-// }
-
-// getData('http://codeit.pro/codeitCandidates/serverFrontendTest/news/getList');
 fillList();
 
 function fillList() {
@@ -40,7 +27,7 @@ function fillList() {
       }, 3000 / 250);
 
       response.list.forEach(item => {
-        console.log(item);
+        // console.log(item);
         out += `<div class="company">${item.name}</div>`;
       });
 
@@ -51,7 +38,7 @@ function fillList() {
           let out = '';
           response.list.forEach(company => {
             if(this.innerHTML === company.name) {
-              console.log(company);
+              // console.log(company);
               company.partners.forEach(partner => {
                 out += `
                   <div class="partner">
@@ -61,7 +48,7 @@ function fillList() {
                     </div>
                   </div>
                 `;
-                console.log(partner);
+                // console.log(partner);
               });
               document.querySelector('.row.hidden').style.display = 'block';
               document.querySelector('.partners-container').innerHTML = out;
@@ -72,26 +59,3 @@ function fillList() {
     }
   }
 }
-
-// function barChart() {
-//   var ctx = document.getElementById('myChart').getContext('2d');
-//   ctx.canvas.height = 100;
-//   ctx.canvas.width = 200;
-//   var chart = new Chart(ctx, {
-//     type: 'pie',
-//     data: {
-//         labels: ["January", "February", "March"],
-//         datasets: [{
-//             backgroundColor: 'rgb(255, 99, 132)',
-//             borderColor: 'rgb(255, 99, 132)',
-//             data: [1, 10, 5],
-//         }]
-//     },
-//     options: {
-//     }
-//   });
-  
-//   console.log(ctx);
-// }
-
-// barChart();
