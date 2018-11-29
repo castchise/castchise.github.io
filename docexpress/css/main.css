@@ -44,9 +44,10 @@ ul{
   max-width: 1366px;
   margin: 0 auto; }
   .header{
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff; }
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff; }
     .logo{
       display: flex;
       margin-left: 21px;
@@ -85,6 +86,9 @@ ul{
             width: 100%; }
           .options{
             display: flex; }
+            .active-opt{
+              background: #0E76BC;
+            }
             .options-item .menu-item:after{
               display: none; }
             .options li{
@@ -100,6 +104,9 @@ ul{
               transition: background-color .25s ease; }
             .options a:hover{
               background-color: #f8f8f8; }
+            .active-opt a:hover{
+              background-color:#0b507e;
+            }
             .options li:last-child{
               border-right: 0px; }
             .options li:nth-child(2){
@@ -388,5 +395,50 @@ ul{
 .text-form{
   padding-top: 24px;
   padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-right: 20px; }
+
+.modal{
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 415px;
+  height: 746px;
+  z-index: 100;
+  background: #fff;
+  box-shadow: -5px 0 9px -5px rgba(0,0,0,.2); }
+  .modal-title{
+    margin-top: 24px;
+    padding-left: 17px;
+    font-weight: lighter;
+    font-size: 18px; }
+  .modal .modal-block:first-child{
+    margin-top: 40px; }
+  .modal-block{
+    margin-top: 24px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+    padding-left: 17px; }
+    .block-header{
+      display: flex;
+      justify-content: flex-start; }
+      .block-title{
+        line-height: 21px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 17px; }
+    .block-body{
+      margin-top: 5px;
+      display: flex;
+      position: relative; }
+      .active-dot.modal-dot{
+        position: absolute;
+        display: block;
+        left: 8px;
+        top: 50%;
+        background: #0E76BC;
+        height: 11px;
+        width: 11px; }
+      .modal-txt{
+        margin-left: 35px;
+        font-size: 15px; }
