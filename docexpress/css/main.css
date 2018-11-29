@@ -38,6 +38,8 @@ ul{
   font-family: 'OpenSansSemiBold', sans-serif;
   src: url('../fonts/OpenSans-SemiBold.ttf'); }
 
+/* =========================================================== */
+
 .wrapper{
   max-width: 1366px;
   margin: 0 auto; }
@@ -67,6 +69,7 @@ ul{
         .nav-menu li:last-child{
           margin-right: 0px; }
           .menu-item{
+            font-size: 15px;
             position: relative;
             color: #000; }
           .menu-item:after{
@@ -107,8 +110,12 @@ ul{
               display: block; }
   .under-main-section{
     margin-bottom: 25px; }
+    .under-main-section .main{
+      max-width: 1222px;
+    }
   .main{
     display: flex;
+    position: relative;
     justify-content: flex-end; }
     .main-nav{
       padding-bottom: 13px;
@@ -119,24 +126,46 @@ ul{
         .main-nav a{
           display: flex;
           color: #0E76BC; }
-          .main-nav a img{
-            height: auto;
-            width: auto; }
           .main-nav a span{
+            font-size: 14px;
             margin-left: 6px;
             margin-right: 9px;
             line-height: 17px; }
         .main-nav a:hover{
           text-decoration: underline; }
+    .resize{
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 390px;
+      transform: translateY(-50%);
+    }
     .sidebar{
       width: 362px;
+      border-radius: 5px;
       text-align: center;
       background: #fff; }
+      .sidebar-logo-container{
+        width: 320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .sidebar-logo-container .sidebar-logo{
+          margin-right: 7px;
+        }
+        .sidebar-title.left-oriented{
+          max-width: 100% !important;
+          text-align: left;
+        }
+      .small{
+        height: 37px;
+        width: 37px; }
       .sidebar-logo{
         margin-top: 21px;
         margin-bottom: 19px; }
       .sidebar-title{
-        width: 178px;
+        max-width: 178px;
         margin: 0 auto;
         font-size: 15px;
         font-weight: 500; }
@@ -149,6 +178,9 @@ ul{
         background-color: #ECECEC;
         border-radius: 5px;
         position: relative; }
+      .lg{
+        margin-top: 0px;
+        width: 320px; }
         .progress{
           width: 182px;
           height: 5px;
@@ -156,13 +188,24 @@ ul{
           border-radius: 5px;
           position: absolute; }
       .side-block-container{
-        width: 329px;
+        max-width: 329px;
         margin: 0 auto;
         border-top: 1px solid #F4F4F4; }
         .content{
-          width: 285px;
+          max-width: 285px;
           margin: 0 auto;
           margin-top: 15px; }
+        .content.left-oriented{
+          max-width: 100%;
+          text-align: left;
+        }
+        .content.left-oriented .form-title{
+          text-align: left;
+          margin-left: 9px;
+          margin-bottom: 15px;
+          font-size: 14px;
+          padding-top: 0;
+        }
         .sub-title{
           margin-bottom: 16px;
           text-align-last: left;
@@ -171,7 +214,7 @@ ul{
         .side-block{
           cursor: default;
           position: relative;
-          width: 285px;
+          max-width: 285px;
           height: 49px;
           margin-bottom: 7px;
           line-height: 47px;
@@ -210,6 +253,8 @@ ul{
           margin-top: 73px;
           margin-bottom: 8px;
           border-top: 1px solid #D2D2D2; }
+        .sidebar-footer.preview{
+          margin-top: 20px; }
           .sidebar-footer img{
             display: inline-block;
             position: absolute;
@@ -223,9 +268,8 @@ ul{
             text-align: left;
             font-size: 13px; }
     .content-form{
-      margin-top: 10px;
       width: 859px;
-      height: 601px;
+      height: 100%;
       border-radius: 5px;
       background: #fff; }
       .form-title{
@@ -235,19 +279,48 @@ ul{
         font-weight: 500;
         letter-spacing: .3px;
         font-size: 20px; }
+      .form-left{
+        width: 320px;
+        height: 337px;
+        max-width: 100%;
+        text-align: left;
+        padding-right: 26px; }
       form{
         width: 768px;
         height: 500px;
+        padding-right: 30px;
         overflow-y: auto;
         margin: 0 auto; }
+        form::-webkit-scrollbar {
+          width: 5px; }
+        form::-webkit-scrollbar-button{
+          background-size: 100%;
+          height: 6.5px;
+          width: 10px;
+          background-size: cover; }
+        form::-webkit-scrollbar-button:vertical:decrement{
+          background:url('../img/scrollArrowUp.png') center center;
+        }
+        form::-webkit-scrollbar-button:vertical:increment{
+          background:url('../img/scrollArrowDown.png') center center;
+        }
+        form::-webkit-scrollbar-track {
+          background: #CFCFCF;
+          border: 2px solid transparent;
+          background-clip: content-box; }
+        form::-webkit-scrollbar-thumb{
+          border: 1px solid #0E76BC;
+          border-radius: 5px;
+          background: #0E76BC; }
         form label{
           display: block;
           margin-bottom: 8px;
           font-weight: 500;
           font-size: 14px; }
           form label img{
-            padding-left: 5px; }
-        form input{
+            padding-left: 5px;
+            cursor: pointer; }
+        .input-txt{
           width: 100%;
           height: 38px;
           padding-left: 12px;
@@ -256,6 +329,7 @@ ul{
           outline: none;
           border: 1px solid #DEDEDE;
           border-radius: 3px;
+          position: relative;
         }
         .subm:before{
           content: "";
@@ -264,7 +338,11 @@ ul{
           left: 0;
           width: 151px;
           height: 1px;
-          background: #DEDEDE;
+          background: #D2D2D2;
+        }
+        .subm-left:before{
+          top: -20px;
+          width: 320px;
         }
         .subm{
           position: relative;
@@ -281,10 +359,16 @@ ul{
           background: #0E76BC;
           border-radius: 5px;
         }
+        .subm-left{
+          margin-left: 0;
+          margin-top: 37px;
+          text-align: center;
+        }
         .subm:hover{
           background: #0b507e;
         }
         .later{
+          cursor: pointer;
           margin-left: 16px;
           font-size: 14px;
           border: none;
@@ -292,3 +376,11 @@ ul{
           color: #6B6B6B;
           background: transparent;
         }
+
+/* ============================== */
+
+.text-form{
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
