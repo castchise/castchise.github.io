@@ -391,3 +391,153 @@ img{
   }
 }
 
+.leadership-item{
+  margin-top: 35px;
+}
+
+.leadership-header{
+  display: flex;
+
+  .leadership-name{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+
+    .person{
+      color: #262626;
+      font-size: 21px;
+      margin-bottom: 0 !important;
+    }
+
+    .person-social{
+      margin-left: 40px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-end;
+
+      a{
+        margin-right: 15px;
+      }
+    }
+
+    .leadership-title{
+      margin-top: 0 !important;
+      width: 100%;
+      color: #AAAAAA;
+    }
+  }
+}
+
+.leadership-body{
+  margin-left: 140px;
+  color: #262626;
+  font-size: 16px;
+
+  .leadership-info-txt{
+    margin-top: 0 !important;
+  }
+}
+
+.employ{
+  text-align: center;
+  position: relative;
+  padding-bottom: 210px;
+
+  .col.s3{
+    width: 444px !important;
+    text-align: left;
+  }
+}
+
+.employ-txt{
+  font-size: 16px;
+  text-align: left;
+
+  strong{
+    font-weight: 400;
+    color: #0067B8;
+  }
+}
+
+.btn-employ{
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: initial !important;
+  margin-top: 78px !important;
+  width: 172px !important;
+  height: 43px !important;
+  line-height: 43px !important;
+  border-radius: 0px !important;
+  background: #0067B8 !important;
+  box-shadow: 9px 8px 0px 1px #ECF2FF !important;
+}
+
+.pictures-container{
+  position: absolute;
+  top: 45px;
+  right: -160px !important;
+  margin-left: 36px !important;
+  display: flex;
+  flex-wrap: wrap;
+
+  .employ-1{
+    margin-left: 81px;
+  }
+  .employ-2{
+    margin-left: 26px;
+  }
+  .employ-3, .employ-4{
+    margin-top: 19px;
+    margin-left: 26px;
+  }
+  .employ-3{
+    margin-left: 0;
+  }
+}
+
+
+.pre-footer{
+  height: 155px;
+
+  .row{
+    height: 100%;
+    margin-bottom: 0 !important;
+    
+    .col{
+      height: 100%;
+
+      a{
+        display: block;
+        text-align: center;
+        padding-top: 29px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+
+        img{
+          margin: 0 auto;
+          margin-bottom: 14px;
+        }
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+
+    .instabg{
+      background: linear-gradient(45deg, #932ecf 0%,#dc1ab0 32%,#ff6a30 61%,#ffdc2b 90%) !important;
+    }
+
+    .fbbg{
+      background: #0067B8;
+
+      a{
+        padding-top: 39px;
+
+        img{
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
