@@ -1,0 +1,14 @@
+{
+  "name": "studio_curtains",
+  "version": "1.0.0",
+  "description": "curtains landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "chise",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

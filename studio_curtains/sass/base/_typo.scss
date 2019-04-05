@@ -1,0 +1,92 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey;
+}
+
+.heading-primary {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 400;
+
+  animation: fadeIn;
+  animation-duration: 1.5s;
+  backface-visibility: hidden;
+
+  &--sm,
+  &--lg {
+    display: block;
+    letter-spacing: 2rem;
+  }
+
+  &--lg {
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+  }
+}
+
+.heading-info {
+  display: block;
+
+  animation: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+
+  &--link {
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey;
+    background-color: $color-white;
+    border-radius: 2rem;
+    padding: .35rem 1.35rem;
+    transition: all .3s;
+    box-shadow: 0 1rem 1rem rgba($color-grey, .25);
+  }
+
+  &--address {
+    display: block;
+  }
+
+  &--link:hover {
+    background-color: $color-tertiary;
+    color: $color-white;
+    box-shadow: 0 1rem 1rem rgba($color-grey, .35);
+  }
+
+  &--link:active {
+    transform: translateY(3px);
+    box-shadow: 0 .5rem 1rem rgba($color-grey, .35);
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  // background-image: linear-gradient(to left top, $color-secondary, $color-primary);
+  background-image: linear-gradient(to left top, $color-tertiary, $color-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: .2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-paragraph {
+  font-size: 1.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

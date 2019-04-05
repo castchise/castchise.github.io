@@ -1,0 +1,47 @@
+.section-intro {
+  padding: 26rem 0;
+  margin-top: -20vh;
+  background-color: $color-grey-light-1;
+}
+
+.section-advantages {
+  padding: 26rem 0;
+  margin-top: -12rem;
+  background-image: 
+  linear-gradient(
+    to right bottom,
+    rgba($color-primary, .8),
+    rgba($color-secondary, .8)),
+  url('../img/advantages.jpg');
+  background-size: cover;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-gallery {
+  padding: 26rem 0;
+  margin-top: -12rem;
+  background-color: $color-grey-light-1;
+}
+
+.section-cards {
+  padding: 15rem 0;
+  margin-top: -12rem;
+  background-image: 
+  linear-gradient(
+    to right bottom,
+    rgba($color-primary, .8),
+    rgba($color-secondary, .8)),
+  url('../img/cards.jpg');
+  background-size: cover;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
