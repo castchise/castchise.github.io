@@ -8,6 +8,18 @@
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba($color-grey, .35); 
   padding: 3rem;
+  position: relative;
+
+  &__map {
+    position: absolute;
+    right: 7.5rem;
+    top: 5rem;
+    height: 350px;
+    width: 350px;
+    background: orangered;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, .35);
+    border-radius: 10px;
+  }
 
   &__item {
     width: 40%;

@@ -363,7 +363,17 @@ ul.lSPager.lSGallery {
   background-position: right;
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.35);
-  padding: 3rem; }
+  padding: 3rem;
+  position: relative; }
+  .contact-box__map {
+    position: absolute;
+    right: 7.5rem;
+    top: 5rem;
+    height: 350px;
+    width: 350px;
+    background: orangered;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.35);
+    border-radius: 10px; }
   .contact-box__item {
     width: 40%;
     font-size: 1.4rem; }
