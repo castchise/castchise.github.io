@@ -90,3 +90,24 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+.heading-footer {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 400;
+
+  &--sm,
+  &--lg {
+    display: block;
+    letter-spacing: 1.15rem;
+    font-size: 1.3rem;
+  }
+
+  &--lg {
+    font-size: 3.25rem;
+    letter-spacing: .35rem;
+    text-transform: uppercase;
+  }
+}

@@ -22,7 +22,8 @@
   }
 }
 
-.section-gallery {
+.section-gallery,
+.section-contacts {
   padding: 26rem 0;
   margin-top: -12rem;
   background-color: $color-grey-light-1;
@@ -44,4 +45,9 @@
   & > * {
     transform: skewY(7deg);
   }
+}
+
+.section-contacts {
+  padding-top: 28rem;
+  padding-bottom: 15rem;
 }
