@@ -65,7 +65,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     z-index: 95;
 
     opacity: 0;
@@ -126,6 +126,7 @@
   &__checkbox:checked ~ &__nav{
     opacity: 1;
     width: 100%;
+    left: 0;
   }
 
   /// Nav menu icon
