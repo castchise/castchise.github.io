@@ -15,6 +15,28 @@
 
 </head>
 <body>
+
+  <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>О нас</a></li>
+              <li class="navigation__item"><a href="#advantages" class="navigation__link"><span>02</span>Преимущества</a></li>
+              <li class="navigation__item"><a href="#gallery" class="navigation__link"><span>03</span>Галерея</a></li>
+              <li class="navigation__item"><a href="#popular" class="navigation__link"><span>04</span>Популярное</a></li>
+              <li class="navigation__item"><a href="#contacts" class="navigation__link"><span>05</span>Обратная связь</a></li>
+          </ul>
+      </nav>
+
+  </div>
+
   <header class="header">
     <div class="header__text-box">
       <h1 class="heading-primary">
@@ -29,8 +51,9 @@
     </div>
     <div class="placeholder-for-menu"></div>
   </header>
+
   <main>
-    <section class="section-intro">
+    <section class="section-intro" id="about">
       <div class="u-center-text u-margin-bot-big">
         <h2 class="heading-secondary">
           Лучшие шторы от студии илоны христенко
@@ -56,7 +79,7 @@
       </div>
     </section>
 
-    <section class="section-advantages">
+    <section class="section-advantages" id="advantages">
       <div class="row">
         <div class="col-1-of-4">
           <div class="advantage-box">
@@ -100,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section-gallery">
+    <section class="section-gallery" id="gallery">
       <div class="row">
         <div class="u-center-text u-margin-bot-big">
           <h2 class="heading-secondary">
@@ -125,7 +148,7 @@
       </div>
     </section>
 
-    <section class="section-cards">
+    <section class="section-cards" id="popular">
       <div class="row">
         <div class="col-1-of-3">
           <div class="card">
@@ -217,7 +240,7 @@
       </div>
     </section>
 
-    <section class="section-contacts">
+    <section class="section-contacts" id="contacts">
       <div class="row">
         <div class="contact-box">
           <div class="contact-box__map" id="map"></div>
@@ -279,10 +302,19 @@
     });
 
     function initMap() {
-      var coordinate = {lat: 50.005746, lng: 36.229240};
-      var map = new google.maps.Map(
+      let coordinate = {lat: 50.005746, lng: 36.229240};
+      let map = new google.maps.Map(
       document.getElementById('map'), {zoom: 15, center: coordinate, disableDefaultUI: true});
-      var marker = new google.maps.Marker({position: coordinate, map: map});
+      let marker = new google.maps.Marker({position: coordinate, map: map});
+    }
+
+    let navLinks = document.getElementsByClassName('navigation__link');
+    let navToggle = document.getElementById('navi-toggle');
+
+    for(let i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', function() {
+        navToggle.checked = false;
+      });
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLylxpYewGHhGyUcP81VnwPnJskdkk2OI&callback=initMap"></script>

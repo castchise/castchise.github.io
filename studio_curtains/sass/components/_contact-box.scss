@@ -10,6 +10,25 @@
   padding: 3rem;
   position: relative;
 
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg,
+                    rgba($color-white, .9) 0%,
+                    rgba($color-white, .9) 60%,
+                    transparent 60%), 
+                    url(../img/contacts.jpg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right,
+                      rgba($color-white, .9) 0%,
+                      rgba($color-white, .9) 60%),
+                      url(../img/contacts.jpg);
+  }
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
   &__map {
     position: absolute;
     right: 7.5rem;
@@ -19,11 +38,36 @@
     background: orangered;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, .35);
     border-radius: 10px;
+
+    @include respond(tab-land) {
+      right: 3rem;
+      top: 7rem;
+      height: 285px;
+      width: 285px;
+    }
+
+    @include respond(tab-port) {
+      position: relative;
+      box-shadow: none;
+      top: 0;
+      right: 0;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+
+    @include respond(phone) {
+      height: 200px;
+      width: 235px;
+    }
   }
 
   &__item {
     width: 40%;
     font-size: 1.4rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     & strong {
       display: block;
@@ -35,6 +79,10 @@
       width: 40%;
       padding-top: 1.6rem;
       border-top: 1px solid $color-grey-dark-1;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
     }
 
     &--link:link,

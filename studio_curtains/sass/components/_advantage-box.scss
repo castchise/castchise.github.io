@@ -9,6 +9,15 @@
   transition: transform .3s;
   backface-visibility: hidden;
 
+  @include respond(tab-land) {
+    backface-visibility: unset;
+    padding: 2em 1em;
+  }
+
+  @include respond(phone) {
+    padding: 3em 5em;
+  }
+
   &__icon {
     padding: 1px;
     font-size: 6rem;

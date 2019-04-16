@@ -3,6 +3,11 @@
   background-color: $color-grey;
   color: $color-grey-light-1;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+    font-size: 1.5rem;
+  }
+
   &__logo {
     text-align: center;
   }
@@ -11,6 +16,11 @@
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -22,6 +32,15 @@
 
     &:not(:last-child) {
       margin-right: 1.5rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @include respond(phone) {
+      display: block;
     }
   }
 
@@ -31,6 +50,12 @@
     color: $color-grey-light-1;
     width: 73%;
     float: right;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
   }
 
   &__link {

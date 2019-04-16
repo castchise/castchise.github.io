@@ -20,11 +20,31 @@ body {
   &--lg {
     display: block;
     letter-spacing: 2rem;
+
+    @include respond(tab-land) {
+      letter-spacing: 1rem;
+    }
+
+    @include respond(phone) {
+      letter-spacing: .1rem;
+      font-size: 3rem;
+    }
   }
 
   &--lg {
     font-size: 5rem;
     letter-spacing: 1.1rem;
+
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+      letter-spacing: normal;
+    }
+    
   }
 }
 
@@ -50,6 +70,10 @@ body {
 
   &--address {
     display: block;
+
+    @include respond(phone) {
+      width: 50%;
+    }
   }
 
   &--link:hover {
@@ -75,6 +99,14 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   letter-spacing: .2rem;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.75rem;
+  }
 }
 
 .heading-tertiary {
