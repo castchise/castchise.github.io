@@ -453,7 +453,8 @@ ul.lSPager.lSGallery {
         box-shadow: none; }
         .card__side--back {
           transform: rotateX(0deg);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
       .card:hover .card__side--front {
         transform: rotateX(0deg); }
       .card:hover .card__side--back {
