@@ -24,6 +24,10 @@
       @include respond(tab-port) {
         top: 1rem;
         transform: scale(1.35);
+
+        &:hover {
+          left: 3rem;
+        }
       }
     }
 
@@ -46,6 +50,10 @@
         top: 1.35rem;
         left: 0;
         transform: scale(1.15);
+
+        &:hover {
+          left: -3rem;
+        }
       }
     }
 
@@ -54,6 +62,10 @@
       transform: scale(1.35) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-grey, .5);
       z-index: 20;
+
+      @include respond(tab-port) {
+        z-index: 55;
+      }
     }
   }
 
