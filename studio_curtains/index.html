@@ -46,8 +46,8 @@
     </div> 
     <div class="header__contact-box">
       <!-- <span class="heading-info heading-info--address">Харьков, ул. Пушкина дом колотушкина 228</span> -->
-      <a class="heading-info heading-info--link heading-info--address" href="https://goo.gl/maps/AZvoCcB2F6P2">Харьков, ул. Пушкина дом колотушкина 228</a>
-      <a class="heading-info heading-info--link" href="tel:+38 228 1488 6666">&#9742; +38 228 1488 6666</a>
+      <a class="heading-info heading-info--link heading-info--address" href="https://goo.gl/maps/AZvoCcB2F6P2"><i class="fas fa-map-marker-alt"></i> Харьков, ул. Пушкина дом колотушкина 228</a>
+      <a class="heading-info heading-info--link" href="tel:+38 228 1488 6666"><i class="fas fa-phone"></i> +38 228 1488 6666</a>
     </div>
     <div class="placeholder-for-menu"></div>
   </header>
@@ -67,7 +67,7 @@
           <h3 class="heading-tertiary u-margin-bot-sm">Индивидуальный подход и минимальные сроки</h3>
           <p class="text-paragraph">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Прямо семь продолжил даже несколько? Бросил, переулка lorem злых путь текстов собрал, пор послушавшись заголовок маленький заглавных курсивных своих родного.</p>
 
-          <a href="#" class="btn-text">Связаться с нами &rarr;</a>
+          <a href="#contacts" class="btn-text">Связаться с нами &rarr;</a>
         </div>
         <div class="col-1-of-2">
           <div class="img-composition">
@@ -174,7 +174,7 @@
                       <p class="card__price-only">Всего</p>
                       <p class="card__price-value">$1488/м</p>
                   </div>
-                  <a href="#" class="btn btn--white">Заказать!</a>
+                  <a href="#contacts" class="btn btn--white">Заказать!</a>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@
                       <p class="card__price-only">Всего</p>
                       <p class="card__price-value">$1488/м</p>
                   </div>
-                  <a href="#" class="btn btn--white">Заказать!</a>
+                  <a href="#contacts" class="btn btn--white">Заказать!</a>
               </div>
             </div>
           </div>
@@ -232,7 +232,7 @@
                       <p class="card__price-only">Всего</p>
                       <p class="card__price-value">$1488/м</p>
                   </div>
-                  <a href="#" class="btn btn--white">Заказать!</a>
+                  <a href="#contacts" class="btn btn--white">Заказать!</a>
               </div>
             </div>
           </div>
@@ -316,6 +316,20 @@
         navToggle.checked = false;
       });
     }
+
+    $('a').on('click', function(e) {
+      if(this.hash !== '') {
+        e.preventDefault();
+        let hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+
+    });
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLylxpYewGHhGyUcP81VnwPnJskdkk2OI&callback=initMap"></script>
 </body>

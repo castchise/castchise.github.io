@@ -94,7 +94,7 @@ body {
     display: block; }
     @media (max-width: 37.5em) {
       .heading-info--address {
-        width: 50%; } }
+        width: 70%; } }
   .heading-info--link:hover {
     background-color: #B58B70;
     color: #fff;
@@ -140,10 +140,16 @@ body {
     display: block;
     letter-spacing: 1.15rem;
     font-size: 1.3rem; }
+    @media (max-width: 37.5em) {
+      .heading-footer--sm, .heading-footer--lg {
+        letter-spacing: .9rem; } }
   .heading-footer--lg {
     font-size: 3.25rem;
     letter-spacing: .35rem;
     text-transform: uppercase; }
+    @media (max-width: 37.5em) {
+      .heading-footer--lg {
+        letter-spacing: .1rem; } }
 
 @keyframes fadeInTop {
   0% {
@@ -517,7 +523,7 @@ ul.lSPager.lSGallery {
     @media (max-width: 37.5em) {
       .contact-box__map {
         height: 200px;
-        width: 235px; } }
+        width: 225px; } }
   .contact-box__item {
     width: 40%;
     font-size: 1.4rem; }
@@ -646,7 +652,7 @@ ul.lSPager.lSGallery {
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0;
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
   .footer__logo {
     text-align: center; }
   .footer__navigation {
@@ -844,6 +850,9 @@ ul.lSPager.lSGallery {
   padding: 20rem 0;
   margin-top: -12rem;
   background-color: #f7f7f7; }
+
+.section-gallery {
+  padding-bottom: 25rem; }
 
 .section-cards {
   padding: 10rem 0;
