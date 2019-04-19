@@ -149,7 +149,7 @@ body {
     text-transform: uppercase; }
     @media (max-width: 37.5em) {
       .heading-footer--lg {
-        letter-spacing: .1rem; } }
+        letter-spacing: .2rem; } }
 
 @keyframes fadeInTop {
   0% {

@@ -147,7 +147,7 @@ body {
     text-transform: uppercase;
 
     @include respond(phone) {
-      letter-spacing: .1rem;
+      letter-spacing: .2rem;
     }
   }
 }
