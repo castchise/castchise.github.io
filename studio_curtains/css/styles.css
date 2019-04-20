@@ -332,7 +332,7 @@ body {
   @media (max-width: 75em) {
     .advantage-box {
       backface-visibility: unset;
-      padding: 2em 1em; } }
+      padding: 1.5em 3em; } }
   @media (max-width: 37.5em) {
     .advantage-box {
       padding: 3em 5em; } }
