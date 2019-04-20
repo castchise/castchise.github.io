@@ -454,7 +454,7 @@ ul.lSPager.lSGallery {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .card {
       height: auto;
       border-radius: 3px;
