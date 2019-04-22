@@ -118,7 +118,8 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2.75rem; } }
+      font-size: 2.35rem;
+      padding: 0 3rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -197,6 +198,9 @@ body {
 
 .u-margin-top-extra {
   margin-top: 10rem !important; }
+
+.u-padding-none {
+  padding: 0; }
 
 .img-composition {
   position: relative; }
@@ -505,6 +509,7 @@ ul.lSPager.lSGallery {
     .contact-box {
       text-align: center; } }
   .contact-box__map {
+    display: none;
     position: absolute;
     right: 7.5rem;
     top: 5rem;
@@ -539,7 +544,7 @@ ul.lSPager.lSGallery {
         width: 100%; } }
     .contact-box__item strong {
       display: block;
-      font-size: 1.6rem;
+      font-size: 2rem;
       color: #B58B70; }
     .contact-box__item--container {
       width: 40%;

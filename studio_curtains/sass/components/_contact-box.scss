@@ -30,6 +30,7 @@
   }
 
   &__map {
+    display: none;
     position: absolute;
     right: 7.5rem;
     top: 5rem;
@@ -71,7 +72,7 @@
 
     & strong {
       display: block;
-      font-size: 1.6rem;
+      font-size: 2rem;
       color: $color-tertiary;
     }
 

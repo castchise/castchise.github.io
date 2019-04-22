@@ -105,7 +105,8 @@ body {
   }
 
   @include respond(phone) {
-    font-size: 2.75rem;
+    font-size: 2.35rem;
+    padding: 0 3rem;
   }
 }
 
