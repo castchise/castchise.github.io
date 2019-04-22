@@ -4,6 +4,9 @@
 
 Commercial works
 --------------
+
+[Curtains Studio LP](https://castchise.github.io/studio_curtains/index.html) -> freelance project for curtains studio, fully adaptive with simple and nice features (sliders, animated goods cards) 
+
 [Roofing & Siding LP](https://castchise.github.io/mkif/index.html) -> freelance project, landing page with addition of yMaps and email delievery of contact information submitted by user on hosts e-mail address (done via smtpjs)  
 
 
