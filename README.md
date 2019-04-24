@@ -20,10 +20,6 @@ vanilla JS, partially JQ used (+attempted to use crossfaded css animations for s
 
 [Tajam](https://castchise.github.io/tajam/index.html) -> adaptive LP with simple functions (carousels/video pop-ups)
 
-[Starnight](https://castchise.github.io/starnight_wip/index.htm) -> bootstrap4 practise
-
-[Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
-
 Other stuff:
 ------------
 
@@ -42,7 +38,11 @@ Older works:
 
 [Pingbuller](https://castchise.github.io/pingbuller/index.html) -> one of the first adaptive works, @media queries and 'mobile-first' workflow practise (4 breakpoints done with 4 psd layouts accordingly)
 
+[Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
+
 [PC Builder](https://castchise.github.io/pcbuilder/index.htm) -> kind of similar project to pingbuller, but with different realization of mobile menu (more popular method with toggle) and inner block within under hover stance 
+
+[Starnight](https://castchise.github.io/starnight_wip/index.htm) -> bootstrap4 practise
 
 [cGlobal](https://castchise.github.io/cglob_proj/index.htm) -> introduction to pseudoelements, dropdowns, form elements (non-adaptive)
 
