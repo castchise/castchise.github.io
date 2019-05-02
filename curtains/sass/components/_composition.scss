@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 10;
     transition: all .2s;
-    outline-offset: .55rem;
+    outline-offset: .25rem;
 
     @include respond(tab-port) {
       float: left;
@@ -17,13 +17,14 @@
       box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
     }
 
+    // positioning and scaling
     &--p1 {
       left: 0;
       top: -2rem;
 
       @include respond(tab-port) {
         top: 1rem;
-        transform: scale(1.35);
+        transform: scale(1.15);
 
         &:hover {
           left: 3rem;
@@ -37,7 +38,7 @@
 
       @include respond(tab-port) {
         top: -1rem;
-        transform: scale(1.55);
+        transform: scale(1.25);
         z-index: 50;
       }
     }
@@ -47,7 +48,7 @@
       top: 10rem;
 
       @include respond(tab-port) {
-        top: 1.35rem;
+        top: 1.55rem;
         left: 0;
         transform: scale(1.15);
 
@@ -58,8 +59,8 @@
     }
 
     &:hover {
-      outline: .75rem solid rgba($color-tertiary, .95);
-      transform: scale(1.55) translateY(-.5rem);
+      outline: .35rem solid rgba($color-tertiary, .95);
+      transform: scale(1.35) translateY(-.5rem); // scale and slightly move on hover
       box-shadow: 0 2.5rem 4rem rgba($color-grey, .5);
       z-index: 20;
 

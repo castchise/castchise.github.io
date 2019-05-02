@@ -14,8 +14,10 @@ body {
 
   animation: fadeIn;
   animation-duration: 1.5s;
-  backface-visibility: hidden;
+  backface-visibility: hidden; // animation stutter fix
 
+
+  // header middle title - style similar to upper/rear textlines
   &--sm,
   &--lg {
     display: block;
@@ -30,7 +32,8 @@ body {
       font-size: 3rem;
     }
   }
-
+  
+  // styling rear textline
   &--lg {
     font-size: 5rem;
     letter-spacing: 1.1rem;
@@ -68,7 +71,7 @@ body {
     box-shadow: 0 1rem 1rem rgba($color-grey, .25);
     
     .fas {
-      color: #06e306;
+      color: #06e306; // phone icon color
     }
   }
 
@@ -98,7 +101,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: transparent;
-  // background-image: linear-gradient(to left top, $color-secondary, $color-primary);
   background-image: linear-gradient(to left top, $color-tertiary, $color-primary);
   background-clip: text;
   -webkit-background-clip: text;

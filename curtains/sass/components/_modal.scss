@@ -10,7 +10,7 @@
 
   &__content {
     position: absolute;
-    width: 65%;
+    width: 65%; // default img size
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,11 +22,11 @@
     }
 
     @include respond(tab-port) {
-      width: 75%;
+      width: 75%; // larger image on tablets
     }
 
     @include respond(phone) {
-      width: 90%;
+      width: 100%; // full width img on phones
     }
   }
 }
