@@ -1,0 +1,55 @@
+.workflow-step {
+  background-color: $color-grey-dark-1;
+  border-radius: 5px;
+  box-shadow: 0 1rem 4rem rgba($color-grey, .15); 
+  height: 35rem;
+  position: relative;
+  overflow: hidden;
+
+  &__1,
+  &__2,
+  &__3 {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: all .25s ease;
+  }
+
+  &__1 {
+    background-image: url('../img/workflow-step-1.jpg');
+  }
+
+  &__2 {
+    background-image: url('../img/workflow-step-2.jpg');
+  }
+
+  &__3 {
+    background-image: url('../img/workflow-step-3.jpg');
+  }
+
+  &__text {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: rgba(255,255,255,.9);
+    padding: 1rem;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.5rem;
+
+    strong {
+      font-size: 1.8rem;
+      color: $color-tertiary;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  &:hover &__1, 
+  &:hover &__2,
+  &:hover &__3 {
+    transform: scale(1.1);
+  }
+}

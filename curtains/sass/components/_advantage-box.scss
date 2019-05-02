@@ -1,0 +1,63 @@
+.advantage-container {
+  display: flex;
+  justify-content: center;
+
+  &__col {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond(tab-land) {
+    display: block;
+
+    &__col {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: $gutter-vertical-sm;
+      width: 55% !important;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.advantage-box {
+  cursor: default;
+  background: rgba($color-white, .8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-grey, .55);
+  transition: transform .3s;
+  backface-visibility: hidden;
+
+  @include respond(tab-land) {
+    backface-visibility: unset;
+    padding: 1.5em 3em;
+  }
+
+  @include respond(phone) {
+    padding: 3em 5em;
+  }
+
+  &__icon {
+    padding: 1px;
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__text {
+    margin-top: 1rem;
+  }
+}

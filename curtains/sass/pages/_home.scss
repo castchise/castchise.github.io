@@ -1,0 +1,66 @@
+.section-intro {
+  padding: 26rem 0;
+  margin-top: -20vh;
+  background-color: $color-grey-light-1;
+
+  @include respond(phone) {
+    padding: 24rem 0 23rem 0;
+  }
+}
+
+.section-advantages {
+  padding: 10rem 0;
+  margin-top: -12rem;
+  background-image: 
+  linear-gradient(
+    to right bottom,
+    rgba($color-primary, .8),
+    rgba($color-secondary, .8)),
+  url('../img/advantages.jpg');
+  background-size: cover;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-gallery {
+  padding: 20rem 0;
+  margin-top: -12rem;
+  background-color: $color-grey-light-1;
+}
+
+.section-gallery {
+  padding-bottom: 25rem;
+}
+
+.section-cards {
+  padding: 10rem 0;
+  margin-top: -12rem;
+  background-image: 
+  linear-gradient(
+    to right bottom,
+    rgba($color-primary, .8),
+    rgba($color-secondary, .8)),
+  url('../img/cards.jpg');
+  background-size: cover;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-workflow {
+  padding-top: 26rem;
+  margin-top: -12rem;
+  background-color: $color-grey-light-1;
+}
+
+.section-contacts {
+  padding: 10rem 0;
+  background-color: $color-grey-light-1;
+}

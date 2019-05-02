@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Студия Штор и Гардин Илоны Христенко</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>О нас</a></li>
+              <li class="navigation__item"><a href="#advantages" class="navigation__link"><span>02</span>Преимущества</a></li>
+              <li class="navigation__item"><a href="#gallery" class="navigation__link"><span>03</span>Галерея</a></li>
+              <li class="navigation__item"><a href="#popular" class="navigation__link"><span>04</span>Популярное</a></li>
+              <li class="navigation__item"><a href="#contacts" class="navigation__link"><span>05</span>Обратная связь</a></li>
+          </ul>
+      </nav>
+
+  </div>
+
+  <header class="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary u-margin-bot-md">
+        <span class="heading-primary--sm">студия штор и гардин</span>
+        <span class="heading-primary--lg">илоны христенко</span>
+      </h1>
+      <a href="#contacts" class="btn btn--white">Заказать шторы</a>
+    </div> 
+    <div class="header__contact-box">
+      <!-- <span class="heading-info heading-info--address">Харьков, ул. Пушкина дом колотушкина 228</span> -->
+      <a class="heading-info heading-info--link" href="tel:+38 228 1488 6666"><i class="fas fa-phone"></i> +38 228 1488 6666</a>
+    </div>
+    <div class="placeholder-for-menu"></div>
+  </header>
+
+  <main>
+    <section class="section-intro" id="about">
+      <div class="u-center-text u-margin-bot-big">
+        <h2 class="heading-secondary">
+          Лучшие шторы от студии илоны христенко
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bot-sm">эксклюзивные шторы под различные интерьеры</h3>
+          <p class="text-paragraph">
+            Студия штор Илоны Христенко предоставляет огромный выбор решений для Вашего дома. Вы можете не только приобрести, но и заказать пошив уникальных штор.
+            Опытные специалисты подберут лучшие варианты для вашего дома - будь то спальня, кабинет, кухня или любое другое жилое пространство.
+          </p>
+
+          <h3 class="heading-tertiary u-margin-bot-sm">Качественная и надежная продукция</h3>
+          <p class="text-paragraph">
+            Мы работаем только с качественным текстилем. Не сядет после стирки, не вытянется под собственным весом и не выгорит со временем.
+            <strong>Бесплатный вызов дизайнера после концультации по телефону или онлайн.</strong>
+          </p>
+
+          <a href="#contacts" class="btn-text">Связаться с нами &rarr;</a>
+        </div>
+        <div class="col-1-of-2">
+          <div class="img-composition">
+            <!-- <img src="img/curtains-1-lg.jpg" alt="" class="img-composition__photo img-composition__photo--p1">
+            <img src="img/curtains-2-lg.jpg" alt="" class="img-composition__photo img-composition__photo--p2">
+            <img src="img/curtains-3-lg.jpg" alt="" class="img-composition__photo img-composition__photo--p3"> -->
+            <img src="img/studio_left.jpg" alt="" class="img-composition__photo img-composition__photo--p1">
+            <img src="img/studio_right.jpg" alt="" class="img-composition__photo img-composition__photo--p2">
+            <img src="img/studio_mid.jpg" alt="" class="img-composition__photo img-composition__photo--p3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-advantages" id="advantages">
+      <div class="row advantage-container">
+        <div class="col-1-of-4 advantage-container__col">
+          <div class="advantage-box">
+            <i class="advantage-box__icon fas fa-medal"></i>
+            <div class="heading-tertiary heading-tertiary--advantage">Нам есть что предложить</div>
+            <div class="advantage-box__text">
+              Свыше 12 000 наименований, от эконом до премиум класса. Постоянный приток новых коллекций. 
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-1-of-4 advantage-container__col">
+          <div class="advantage-box">
+            <i class="advantage-box__icon fas fa-clock"></i>
+            <div class="heading-tertiary heading-tertiary--advantage">Кратчайшие сроки</div>
+            <div class="advantage-box__text">
+              Собственное швейное производство, изготовление штор от 5 рабочих дней.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-4 advantage-container__col">
+          <div class="advantage-box">
+            <i class="advantage-box__icon fas fa-user-check"></i>
+            <div class="heading-tertiary heading-tertiary--advantage">личный подход</div>
+            <div class="advantage-box__text">
+              Индивидуальный дизайн-проект для каждого клиента. Подбор сразу нескольких вариантов к Вашему вниманию.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-4 advantage-container__col">
+          <div class="advantage-box">
+            <i class="advantage-box__icon fas fa-drafting-compass"></i>
+            <div class="heading-tertiary heading-tertiary--advantage">Декорирование и повеска</div>
+            <div class="advantage-box__text">
+              Гладим, навешиваем, отпариваем и декорируем шторы быстро и качественно.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery" id="gallery">
+      <div class="row">
+        <div class="u-center-text u-margin-bot-big">
+          <h2 class="heading-secondary">
+            Примеры наших работ
+          </h2>
+        </div>
+        <ul id="lightSlider">
+          <li data-thumb="img/slider-img-1.jpg"><img src="img/slider-img-1.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-2.jpg"><img src="img/slider-img-2.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-3.jpg"><img src="img/slider-img-3.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-4.jpg"><img src="img/slider-img-4.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-5.jpg"><img src="img/slider-img-5.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-6.jpg"><img src="img/slider-img-6.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-7.jpg"><img src="img/slider-img-7.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-8.jpg"><img src="img/slider-img-8.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-3.jpg"><img src="img/slider-img-3.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-2.jpg"><img src="img/slider-img-2.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-3.jpg"><img src="img/slider-img-3.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-2.jpg"><img src="img/slider-img-2.jpg" alt=""></li>
+          <li data-thumb="img/slider-img-3.jpg"><img src="img/slider-img-3.jpg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-cards" id="popular">
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--1">Римские Шторы</span>                                  
+                </h4>
+                <div class="card__details">
+                    <ul>
+                        <li>Универсальность</li>
+                        <li>Функциональность</li>
+                        <li>Простота</li>
+                        <li>Для гостинных и кухонь</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                  <div class="card__price-box">
+                      <!-- <p class="card__price-only">ровные линии классического варианта придадут строгости, при желании</p>
+                      <p class="card__price-only">складки в каскадном варианте, напротив, мягкости</p> -->
+                      <p class="card__price-value">$1488/м</p>
+                  </div>
+                  <a href="#contacts" class="btn btn--white">Просчитать!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--2">Базовые Шторы</span>                                  
+                </h4>
+                <div class="card__details">
+                    <ul>
+                        <li>Вариативность</li>
+                        <li>Функциональность</li>
+                        <li>Простота</li>
+                        <li>Для любого интерьера</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                  <div class="card__price-box">
+                      <p class="card__price-only">Всего</p>
+                      <p class="card__price-value">$1488/м</p>
+                  </div>
+                  <a href="#contacts" class="btn btn--white">Просчитать!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--3">Классические Шторы</span>                                  
+                </h4>
+                <div class="card__details">
+                    <ul>
+                        <li>Универсальность</li>
+                        <li>Функциональность</li>
+                        <li>Простота</li>
+                        <li>Для любого интерьера</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                  <div class="card__price-box">
+                      <p class="card__price-only">Всего</p>
+                      <p class="card__price-value">$1488/м</p>
+                  </div>
+                  <a href="#contacts" class="btn btn--white">Просчитать!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-workflow" id="workflow">
+      <div class="row">
+        <div class="u-center-text u-margin-bot-md">
+          <h2 class="heading-secondary">
+            рабочий процесс
+          </h2>
+        </div>
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__1"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>1 - Оставление заявки</strong>
+              Вы оставляете заявку/звоните/приходите в салон
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__2"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>2 - Бесплатный выезд дизайнера</strong>
+              Дизайнер студии выезжает к вам для подбора тканей и замеров
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__3"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>3 - Созадние дизайна</strong>
+              Дизайнер создает дизайн в течение 2-3х дней
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__1"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>4 - Согласование проекта</strong>
+              Мы согласовавываем с вами дизайн-проект штор
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__2"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>5 - Пошив штор</strong>
+              Изготавливаем шторы в течение 5-14 рабочих дней
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="workflow-step">
+            <div class="workflow-step__3"></div>
+            <p class="workflow-step workflow-step__text">
+              <strong>6 - Доставка и установка</strong>
+              Наши специалисты проведут установку заказа и проконсультируют по дальнейшем эксплуатации.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="section-contacts" id="contacts">
+      <div class="row">
+        <div class="u-center-text u-margin-bot-md">
+          <h2 class="heading-secondary u-padding-none">
+            Свяжитесь с нами!
+          </h2>
+        </div>
+
+        <div class="contact-box u-center-text u-margin-bot-md">
+          <div class="contact-box__inner">
+            <div class="contact-box__item u-margin-bot-sm">
+              <div class="contact-box__gallery">
+                <img src="img/studio_left.jpg" alt="" class="open-modal" data-img="img/studio_left.jpg">
+                <img src="img/studio_mid.jpg" alt="" class="open-modal" data-img="img/studio_mid.jpg">
+                <img src="img/studio_right.jpg" alt="" class="open-modal" data-img="img/studio_right.jpg">
+                <img src="img/studio_mid.jpg" alt="" class="mobile-img open-modal" data-img="img/studio_mid.jpg">
+              </div>
+              <h3 class="heading-tertiary">Студия в ТРЦ Сан-Сити Плаза</h3>
+              <p class="text-paragraph">
+                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Которое диких точках вдали. Гор снова назад буквоград, первую выйти о рот рекламных страну заголовок, lorem речью подзаголовок сих свое!
+                <strong>консультация и вызов замерщика - бесплатно.</strong>
+              </p>
+            </div>
+            <div class="contact-box__item--container">
+              <a href="#" class="contact-box__item--link">Харьков, ул. Пушкина дом колотушкина 228 &rarr;</a>  
+              <a href="#" class="contact-box__item--link">+38 228 1488 6666 &rarr;</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-box u-center-text">
+          <div class="contact-box__inner">
+            <div class="contact-box__item u-margin-bot-sm">
+              <div class="contact-box__gallery">
+                <img src="img/studio_2_left.jpg" alt="" class="open-modal" data-img="img/studio_2_left.jpg">
+                <img src="img/studio_2_mid.jpg" alt="" class="open-modal" data-img="img/studio_2_mid.jpg">
+                <img src="img/studio_2_right.jpg" alt="" class="open-modal" data-img="img/studio_2_right.jpg">
+                <img src="img/studio_2_mid.jpg" alt="" class="mobile-img open-modal" data-img="img/studio_2_mid.jpg">
+              </div>
+              <h3 class="heading-tertiary">Студия в ТРЦ Сан-Сити Плаза</h3>
+              <p class="text-paragraph">
+                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Которое диких точках вдали. Гор снова назад буквоград, первую выйти о рот рекламных страну заголовок, lorem речью подзаголовок сих свое!
+                <strong>консультация и вызов замерщика - бесплатно.</strong>
+              </p>
+            </div>
+            <div class="contact-box__item--container">
+              <a href="#" class="contact-box__item--link">Харьков, ул. Пушкина дом колотушкина 228 &rarr;</a>  
+              <a href="#" class="contact-box__item--link">+38 228 1488 6666 &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="contact-box">
+          <div class="contact-box__inner">
+            <div class="contact-box__item u-margin-bot-sm">
+              <h3 class="heading-tertiary">Студия в ТРЦ Сан-Сити Плаза</h3>
+              Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Которое диких точках вдали. Гор снова назад буквоград, первую выйти о рот рекламных страну заголовок, lorem речью подзаголовок сих свое!
+              <strong>консультация и вызов замерщика - бесплатно.</strong>
+            </div>
+            <div class="contact-box__item--container">
+              <a href="#" class="contact-box__item--link">Харьков, ул. Пушкина дом колотушкина 228 &rarr;</a>  
+              <a href="#" class="contact-box__item--link">+38 228 1488 6666 &rarr;</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-1-of-2">
+          <div class="contact-box">
+            <div class="contact-box__inner">
+              <div class="contact-box__item u-margin-bot-sm">
+                <h3 class="heading-tertiary">Студия в ТРЦ Сан-Сити Плаза</h3>
+                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Которое диких точках вдали. Гор снова назад буквоград, первую выйти о рот рекламных страну заголовок, lorem речью подзаголовок сих свое!
+                <strong>консультация и вызов замерщика - бесплатно.</strong>
+              </div>
+              <div class="contact-box__item--container">
+                <a href="#" class="contact-box__item--link">Харьков, ул. Пушкина дом колотушкина 228 &rarr;</a>  
+                <a href="#" class="contact-box__item--link">+38 228 1488 6666 &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-2">
+          <div class="contact-box">
+            <div class="contact-box__inner">
+              <div class="contact-box__item u-margin-bot-sm">
+                <h3 class="heading-tertiary">Студия в ТРЦ Дафи</h3>
+                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Которое диких точках вдали. Гор снова назад буквоград, первую выйти о рот рекламных страну заголовок, lorem речью подзаголовок сих свое!
+                <strong>консультация и вызов замерщика - бесплатно.</strong>
+              </div>
+              <div class="contact-box__item--container">
+                <a href="#" class="contact-box__item--link">Харьков, ул. Пушкина дом колотушкина 228 &rarr;</a>  
+                <a href="#" class="contact-box__item--link">+38 228 1488 6666 &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo u-margin-bot-big">
+      <span class="heading-footer--sm">студия штор и гардин</span>
+      <span class="heading-footer--lg">илоны христенко</span>
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <nav class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">О Нас</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Преимущества</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Галерея</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Связаться с Нами</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-1-of-2">
+        <div class="footer__text">
+          <a href="#" class="footer__link">Студия Штор и Гардин Илоны Христенко</a>. Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре несколько заголовок пояс безопасную дорогу пустился продолжил снова страну проектах! Бросил первую приставка строчка алфавит. Вопроса рот языкового сих? Вскоре несколько заголовок пояс безопасную дорогу пустился продолжил снова страну проектах! Бросил первую приставка строчка алфавит. Вопроса рот языкового сих?
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    //SLIDER
+    $(document).ready(function() {
+      $("#lightSlider").lightSlider({
+        item: 1,
+        slideMove: 1,
+        mode: 'slide',
+        gallery: true,
+        enableTouch:true,
+        enableDrag:true,
+        currentPagerPosition: 'middle',
+      });
+      
+      //MODAL SHOW
+      $('.open-modal').click(function(e) {
+        let img = $(e.target).data('img');
+        $('.modal__content img').attr('src', img);
+        $('.modal').show();
+      });
+
+      //MODAL CLS
+      $('.modal').click(function() {
+        $('.modal').hide(); 
+      });
+      $('.modal__content').click(function(e){
+        e.stopPropagation();
+      });                                   
+    });                                
+
+    // function initMap() {
+    //   let coordinate = {lat: 50.005746, lng: 36.229240};
+    //   let map = new google.maps.Map(
+    //   document.getElementById('map'), {zoom: 15, center: coordinate, disableDefaultUI: true});
+    //   let marker = new google.maps.Marker({position: coordinate, map: map});
+    // }
+
+    let navLinks = document.getElementsByClassName('navigation__link');
+    let navToggle = document.getElementById('navi-toggle');
+
+    for(let i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', function() {
+        navToggle.checked = false;
+      });
+    }
+
+    $('a').on('click', function(e) {
+      if(this.hash !== '') {
+        e.preventDefault();
+        let hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+
+    });
+  </script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLylxpYewGHhGyUcP81VnwPnJskdkk2OI&callback=initMap"></script> -->
+</body>
+</html>
