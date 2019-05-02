@@ -238,7 +238,7 @@ body {
       @media (max-width: 56.25em) {
         .img-composition__photo--p2 {
           top: -1rem;
-          transform: scale(1.55);
+          transform: scale(1.25);
           z-index: 50; } }
     .img-composition__photo--p3 {
       left: 20%;
