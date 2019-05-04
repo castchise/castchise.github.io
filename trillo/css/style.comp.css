@@ -363,7 +363,8 @@ body {
         padding: 0 1.5rem; } }
     @media only screen and (max-width: 28.125em) {
       .overview__rating {
-        margin-left: 1rem; } }
+        margin-left: 1rem;
+        padding: 0 .5rem; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
@@ -371,12 +372,15 @@ body {
     @media only screen and (max-width: 37.5em) {
       .overview__rating-average {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .overview__rating-average {
+        font-size: 1.4rem; } }
   .overview__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase; }
     @media only screen and (max-width: 37.5em) {
       .overview__rating-count {
-        font-size: 0.5rem; } }
+        font-size: 0.35rem; } }
 
 .btn-inline {
   border: none;

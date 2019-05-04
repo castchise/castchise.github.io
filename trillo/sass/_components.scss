@@ -325,6 +325,7 @@
 
     @media only screen and (max-width: $bp-extra) {
       margin-left: 1rem;
+      padding: 0 .5rem;
     }
   }
 
@@ -336,6 +337,10 @@
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
     }
+
+    @media only screen and (max-width: $bp-extra) {
+      font-size: 1.4rem;
+    }
   }
 
   &__rating-count {
@@ -343,7 +348,7 @@
     text-transform: uppercase;
 
     @media only screen and (max-width: $bp-small) {
-      font-size: 0.5rem;
+      font-size: 0.35rem;
     }
   }
 
