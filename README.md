@@ -2,16 +2,12 @@
 
 *List (with descr.) of sample projects hosted on github pages*
 
-Commercial works
+Relevant works
 --------------
 
 [Curtains Studio LP](https://castchise.github.io/studio_curtains/index.html) -> freelance project for curtains studio, fully adaptive with simple and nice features (sliders, animated goods cards) 
 
 [Roofing & Siding LP](https://castchise.github.io/mkif/index.html) -> freelance project, landing page with addition of yMaps and email delievery of contact information submitted by user on hosts e-mail address (done via smtpjs)  
-
-
-Relevant works
---------------
 
 [Dark Souls Themed](https://castchise.github.io/ds/index.html) -> inspired by original JP version of Dark Souls Remaster website.(link in footer)
 vanilla JS, partially JQ used (+attempted to use crossfaded css animations for slideshow instead of JS slider)
