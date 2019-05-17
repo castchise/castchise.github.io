@@ -22,23 +22,15 @@ vanilla JS, partially JQ used (+attempted to use crossfaded css animations for s
 
 [Trillo](https://castchise.github.io/trillo/) -> flexbox practise, fully adaptive
 
-Other stuff:
-------------
-
-[Image Gallery](https://castchise.github.io/img_gallery/index.html) -> image slider, filter via keywords 
-
-[PlayStation 1 Intro animation](https://castchise.github.io/ps-intro/index.html) -> replica of original PS1 Intro([https://youtu.be/oAhvQoLpvsM](https://youtu.be/oAhvQoLpvsM)) using CSS animations
-
-[HamburgerMenu snippet](https://castchise.github.io/hamburger_menu/index.html) -> default hamburger menu with animations
-
-[CSS Generator](https://castchise.github.io/cssgen/index.html) -> sample of CSS generator using JS
-
-[Bingo Game](https://castchise.github.io/bingo/index.html) -> guess number from 1 to 10
 
 Older works:
 ------------
 
 [Pingbuller](https://castchise.github.io/pingbuller/index.html) -> one of the first adaptive works, @media queries and 'mobile-first' workflow practise (4 breakpoints done with 4 psd layouts accordingly)
+
+[Image Gallery](https://castchise.github.io/img_gallery/index.html) -> image slider, filter via keywords 
+
+[PlayStation 1 Intro animation](https://castchise.github.io/ps-intro/index.html) -> replica of original PS1 Intro([https://youtu.be/oAhvQoLpvsM](https://youtu.be/oAhvQoLpvsM)) using CSS animations
 
 [Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
 
