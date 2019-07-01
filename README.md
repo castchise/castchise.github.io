@@ -2,41 +2,31 @@
 
 *List (with descr.) of sample projects hosted on github pages*
 
-Commercial works
+Relevant works
 --------------
 
 [Curtains Studio LP](https://castchise.github.io/studio_curtains/index.html) -> freelance project for curtains studio, fully adaptive with simple and nice features (sliders, animated goods cards) 
 
 [Roofing & Siding LP](https://castchise.github.io/mkif/index.html) -> freelance project, landing page with addition of yMaps and email delievery of contact information submitted by user on hosts e-mail address (done via smtpjs)  
 
-
-Relevant works
---------------
-
-[Dark Souls Themed](https://castchise.github.io/ds/index.html) -> latest work, website inspired by original JP version.(link in footer)
+[Dark Souls Themed](https://castchise.github.io/ds/index.html) -> inspired by original JP version of Dark Souls Remaster website.(link in footer)
 vanilla JS, partially JQ used (+attempted to use crossfaded css animations for slideshow instead of JS slider)
-
-[WeatherJS](https://castchise.github.io/weatherapp/index.html) -> simple weather app with usage of OpenWeatherMap API
 
 [Tajam](https://castchise.github.io/tajam/index.html) -> adaptive LP with simple functions (carousels/video pop-ups)
 
-Other stuff:
-------------
+[WeatherJS](https://castchise.github.io/weatherapp/index.html) -> simple weather app with usage of OpenWeatherMap API
 
-[Image Gallery](https://castchise.github.io/img_gallery/index.html) -> image slider, filter via keywords 
+[Trillo](https://castchise.github.io/trillo/) -> flexbox practise, fully adaptive
 
-[PlayStation 1 Intro animation](https://castchise.github.io/ps-intro/index.html) -> replica of original PS1 Intro([https://youtu.be/oAhvQoLpvsM](https://youtu.be/oAhvQoLpvsM)) using CSS animations
-
-[HamburgerMenu snippet](https://castchise.github.io/hamburger_menu/index.html) -> default hamburger menu with animations
-
-[CSS Generator](https://castchise.github.io/cssgen/index.html) -> sample of CSS generator using JS
-
-[Bingo Game](https://castchise.github.io/bingo/index.html) -> guess number from 1 to 10
 
 Older works:
 ------------
 
 [Pingbuller](https://castchise.github.io/pingbuller/index.html) -> one of the first adaptive works, @media queries and 'mobile-first' workflow practise (4 breakpoints done with 4 psd layouts accordingly)
+
+[Image Gallery](https://castchise.github.io/img_gallery/index.html) -> image slider, filter via keywords 
+
+[PlayStation 1 Intro animation](https://castchise.github.io/ps-intro/index.html) -> replica of original PS1 Intro([https://youtu.be/oAhvQoLpvsM](https://youtu.be/oAhvQoLpvsM)) using CSS animations
 
 [Portfolio LP](https://castchise.github.io/qiwi/index.html) -> simple adaptive portfolio website with sticky header
 
