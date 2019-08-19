@@ -648,8 +648,10 @@ b {
   color: #fff;
   height: 42px;
   border-left: 1px solid rgb(16, 65, 176);
-  padding-left: 17px;
+  padding-left: 8px;
   font-size: 12px;
+  font-family: inter-bold;
+  letter-spacing: 0.1px;
 }
 .map-frame .reg-mobile .vk-logo {
   background: transparent;
