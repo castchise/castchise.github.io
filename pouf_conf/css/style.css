@@ -8,22 +8,22 @@
 
 @font-face {
   font-family: "inter-black";
-  src: url("/fonts/Inter-Black.ttf");
+  src: url("../fonts/Inter-Black.ttf");
 }
 
 @font-face {
   font-family: "inter";
-  src: url("/fonts/Inter-Regular.ttf");
+  src: url("../fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: "inter-semibold";
-  src: url("/fonts/Inter-SemiBold.ttf");
+  src: url("../fonts/Inter-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "roboto";
-  src: url("/fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 html {
