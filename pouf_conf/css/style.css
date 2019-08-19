@@ -380,8 +380,10 @@ html {
   overflow-x: scroll;
 }
 .table {
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
   width: 900px;
-  margin: 0 auto;
   border: 1px solid;
   border-color: #00000012;
   box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.04);
@@ -800,6 +802,10 @@ html {
   }
   .prize:nth-child(even) > img {
     order: 2;
+  }
+  .table {
+    display: block;
+    margin: 0 auto;
   }
 }
 
