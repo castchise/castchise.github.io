@@ -44,6 +44,8 @@ h2,
 h3,
 h4,
 h5,
+span,
+p,
 strong,
 b {
   font-weight: 400;
@@ -651,6 +653,7 @@ b {
   padding-left: 8px;
   font-size: 12px;
   font-family: inter-bold;
+  font-weight: 400;
   letter-spacing: 0.1px;
 }
 .map-frame .reg-mobile .vk-logo {
