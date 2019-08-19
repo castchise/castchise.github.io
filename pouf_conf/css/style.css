@@ -12,6 +12,11 @@
 }
 
 @font-face {
+  font-family: "inter-bold";
+  src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
   font-family: "inter";
   src: url("../fonts/Inter-Regular.ttf");
 }
@@ -28,6 +33,20 @@
 
 html {
   font-family: roboto;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+b {
+  font-weight: 400;
 }
 
 .wrapper {
@@ -128,6 +147,10 @@ html {
   align-items: center;
   margin-top: 30px;
 }
+.reg-desktop svg {
+  height: 100px;
+  width: 100px;
+}
 .reg-desktop p {
   color: #fff;
   opacity: 0.5;
@@ -195,7 +218,7 @@ html {
 }
 .desktop-slider {
   display: none;
-  max-width: 1000px;
+  max-width: 1024px;
   margin: 0 auto;
   position: relative;
 }
@@ -236,8 +259,8 @@ html {
   flex-direction: column;
   justify-content: center;
   min-height: 135px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 10px;
   cursor: pointer;
   border: 1px solid transparent;
   box-shadow: 0px 8px 14px 0px transparent;
@@ -259,6 +282,7 @@ html {
 .tooltip-desc {
   margin-top: 10px;
   color: rgb(60, 61, 65);
+  opacity: 0.5;
   font-size: 14px;
   letter-spacing: 0.14px;
   line-height: 25px;
@@ -271,7 +295,7 @@ html {
   margin: 0 auto;
 }
 .block {
-  padding-bottom: 100px;
+  padding-bottom: 65px;
   max-width: 310px;
   margin: 0 auto;
 }
@@ -290,8 +314,11 @@ html {
 
 .slider-content-img {
   display: block;
+  width: 100%;
+  max-width: 280px;
   margin: 0 auto;
   margin-top: 20px;
+  backface-visibility: hidden;
 }
 
 .slider img {
@@ -307,7 +334,7 @@ html {
   text-align: center;
   color: rgb(60, 61, 65);
   margin-top: -195px;
-  padding-top: 110px;
+  padding-top: 140px;
   z-index: 90;
   position: relative;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+31,1+31,1+100 */
@@ -423,7 +450,7 @@ html {
   width: 780px;
   flex-direction: column;
   font-size: 14px;
-  font-family: inter-black;
+  font-family: inter-bold;
 }
 .table-cell.disabled {
   background-image: linear-gradient(
@@ -469,7 +496,7 @@ html {
 /* time */
 .table-row .table-cell.time {
   font-size: 12px;
-  font-family: inter-semibold;
+  font-family: inter-bold;
   color: rgb(51, 51, 51);
 }
 .table-row .table-cell.time p:not(:last-child) {
@@ -477,7 +504,7 @@ html {
 }
 /* titles */
 .table-row.titles .table-cell {
-  font-family: inter-black;
+  font-family: inter-bold;
   font-size: 14px;
   color: rgb(51, 51, 51);
 }
@@ -497,7 +524,7 @@ html {
   align-items: center;
 }
 .cell-info strong {
-  font-family: inter-black;
+  font-family: inter-bold;
   letter-spacing: -0.9px;
 }
 /* prize-section */
@@ -641,7 +668,7 @@ html {
   transform: translateY(-50%);
   right: 0;
 }
-.map-sec.desktop .map-frame img{
+.map-sec.desktop .map-frame img {
   margin-top: 20px;
   width: 50%;
 }
@@ -696,6 +723,9 @@ html {
   color: #fff;
   font-weight: 600;
   text-decoration: none;
+}
+.footer-txt .footer-link {
+  text-decoration: underline;
 }
 .footer-logo {
   display: block;
