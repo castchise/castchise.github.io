@@ -51,6 +51,11 @@ b {
   font-weight: 400;
 }
 
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
@@ -300,6 +305,10 @@ b {
   padding-bottom: 65px;
   max-width: 310px;
   margin: 0 auto;
+}
+
+.block .swiper-container {
+  border-radius: 90px;
 }
 
 .slider-wrap-img {
@@ -726,7 +735,7 @@ b {
 }
 .footer-txt a {
   color: #fff;
-  font-weight: 600;
+  font-family: inter-semibold;
   text-decoration: none;
 }
 .footer-txt .footer-link {
