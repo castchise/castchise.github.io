@@ -681,6 +681,8 @@ img {
   left: unset;
   transform: translateY(-50%);
   right: 0;
+  user-select: all;
+  pointer-events: all;
 }
 .map-sec.desktop .map-frame img {
   margin-top: 20px;
