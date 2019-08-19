@@ -779,6 +779,7 @@ html {
   }
   .prize > img {
     max-width: 275px;
+    height: 100%;
     margin: 0;
   }
   .prize > .pic-sm {
