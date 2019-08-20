@@ -238,9 +238,6 @@ img {
   margin: 0 auto;
   position: relative;
 }
-.desktop-slidewrap .swiper-slide {
-  cursor: pointer;
-}
 .desktop-slider .block {
   overflow: hidden;
   max-width: 295px;
@@ -968,4 +965,11 @@ img {
   .footer-links {
     margin-bottom: 5px;
   }
+}
+
+/* VK widget */
+#vk_community_messages {
+  /* right: unset;
+  left: 50%;
+  transform: translateX(-50%); */
 }

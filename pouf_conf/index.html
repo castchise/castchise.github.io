@@ -13,6 +13,7 @@
     </script> -->
 
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
@@ -386,7 +387,7 @@
           <p class="text-md location-top">26 сентября, Москва, ЦДП</p>
           <p class="text-md descr-top">Добро пожаловать на конференцию pouf.conf: выполняй задания, общайся
             с компаниями и принимай участие в розыгрыше крутых призов</p>
-          <a href="#!" class="reg-mobile">
+          <a href="https://vk.com/app7094869" class="reg-mobile" target="_blank">
             <span class="vk-logo"><svg class="icon">
                 <use xlink:href="#vk-logo"></use>
               </svg></span>
@@ -507,22 +508,22 @@
         <div class="desktop-slidewrap">
           <div class="swiper-wrapper">
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr1.png" class="slider-content-img" alt="1"></a>
+              <img src="img/slider/scr1.png" class="slider-content-img" alt="1">
             </div>
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr2.png" class="slider-content-img" alt="2"></a>
+              <img src="img/slider/scr2.png" class="slider-content-img" alt="2">
             </div>
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr3.png" class="slider-content-img" alt="3"></a>
+              <img src="img/slider/scr3.png" class="slider-content-img" alt="3">
             </div>
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr4.png" class="slider-content-img" alt="4"></a>
+              <img src="img/slider/scr4.png" class="slider-content-img" alt="4">
             </div>
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr5.png" class="slider-content-img" alt="5"></a>
+              <img src="img/slider/scr5.png" class="slider-content-img" alt="5">
             </div>
             <div class="swiper-slide no-swipe">
-              <a href=""><img src="img/slider/scr6.png" class="slider-content-img" alt="6"></a>
+              <img src="img/slider/scr6.png" class="slider-content-img" alt="6">
             </div>
           </div>
         </div>
@@ -834,7 +835,7 @@
       <h2 class="section-title">Залетай на pouf.conf</h2>
       <p class="text-md">26 сентября в 15:00, Москва, ЦДП</p>
       <img src="img/map_img.png" alt="Залетай на pouf.conf">
-      <a href="#!" class="reg-mobile">
+      <a href="https://vk.com/app7094869" class="reg-mobile" target="_blank">
         <span class="vk-logo"><svg class="icon">
             <use xlink:href="#vk-logo"></use>
           </svg></span>
@@ -848,7 +849,7 @@
         <h2 class="section-title">Залетай на pouf.conf</h2>
         <p class="text-md">26 сентября в 15:00, Москва, ЦДП</p>
         <img src="img/map_img.png" alt="Залетай на pouf.conf">
-        <a href="#!" class="reg-mobile">
+        <a href="https://vk.com/app7094869" class="reg-mobile" target="_blank">
           <span class="vk-logo"><svg class="icon">
               <use xlink:href="#vk-logo"></use>
             </svg></span>
@@ -864,7 +865,7 @@
           <svg class="icon lineto">
             <use xlink:href="#line"></use>
           </svg>
-          <a href="#!" class="footer-vk-link">
+          <a href="https://vk.com/poufconf" class="footer-vk-link" target="_blank">
             <svg class="icon">
               <use xlink:href="#vk-logo"></use>
             </svg>
@@ -887,6 +888,7 @@
       </div>
     </div>
   </footer>
+  <div id="vk_community_messages"></div>
   <script src="js/swiper.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -981,12 +983,8 @@
 
     map2.scrollZoom.disable();
   </script>
-  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
-
-  <!-- VK Widget -->
-  <div id="vk_community_messages"></div>
   <script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 181672078, { expandTimeout: "5000", disableExpandChatSound: "1", tooltipButtonText: "Есть вопрос?" });
+    VK.Widgets.CommunityMessages("vk_community_messages", 181672078, { expandTimeout: "30000", disableExpandChatSound: "1", tooltipButtonText: "Есть вопрос?" });
   </script>
 </body>
 
