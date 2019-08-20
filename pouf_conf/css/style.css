@@ -79,6 +79,7 @@ img {
   color: rgb(60, 61, 65);
   text-align: center;
   margin-bottom: 12px;
+  letter-spacing: -0.65px;
 }
 .section-title.dp {
   display: none;
@@ -192,6 +193,14 @@ img {
 .reg-mobile > span {
   display: flex;
   align-items: center;
+}
+
+.reg-mobile > span:last-child {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: inter-bold;
+  letter-spacing: 0.1px;
 }
 
 .vk-logo {
@@ -753,6 +762,12 @@ img {
 }
 /* for SE and lowres */
 @media only screen and (max-width: 350px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .reg-mobile > span:last-child {
+    margin-left: 0px;
+  }
   .slider-wrap,
   .slider-wrap-img {
     max-width: 280px;

@@ -406,7 +406,7 @@
   </header>
   <section class="about-sec mobile">
     <div class="wrapper">
-      <h2 class="section-title">Что такое pouf.conf?</h2>
+      <h2 class="section-title">Конференция&nbsp;для&nbsp;технарей</h2>
       <p class="text-sm about-desc">Мы объединили техническую конференцию и мобильное приложение, чтобы всем стало
         удобнее. Кстати, приложение
         даже не нужно скачивать</p>
@@ -891,9 +891,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var textSwiper = new Swiper('.text-swiper', {
+        loop: true
       });
 
       var imgSwiper = new Swiper('.swiper-container', {
+        loop: true,
         pagination: {
           el: '.swiper-pagination.mobile-pagination',
         },
