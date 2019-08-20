@@ -666,6 +666,7 @@ img {
 }
 .map-frame .reg-mobile > span:last-child {
   color: #fff;
+  margin-left: 0px;
   height: 42px;
   border-left: 1px solid rgb(16, 65, 176);
   padding-left: 8px;
