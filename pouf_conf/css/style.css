@@ -107,7 +107,7 @@ img {
 
 /* ---HEADER--- */
 .header {
-  background: url("../img/mobile_bg.png") no-repeat top center;
+  background: url("../img/mobile_bg.jpg") no-repeat top center;
   min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 60px;
@@ -850,9 +850,19 @@ img {
 /* MEDIAQ */
 @media only screen and (min-width: 376px) {
   .header {
-    background: url("../img/bg.png") no-repeat top center;
+    /* background: url("../img/bg.png") no-repeat top center; */
+    background: linear-gradient(to right bottom, #1149e4, #1246e5, #5630cc);
     background-size: cover;
     min-height: 585px;
+    position: relative;
+  }
+  .svgbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg.svg") no-repeat top center;
   }
   .header .reg-mobile {
     max-width: 100%;
