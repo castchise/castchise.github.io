@@ -591,7 +591,64 @@ img {
 /* parrtners sec */
 .partners-sec {
   padding-top: 65px;
-  padding-bottom: 435px;
+  padding-bottom: 90px;
+}
+.partners-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.partner:not(:last-child) {
+  margin-bottom: 50px;
+}
+.partner {
+  background: #fff;
+  border: 1px solid;
+  border-color: #00000012;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partner-logo {
+  padding: 60px 80px;
+}
+.partner-logo-row:not(:last-child) {
+  margin-bottom: 50px;
+}
+.partner-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.partner-logo-row > img:not(:last-child) {
+  /* margin-right: 80px; */
+  margin-bottom: 50px;
+}
+.partner-logo-row img {
+  display: block;
+  max-width: 100%;
+}
+.partner-title {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid;
+  border-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter-bold;
+  font-weight: 400;
+  color: rgb(60, 61, 65);
+  font-size: 16px;
+  letter-spacing: -0.43px;
 }
 /* map sec */
 .map-sec {
@@ -760,7 +817,7 @@ img {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 20px;
-  max-width: 190px;
+  max-width: 150px;
   height: 45px;
 }
 /* for SE and lowres */
@@ -870,6 +927,13 @@ img {
   .table {
     display: block;
     margin: 0 auto;
+  }
+  .partner-logo-row > img:not(:last-child) {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+  .partner-logo-row {
+    flex-direction: row;
   }
 }
 
